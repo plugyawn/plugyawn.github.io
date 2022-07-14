@@ -1,0 +1,25 @@
+title: Aniket Rajnish
+
+
+markdown: kramdown
+#ins_logo: "./bits-logo.png"
+
+tracking_id: #
+
+footer: yes
+footer_text: "© Makra"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "About"
+   link: "/" 
+ - name: "CV"
+   link: "/files/Aniket Rajnish - CV.pdf"
+ - name: "Contact"
+   link: "/contact"
+ - name: "Docs"
+   link: "/docs"
+ 
