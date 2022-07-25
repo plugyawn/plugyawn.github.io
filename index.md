@@ -6,9 +6,18 @@ layout: default
 
 <img class="profile-picture" src="files/IMG_20220513165455419.jpg">
 
-I’m a junior undergraduate at IIT Gandhinagar. I’m into developing games, VFX, editing videos, computer graphics, and simulations. I’ve mentioned some of my work below. If you want the source code/ build of any of these you can contact me! <br>
 
-**Few of them are available  on my [Github](https://github.com/aniketrajnish). The design & development documents of the projects and games that I've mentioned below are can be found [here](https://aniketrajnish.github.io/docs).**
+Hi! <br> I am Progyan, a junior undergrad at Indian Institute of Technology, Gandhinagar currently completing a B.Tech major in Computer Science and Engineering. <br>
+
+People call me a jack of all trades, but I'm trying to get into and master (right now) competitive coding and Machine Learning. 
+
+While Python has been my go-to language for a long time (and is the focus of my GSoC project at Zulip), I want to get better at C and C++. 
+
+Other than tech, I am interested in Philosophy, Economics, and good, well-written literature. I also blog.
+
+I'm always on the lookout for cool ideas, so if you have one, I'd love to collaborate. 
+
+The first chai is on me. 
 ## Skills
 
 Type | List
