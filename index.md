@@ -4,27 +4,22 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="files/IMG_20220513165455419.jpg">
+<img class="profile-picture" src="files/progyan-das.jpg">
 
 
 Hi! <br> I am Progyan, a junior undergrad at Indian Institute of Technology, Gandhinagar currently completing a B.Tech major in Computer Science and Engineering. <br>
 
-People call me a jack of all trades, but I'm trying to get into and master (right now) competitive coding and Machine Learning. 
+I am a jack-of-all-trades, and I'm looking to do a Master's degree in Machine Learning and AI. I've gotten into GSoC, I want to get into competitive programming, and I'd love to have a conversation with you.
 
-While Python has been my go-to language for a long time (and is the focus of my GSoC project at Zulip), I want to get better at C and C++. 
+First chai's on me.
 
-Other than tech, I am interested in Philosophy, Economics, and good, well-written literature. I also blog.
-
-I'm always on the lookout for cool ideas, so if you have one, I'd love to collaborate. 
-
-The first chai is on me. 
 ## Skills
 
 Type | List
 -----|-------|--------
 Languages | C#, C++, HLSL, GLSL, Python, XML
 Tools & Technologies | Unity, OpenGL, Adobe Premiere Pro, Unreal Engine 4, Adobe After effects, Photoshop, Blender, Adobe XD, GameMaker Studio 2, MATLAB, Plastic SCM, Git & Github, Autodesk Inventor
-
+<!-- 
 ## Experience 
  1. **Game Developer, [Crazylabs](https://www.crazylabs.com/)**
   * Contracting as a partner game studio to help create scalable hypercasual games by looking after their ideation and development.
@@ -244,6 +239,6 @@ The ideation and developement of these games is done by me. Marketing and publis
  * [Remade Dani's Flash Games in Unity](https://www.youtube.com/playlist?list=PLQi4IKEYBPHUisVkBGx31KaW5VgUB64z2)
  * A [random shitpost game](https://play.google.com/store/apps/details?id=com.makra.KillTheStickMan&hl=en&gl=US) that I made in 15 minutes blew up on play store and is being downloaded by thousands of users everyday.
  * My first unity project was a [FAP Simulator](https://drive.google.com/file/d/14pdEJFl5diFXQK_w2OoOAnTkQGs10Eab/vi) XD
- * I have over 10k karma on [Reddit](https://www.reddit.com/user/aniketrajnish/?sort=top).
+ * I have over 10k karma on [Reddit](https://www.reddit.com/user/aniketrajnish/?sort=top). -->
 
-<img src="files/relatable.jpg">
+<img src="files/math_work_2x.png">
