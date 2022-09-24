@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: I get selected for the Cargill Global Scholars Programme!
+date: 2022-06-21 16:11:00-0400
 inline: false
 ---
 
