@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - plugyawn
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - plugyawn/WimpyML
+  - plugyawn/SDFNet
+  - plugyawn/InsIIT
+  - plugyawn/NBodySimulation
+  - plugyawn/codeMixedTextToolkit
+  - plugyawn/cerebruh

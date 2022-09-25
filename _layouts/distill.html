@@ -63,8 +63,8 @@
     <div class="post distill">
 
       <d-title>
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
+        <h1 class="font-weight-bolder">{{ page.title }}</h1>
+        <p class="font-weight-lighter">{{ page.description }}</p>
       </d-title>
 
       <d-byline></d-byline>
@@ -73,7 +73,7 @@
         {% if page.toc -%}
         <d-contents>
           <nav class="l-text figcaption">
-          <h3>Contents</h3>
+          <h3 class="font-weight-lighter">Contents</h3>
             {% for section in page.toc -%}
             <div><a href="#{{ section.name | slugify }}">{{ section.name }}</a></div>
             {% if section.subsections -%}
