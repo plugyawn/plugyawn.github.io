@@ -1,80 +1,70 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: n-body simulation
+description: Scripts in vPython for visualization n-body simulations through iterative, numerical analysis, especially Euler-Crömer techniques.
+img: 
 importance: 3
-category: fun
+category: course projects
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+# Iterative solutions for n-body simulations.
+<img height="300" alt="image" src="https://user-images.githubusercontent.com/76529011/185738668-57d533b5-40de-4d5d-92b7-d1c96ac2b5ba.png" align="right">
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Code for investigating the behaviour of particles in the vicinity of $n$ massive objects. When a 3rd body is added to a 2-body system, no analytical solution exists. For the undertaking, we consider particles to be massless bodies, while massive bodies (understandably) have mass. 
+
+Techniques used include the Verlet Integration, the Euler Cromer method, using Newton's Law of Gravitation. Future plans include adding relativistic physics to the simulation.
+
+The scripts are written in VPython. It is recommended to run them on https://glowscript.org. Check out an implementation of a binary star system collapsing [here](https://www.glowscript.org/#/user/progyan.das/folder/MyPrograms/program/blackhoooole).
+
+----------------------
+
+### The velocity-Verlet algorithm
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/76529011/185738704-4d8c0f37-d331-4c7b-86a8-9953b1397a52.png" align="left">
+
+Verlet integration is a method used to solve the Newton’s equations
+of motion. It is an algorithm to perform the integration for solving
+the Newton’s equations. Velocity verlet method is an algorithm which
+has similarities to the leapfrog method. The only difference is that
+the velocity and position are calculated at the same value fo the time
+variable. The algorithm consists of clear steps to find the solution.
+This method uses the approach where it explicitly incorporates the
+velocity, solving the problem of the first time step in the basic Verlet
+algorithm.
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 ```
-{% endraw %}
+Compute 𝑥(𝑡+Δ𝑡)=𝑣(𝑡)+12𝑎(𝑡)Δ𝑡2
+Compute 𝑎(𝑡+Δ𝑡) using the updated position
+Compute 𝑣(𝑡+Δ𝑡)=𝑣(𝑡)+12(𝑎(𝑡)+𝑎(𝑡+Δ𝑡))Δ𝑡
+ ```
+ 
+ ------------------------
+ 
+ 
+ 
+ ### The Euler-Crömer method
+ 
+ At every time step $i$ we compute the position $(x, y, z)$ and the velocity along $x$ and $y$ axis $(vx, vy, vz)$
+
+<img width="347" alt="image" align="right" src="https://user-images.githubusercontent.com/76529011/185739868-c3762986-5cfe-4cd0-bcdd-97d898140a12.png">
+
+
+```
+– First we calculate the distance ri from the reference celestial object.
+– Calculate the values of vx,i+1, vy,i+1 and vz,i+1 as vx,i+1 = v,xi+ax,i ∆t, vy,i+1 = vy,
+  i +ay,i ∆t and vz,i+1 = vz,i +az,i ∆t.
+– Now compute xi+1,yi+1 and zi+1 using vx,i+1, vy,i+1 and vz,i+1 as xi+1 = xi + vx,i+1 ∆t, 
+  yi+1 = yi + vy,i+1 ∆t and zi+1 = zi + vz,i+1 ∆t.
+– Now compute ax,i+1, ay,i+1 and az,i+1 using the new position values xi+1, yi+1 and zi+1.
+– Memorize these positions xi+1, yi+1 and zi+1 and also accelerations ax,i+1, ay,i+1 and 
+  az,i+1 for the next iteration.
+```
+---------------------------
+
+### Credits
+
+This has been a group effort by Rahul Chembakasseril, Progyan Das, Varad Sardeshpande, Saniya Patwardhan, and Rahul Lalani.
+
+
+
