@@ -2,79 +2,95 @@
 layout: page
 title: project 1
 description: a project with a background image
-img: assets/img/12.jpg
+img: https://user-images.githubusercontent.com/76529011/202820671-44b1d06e-1d92-4585-b2d8-f3e18fad50cb.png
 importance: 1
 category: work
 ---
+[![code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)![Compatibility](https://img.shields.io/badge/compatible%20with-python3.6.x-blue.svg)
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+```GP-Zoo``` is a collection of implementations of significant papers on Gaussian Processes with readable, simple code, over the past decade; ranging from Sparse Gaussian Process Regression from Titsias, 2009, to Stochastic Variational Gaussian Processes for classification and regression, by Hensman, 2014. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Implementations
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+We start with the standard ```GPJax``` dataset for regression.
+```python
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+import jax.random as jr
+key = jax.random.PRNGKey(0)
+n = 1000
+noise = 0.2
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+x = jr.uniform(key=key, minval=-5.0, maxval=5.0,
+               shape=(n,)).sort().reshape(-1, 1)
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+def f(x): return jnp.sin(4 * x) + jnp.cos(2 * x)
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+signal = f(x)
+y = signal + jr.normal(key, shape=signal.shape) * noise
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+xtest = jnp.linspace(-5.5, 5.5, 500).reshape(-1, 1)
+
+z = jnp.linspace(-5.0, 5.0, 50).reshape(-1, 1)
+
+fig, ax = plt.subplots(figsize=(12, 5))
+ax.plot(x, y, "o", alpha=0.3, label="Samples")
+ax.plot(xtest, f(xtest), label="True function")
+[ax.axvline(x=z_i, color="black", alpha=0.3, linewidth=1) for z_i in z]
+plt.show()
 ```
-{% endraw %}
+![image](https://user-images.githubusercontent.com/76529011/202865518-e7ee8de9-7b8a-4f70-b883-55fc3b68a3a7.png)
+
+```GP-Zoo```'s regression implementations are all based on this dataset, although it can be easily switched out by replacing ```x``` and ```y``` with a different dataset.
+For example, Stochastic Variational Gaussian Processes for Classification (*Hensman et al, 2014*), classifies the ```moons``` dataset:
+```python
+n_samples = 100
+noise = 0.1
+random_state = 0
+shuffle = True
+
+X, y = make_moons(
+    n_samples=n_samples, random_state=random_state, noise=noise, shuffle=shuffle
+)
+X = StandardScaler().fit_transform(X)  # Yes, this is useful for GPs
+
+X, y = map(jnp.array, (X, y))
+
+plt.scatter(X[:, 0], X[:, 1], c=y)
+```
+![image](https://user-images.githubusercontent.com/76529011/202865498-775da1e2-de64-4bd9-af97-f578cc0aa639.png)
+
+# Examples of regression implementations
+
+## Stochastic Variational Gaussian Process
+A parallelizable, scalable algorithm for Gaussian Processes, optimized for dealing with big data. Crosses are inducing points, while translucent blue dots are the original full dataset.
+
+![image](https://user-images.githubusercontent.com/76529011/202865852-698638d7-c08b-4afb-99cf-cb7e3ec9bf94.png)
+
+## Sparse Gaussian Process
+
+Based on the same dataset, a sparse Gaussian Process would include:
+![image](https://user-images.githubusercontent.com/76529011/202865600-7f74d040-dcfd-4be2-8ad4-06d69454cc8d.png)
+
+## Titsias's Sparse Gaussian Process
+
+Based on Titsias et al (2009), the greedy-algorithm for selecting inducing points leads to a good approximation of an exact Gaussian Process.
+![image](https://user-images.githubusercontent.com/76529011/202865698-503ff319-5c21-48ca-8aad-68b90943d40c.png)
+
+## Variational training of Inducing points
+
+A technique based on minimzing the Evidence Lower Bound as a loss for how well the inducing points approximate the full dataset.
+![image](https://user-images.githubusercontent.com/76529011/202865728-c0570d98-f666-4f49-8883-69c615ad8587.png)
+
+
+
+# Contributing
+
+GP-Zoo is a work-in-progress, so feel free to put in a PR and share in the work!
+
+Notably, if you can find a way to add backtesting strategies through boolean expressions passed to the function, that would be really helpful!
+Reach me at ```progyan.das@iitgn.ac.in``` or ```progyan.me```.
+
+
+
