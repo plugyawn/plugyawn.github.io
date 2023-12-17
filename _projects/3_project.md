@@ -4,7 +4,7 @@ title: Pineapple NES Emulator
 description: A C++ based emulator for the CPU of the Nintendo Entertainment System that ran on the Ricoh 2A03, with limited PPU capabilities.
 img: https://user-images.githubusercontent.com/76529011/194703131-31f83e29-e1cc-4877-ab12-e358750ab697.png
 importance: 3
-category: work
+category: open-source project
 ---
 
 [![forthebadge made-with-python](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.python.org/)

@@ -4,7 +4,7 @@ title: coinframe
 description: Library for analysing, backtesting, and presenting cryptocurrency portfolios reliably, and with very little code.
 img: https://user-images.githubusercontent.com/76529011/202106478-17b62613-6b4f-4d63-91eb-f1a375de1c45.png
 importance: 2
-category: work
+category: open-source project
 ---
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)

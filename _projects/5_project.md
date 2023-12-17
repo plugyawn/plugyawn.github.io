@@ -4,7 +4,7 @@ title: n-body simulation
 description: Scripts in vPython for visualization n-body simulations through iterative, numerical analysis, especially Euler-Crömer techniques.
 img: 
 importance: 3
-category: course projects
+category: course project
 ---
 
 # Iterative solutions for n-body simulations.

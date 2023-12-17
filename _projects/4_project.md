@@ -4,7 +4,7 @@ title: SDFNet
 description: Work on the research paper under Prof. Shanmuganathan Raman on visual synthesis and representation through Signed Distance Functions (SDFs).
 img: https://user-images.githubusercontent.com/76529011/185734211-6530a49f-3209-431b-8fed-bdf1fc450bd0.png
 importance: 3
-category: research
+category: research project
 ---
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)

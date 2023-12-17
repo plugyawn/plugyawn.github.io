@@ -4,7 +4,7 @@ title: gp-zoo
 description: Implementations of major papers on Gaussian Process regression models, implemented from scratch in Python, notably including Stochastic Variational Gaussian Processes.
 img: https://user-images.githubusercontent.com/76529011/202820671-44b1d06e-1d92-4585-b2d8-f3e18fad50cb.png
 importance: 1
-category: work
+category: open-source project
 ---
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
