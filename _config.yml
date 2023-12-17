@@ -92,8 +92,7 @@ instagram_id: # _progyan
 facebook_id: # your facebook id
 discord_id: # your discord id (18-digit unique numerical identifier)
 
-contact_note: >
-  Still looking for a really smart quote to put here. Or an eccentric XKCD.
+contact_note: ""
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
