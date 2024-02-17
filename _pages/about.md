@@ -6,10 +6,10 @@ subtitle: <a href='#'>Undergraduate, Computer Science and Engineering</a>, IIT G
 
 profile:
   align: right
-  image: progyan_aadhya_edited.png
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>At Aadhya Café, IIT Gandhinagar</p>
+    <p>At Bangalore, during Google Research Week 2024</p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -18,9 +18,11 @@ social: true  # includes social icons at the bottom of the page
 
 You may know me as the long-haired guy who frequents the chai places around IIT Gandhinagar. Or, you may know me as ```plugyawn```, which is what I identify as online. Either way, this is my slice of the internet, so here's a little bit about me.
 
-I'm intrigued by Probabilistic Machine Learning and Computer Graphics (if radiance fields are involved). My research is aligned along those fields.
+I'm intrigued by Theoretical Deep Learning, Probabilistic Machine Learning and Differential Equations (especially in Operator Learning). My research is aligned along those fields. 
 
-I've been part of the Google Summer of Code, I am a Cargill Global Scholar, and I'm also serving as the Technical Coordinator at IIT Gandhinagar, overseeing all technical activities that occur here at the student level. As a sidequest, I've also led a team of 120 students for a year and brought my institute's cultural fest back offline in 2021.
+I've been part of the Google Summer of Code, I am a Cargill Global Scholar, and I'm also serving as the Overall Technical Secretary at IIT Gandhinagar, overseeing all technical activities that occur here at the student level. I also spent a wonderful summer in sunny California as a Caltech SURF fellow in the summer of 2023. 
+
+As a sidequest, I've also led a team of 120 students for a year and brought my institute's cultural fest back offline in 2021.
 
 If you see me at IIT Gandhinagar, do say hi -- first chai's on me.
 
