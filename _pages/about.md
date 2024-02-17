@@ -6,7 +6,7 @@ subtitle: <a href='#'>Undergraduate, Computer Science and Engineering</a>, IIT G
 
 profile:
   align: right
-  image: profile.jpg
+  image: abc.jpeg
   image_circular: false # crops the image to make it circular
   address: >
     <p>At Bangalore, during Google Research Week 2024</p>
