@@ -6,10 +6,10 @@ subtitle: <a href='#'>Undergraduate, Computer Science and Engineering</a>, IIT G
 
 profile:
   align: right
-  image: abc.jpeg
+  image: dhanji_concert.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>At Bangalore, during Google Research Week 2024</p>
+    <p>At the great Dhanji's concert, at H.K Hall, Ahmedabad.</p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -20,11 +20,14 @@ You may know me as the long-haired guy who frequents the chai places around IIT 
 
 I'm intrigued by Theoretical Deep Learning, Probabilistic Machine Learning and Differential Equations (especially in Operator Learning). My research is aligned along those fields. 
 
-I've been part of the Google Summer of Code, I am a Cargill Global Scholar, and I'm also serving as the Overall Technical Secretary at IIT Gandhinagar, overseeing all technical activities that occur here at the student level. I also spent a wonderful summer in sunny California as a Caltech SURF fellow in the summer of 2023. 
+Over the past four years, I've been lucky to be a part of the Google Summer of Code, I've been awarded the [Cargill Global Scholarship](https://www.cargill.co.in/en/2019/cargill-global-scholars-program-gives-10-indian-students), and I spent a wonderful summer in sunny California as a [Caltech SURF fellow](https://sfp.caltech.edu/undergraduate-research/programs/surf) in the summer of 2023, where I worked with JPL, NASA on Machine Learning for (literally) astronomically large datasets. Interspersed between these were fortunate opportunities to work on research problems with scientists from DRDO, ISRO, TCS Research, as well as a wonderful winter at Bangalore as a Quantitative Researcher at Mudrex Capital. 
 
-As a sidequest, I've also led a team of 120 students for a year and brought my institute's cultural fest back offline in 2021.
+In 2024, I will be interning with MIT CSAIL as part of their SGI programme, in problems related to Computational Geometry. I've also collaborated with University of Maryland on mathematical questions that arise in Kernel-based Learning. After that, I'm headed to Microsoft, Bangalore as an Applied Scientist!
 
-If you see me at IIT Gandhinagar, do say hi -- first chai's on me.
+As a sidequest, I've also led a team of 120 students for a year and brought my institute's cultural fest back offline in 2021, coordinated 400+ internships across 50+ companies with the Industrial Relations Cell at IIT Gandhinagar, and was elected as the institute's Technical Secretary, where I had the great fortune of leading an incredible team of smart and driven individuals to bring positive, driven change in how students approached technology at IIT Gandhinagar. Check out the [MetaIITGN](http://wiki.metaiitgn.org) Initiative to check out some of our work!
+
+I was brought up in a family of theatre artistes, in quaint and beautiful Agartala, Tripura, where my interests ranged from good literature (from Tagore to Dostoevsky), to great music (from Vivaldi to [Dhanji](https://open.spotify.com/artist/1OVeQPd27s1MkICbzBfZTV)!) I also enjoy good beer, and the occasional Old Monk, so hit me up if you're in Bangalore and in the mood to hit a pub!
+
 
 
 
