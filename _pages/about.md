@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Undergraduate, Computer Science and Engineering</a>, IIT Gandhinagar
+subtitle: <a href='#'>Applied Scientist</a>, Microsoft 
 
 profile:
   align: right
