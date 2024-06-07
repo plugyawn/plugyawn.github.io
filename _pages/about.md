@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Applied Scientist</a>, Microsoft 
+subtitle: <a href='#'>Applied Scientist</a>, Microsoft | <a href='/publications'>Deep Learning</a> Researcher
 
 profile:
   align: right
