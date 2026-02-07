@@ -1,0 +1,573 @@
+/* Accent typography + palette overrides for the Progyan fork. */
+@font-face {
+  font-family: "CMU Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifRoman.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifBoldItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUSerifRoman";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifRoman.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUSerifItalic";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUSerifBold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUSerifBoldItalic";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifBoldItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUSerifExtraBoldSlanted";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifExtraBoldSlanted.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUSerifExtraRomanSlanted";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifExtraRomanSlanted.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUSerifUprightItalicUprightItalic";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifUprightItalicUprightItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMUClassicalSerifItalic";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUClassicalSerifItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif Extra";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifExtraBoldSlanted.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif Extra";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifExtraRomanSlanted.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif Upright Italic";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/static/font/cmu-serif/CMUSerifUprightItalicUprightItalic.ttf")
+    format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=UnifrakturMaguntia&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --GW-body-text-font-size: 19px;
+  --GW-body-max-width: 1050px;
+  --GW-serif-font-stack: "CMU Serif", "CMU Serif Extra", "CMUSerifRoman", "CMUSerifItalic", "CMUClassicalSerifItalic", "Ibarra Real Nova", "Source Serif 4", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
+
+  --progyan-ink: #05060c;
+  --progyan-ink-soft: #0d1322;
+  --progyan-paper: #f4efe3;
+  --progyan-amber: #f3b562;
+  --progyan-rose: #ff7f96;
+  --progyan-violet: #c1a0ff;
+  --progyan-teal: #61d0c7;
+  --progyan-slate: #1a1d2b;
+  --progyan-slate-light: #2b3048;
+}
+
+.markdownBody h1,
+.markdownBody h2,
+.markdownBody h3,
+.markdownBody h4 {
+  font-family: var(--GW-serif-font-stack);
+  font-feature-settings: "smcp", "liga", "clig", "calt";
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  font-variant: small-caps;
+  margin-top: 1.75rem;
+}
+
+.markdownBody > h1:first-child,
+.markdownBody > h2:first-child,
+.markdownBody > h3:first-child {
+  margin-top: 0;
+}
+
+/* Page title: old Bible blackletter */
+header h1 {
+  font-family: "UnifrakturMaguntia", "Playfair Display SC", serif !important;
+  font-style: normal;
+  font-variant-caps: normal !important;
+  text-transform: none !important;
+  letter-spacing: 0.02em;
+  font-size: 2.8em;
+  font-weight: 400;
+}
+
+body,
+.markdownBody {
+  font-family: var(--GW-serif-font-stack) !important;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+.markdownBody p,
+.markdownBody li,
+.markdownBody {
+  text-align: justify !important;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ── Bible two-column layout ── */
+
+/* Outer frame around content area */
+article {
+  --frame-pad-x: 1.75rem;
+  --frame-pad-y: 1.5rem;
+  --frame-color: rgba(243, 181, 98, 0.4);
+  --rule-color: rgba(243, 181, 98, 0.3);
+  --rule-light: rgba(243, 181, 98, 0.18);
+  border: 2px solid var(--frame-color);
+  outline: 1px solid var(--rule-light);
+  outline-offset: 4px;
+  padding: var(--frame-pad-y) var(--frame-pad-x);
+  margin-top: 0.5rem;
+}
+
+/* Bleed helper: extend horizontal rules to meet the outer frame */
+header,
+#page-metadata,
+.markdownBody {
+  margin-left: calc(-1 * var(--frame-pad-x));
+  margin-right: calc(-1 * var(--frame-pad-x));
+  padding-left: var(--frame-pad-x);
+  padding-right: var(--frame-pad-x);
+}
+
+/* Running header line under the page title */
+header {
+  border-bottom: 2px solid var(--rule-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Line under metadata before body text */
+#page-metadata {
+  border-bottom: 1px solid var(--rule-light);
+  padding-bottom: 0.6rem;
+  margin-bottom: 0;
+}
+
+.markdownBody {
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 1.5px solid var(--rule-color);
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  border-top: 1px solid var(--rule-light);
+  padding-top: 1rem;
+}
+
+/* Keep page metadata, title, description spanning full width */
+#page-metadata,
+.markdownBody > .page-description,
+.markdownBody > #page-metadata {
+  column-span: all;
+}
+
+/* Section headers: bleed to frame edges */
+.markdownBody h1,
+.markdownBody h2 {
+  column-span: all;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  margin-left: calc(-1 * var(--frame-pad-x));
+  margin-right: calc(-1 * var(--frame-pad-x));
+  padding: 0.5rem var(--frame-pad-x);
+  border-top: 2px solid var(--rule-color);
+  border-bottom: 1px solid var(--rule-light);
+}
+
+/* h3/h4 stay within their column */
+.markdownBody h3,
+.markdownBody h4 {
+  break-after: avoid;
+}
+
+/* Prevent orphans/widows in columns */
+.markdownBody p {
+  orphans: 3;
+  widows: 3;
+}
+
+/* Let the built-in dropcap system handle drop caps.
+   Override its color to match the Bible theme. */
+p[class*='dropcap-'] span.dropcap {
+  color: var(--progyan-amber) !important;
+}
+
+/* Keep images/math blocks from breaking across columns */
+.markdownBody figure,
+.markdownBody .math.display,
+.markdownBody pre {
+  break-inside: avoid;
+}
+
+/* Lists tighter in columns */
+.markdownBody li {
+  break-inside: avoid;
+}
+
+/* ── Mobile: single column, manuscript feel ── */
+@media all and (max-width: 649px) {
+  :root {
+    --GW-body-text-font-size: 15px;
+  }
+
+  article {
+    padding: 1rem;
+    outline-offset: 2px;
+  }
+
+  .markdownBody {
+    column-count: 1;
+    column-rule: none;
+    border-top: 1px solid rgba(243, 181, 98, 0.15);
+    padding-top: 0.75rem;
+  }
+
+  .markdownBody h1,
+  .markdownBody h2 {
+    text-align: center;
+  }
+}
+
+.progyan-columns {
+  display: grid;
+  gap: 1.75rem;
+  margin: 2rem 0 3rem;
+}
+
+@media (min-width: 720px) {
+  .progyan-columns {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+}
+
+.progyan-columns section {
+  padding: 0.25rem 0 1.75rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.progyan-columns h3 {
+  font-family: "Fraunces", var(--GW-serif-font-stack);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.progyan-columns ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* Navigation bar refresh */
+#sidebar {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.6rem 0.85rem;
+  background-color: #f3ebd6;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0));
+  border-top: 4px double rgba(5, 6, 12, 0.15);
+  border-bottom: 4px double rgba(5, 6, 12, 0.15);
+  border-left: none;
+  border-right: none;
+  box-shadow: inset 0 -1px rgba(5, 6, 12, 0.08), 0 6px 14px rgba(5, 6, 12, 0.08);
+}
+
+#sidebar a {
+  border: none;
+  text-decoration: none;
+}
+
+#sidebar a.logo {
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  margin-right: 0.5rem;
+  border-right: 1px solid rgba(5, 6, 12, 0.15);
+}
+
+#sidebar a.logo .logo-image {
+  --logo-width: 2.75rem;
+  filter: drop-shadow(0 3px 6px rgba(5, 6, 12, 0.18));
+}
+
+#sidebar .sidebar-links {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+}
+
+#sidebar .sidebar-links a {
+  font-family: var(--GW-serif-font-stack);
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  font-size: 0.92rem;
+  color: var(--progyan-ink-soft);
+  padding: 0.15rem 0.2rem;
+  border-bottom: 2px solid transparent;
+  background-image: linear-gradient(120deg, rgba(243, 181, 98, 0.18), rgba(255, 255, 255, 0));
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: color 0.18s ease, border-color 0.18s ease, background-size 0.2s ease;
+}
+
+#sidebar .sidebar-links a:hover,
+#sidebar .sidebar-links a:focus-visible {
+  color: var(--progyan-amber);
+  border-bottom-color: var(--progyan-rose);
+  background-size: 100% 2px;
+}
+
+@media (max-width: 700px) {
+  #sidebar {
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  #sidebar a.logo {
+    border-right: none;
+    margin-bottom: 0.25rem;
+  }
+
+  #sidebar .sidebar-links {
+    justify-content: center;
+  }
+}
+
+/* Force dark mode always */
+:root {
+  color-scheme: dark;
+    --GW-body-background-color: var(--progyan-ink);
+    --GW-body-text-color: var(--progyan-paper);
+    --GW-text-selection-background-color: var(--progyan-rose);
+    --GW-text-selection-color: #120f18;
+
+    --GW-body-link-color: var(--progyan-amber);
+    --GW-body-link-hover-color: var(--progyan-rose);
+    --GW-body-link-visited-color: var(--progyan-violet);
+    --GW-body-link-inverted-color: var(--progyan-ink-soft);
+    --GW-body-link-inverted-hover-color: var(--progyan-rose);
+    --GW-body-link-inverted-visited-color: var(--progyan-violet);
+
+    --GW-abstract-border-color: #56488d;
+    --GW-block-context-span-highlight-color: rgba(97, 208, 199, 0.22);
+
+    --GW-TOC-border-color: #413469;
+    --GW-TOC-background-color: rgba(10, 13, 29, 0.8);
+    --GW-TOC-link-hover-background-color: rgba(61, 72, 107, 0.35);
+    --GW-TOC-number-color: rgba(243, 181, 98, 0.65);
+    --GW-TOC-number-hover-color: var(--progyan-amber);
+
+    --GW-H1-border-color: var(--progyan-amber);
+    --GW-H2-border-color: var(--progyan-teal);
+
+    --GW-bulleted-list-marker-color: var(--progyan-violet);
+
+    --GW-figure-outline-color: #4d4f7e;
+    --GW-figure-caption-outline-color: #4d4f7e;
+
+    --GW-epigraph-quotation-mark-color: rgba(243, 181, 98, 0.75);
+
+    --GW-footnote-border-color: rgba(78, 81, 116, 0.9);
+    --GW-footnote-highlighted-border-color: var(--progyan-amber);
+    --GW-footnotes-section-top-rule-color: rgba(255, 255, 255, 0.08);
+    --GW-footnote-backlink-border-color: var(--progyan-amber);
+    --GW-footnote-backlink-border-hover-color: var(--progyan-rose);
+
+    --GW-highlighted-link-outline-color: var(--progyan-rose);
+    --GW-section-highlighted-border-color: rgba(97, 208, 199, 0.65);
+
+    --GW-sidenote-highlight-box-shadow-color: rgba(97, 208, 199, 0.25);
+    --GW-sidenote-border-color: rgba(97, 208, 199, 0.35);
+    --GW-sidenote-self-link-border-color: rgba(243, 181, 98, 0.55);
+
+    --GW-table-border-color: rgba(243, 181, 98, 0.6);
+    --GW-table-row-horizontal-border-color: rgba(243, 181, 98, 0.35);
+    --GW-table-zebra-stripe-alternate-row-background-color: rgba(25, 29, 45, 0.75);
+
+    --GW-pre-element-background-color: rgba(9, 11, 20, 0.9);
+    --GW-pre-element-border-color: rgba(239, 197, 154, 0.2);
+    --GW-code-block-line-highlight-background-color: rgba(243, 181, 98, 0.08);
+    --GW-code-block-line-number-color: rgba(97, 208, 199, 0.65);
+
+    --GW-dropcaps-goudy-color: var(--progyan-amber);
+    --GW-dropcaps-yinit-color: var(--progyan-teal);
+    --GW-dropcaps-yinit-text-shadow-color: rgba(5, 6, 12, 0.4);
+    --GW-dropcaps-de-zs-color: var(--progyan-rose);
+    --GW-dropcaps-cheshire-color: var(--progyan-violet);
+    --GW-dropcaps-kanzlei-color: var(--progyan-amber);
+  }
+
+  body {
+    background-color: var(--progyan-ink);
+    color: var(--GW-body-text-color);
+    font-feature-settings: "liga", "clig", "onum";
+  }
+
+  #sidebar {
+    background-color: rgba(7, 9, 18, 0.95);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0));
+    border-top: 4px double rgba(243, 181, 98, 0.35);
+    border-bottom: 4px double rgba(243, 181, 98, 0.35);
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.45), 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  #sidebar a.logo {
+    border-right: 1px solid rgba(243, 181, 98, 0.35);
+  }
+
+  #sidebar a,
+  #navigation a {
+    color: var(--progyan-paper);
+  }
+
+  #sidebar .sidebar-links a {
+    color: rgba(255, 255, 255, 0.82);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    background-image: linear-gradient(120deg, rgba(243, 181, 98, 0.35), rgba(255, 255, 255, 0));
+  }
+
+  #sidebar .sidebar-links a:hover,
+  #sidebar .sidebar-links a:focus-visible {
+    color: var(--progyan-amber);
+    border-bottom-color: var(--progyan-rose);
+  }
+
+  #sidebar a:hover,
+  #navigation a:hover {
+    color: var(--progyan-rose);
+  }
+
+  .markdownBody {
+    color: var(--GW-body-text-color);
+    text-rendering: optimizeLegibility;
+  }
+
+  .markdownBody h1,
+  .markdownBody h2,
+  .markdownBody h3,
+  .markdownBody h4 {
+    color: var(--progyan-amber);
+    text-shadow: 0 0 18px rgba(243, 181, 98, 0.15);
+  }
+
+  .markdownBody a {
+    text-decoration-color: rgba(243, 181, 98, 0.45);
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  }
+
+  .progyan-columns section {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .progyan-columns h3 {
+    color: var(--progyan-teal);
+  }
+
+hr::after {
+  filter: hue-rotate(-18deg) saturate(2.2);
+  opacity: 0.65;
+}

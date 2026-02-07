@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SSI: CSS+JS inline for speed -->
+  <!-- INLINED-HEAD-BEGIN -->
+  <!--#include virtual="/static/include/inlined-head.html" -->
+  <!-- INLINED-HEAD-END -->
+
+  
+  <!-- Hint at necessary third-party domains -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <meta name="title" content="On Adventure">
+  <meta name="citation_title" content="On Adventure">
+  <meta name="og:title" content="On Adventure">
+  <meta name="twitter:title" content="On Adventure">
+  <meta name="generator" content="https://github.com/gwern/gwern.net/">
+  <meta name="creator" content="gwern.net">
+  
+  <meta name="author" content="Gwern">
+  <meta name="citation_author" content="Gwern">
+  
+  <meta name="contact" content="https://gwern.net/me#contact">
+  <link rel="index" title="Gwern.net homepage" href="https://gwern.net/index">
+  <link href="https://gwern.substack.com/feed" type="application/rss+xml" rel="alternate" title="ATOM/RSS feed of Gwern.net newsletters with additions and links.">
+
+  <meta name="twitter:creator" content="gwern">
+  <meta name="twitter:site" content="gwern.net">
+  <meta name="og:site" content="gwern.net">
+  <meta name="og:type" content="article">
+  <meta name="description" content="How important are sidequests?">
+  <meta name="og:description" content="How important are sidequests?">
+  <meta property="og:image" content="https://gwern.net/static/img/logo/logo-whitebg-large-border.png">
+  <meta property="og:image:alt" content="Default thumbnail text: the Gwern.net site logo, a logotype of a large blackletter fraktur capital letter 'G' on a white background.">
+  <meta property="og:image:height" content="530">
+  <meta property="og:image:width" content="441">
+  <meta property="gwern:thumbnail:css-classes" content="">
+  <meta name="keywords" content="">
+  <meta name="dc.date.issued" content="2025-04-05">
+  
+  <meta name="citation_publication_date" content="2025-04-05">
+  <meta name="dcterms.modified" content="2025-12-02">
+  <link rel="schema.dcterms" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">
+  <meta name="dcterms.rights" content="CC PD-0">
+  <meta name="dc.rights" content="https://creativecommons.org/publicdomain/zero/1.0/">
+  <link rel="canonical" href="https://gwern.net/adventure">
+  <meta name="citation_fulltext_html_url" content="https://gwern.net/adventure">
+  <meta name="og:url" content="https://gwern.net/adventure">
+  <link rel="alternate" type="text/markdown" href="https://gwern.net/adventure.md" title="Markdown source of ‘On Adventure’ page"> <!-- Also available via Accept header -->
+  <meta name="page-body-classes" content="page-adventure dropcaps-de-zs">
+  <meta name="citation_fulltext_world_readable" content="">
+  <meta name="color-scheme" content="light dark">
+
+  
+  <title>On Adventure · Gwern.net</title>
+  
+
+  <link id="favicon" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small.png">
+  <link id="favicon-dark" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small-dark.png" media="all and (prefers-color-scheme: dark)">
+  <link id="favicon-apple-touch" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch.png">
+  <link id="favicon-apple-touch-dark" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch-dark.png" media="all and (prefers-color-scheme: dark)">
+
+  <!-- CSS for JS-disabled users: ensure that NoScripters know what they are missing even if they jump to a section & miss the warning at top/bottom. -->
+  <noscript>
+    <style>
+      #markdownBody #noscript-warning-header {
+          position: fixed; /* sticky */
+          top: 6px; /* at top */
+          width: 58%;
+          z-index: 99; /* Make sure it is on top */
+          background-color: #f8f8f8; /* Set a solid background color so legible while positioned over text */
+          border-color: var(--GW-abstract-border-color); /* Make look like theme-toggle/admonitions a bit more */
+          border-width: 6px 6px 6px 6px;
+          border-style: double;
+      }
+      #markdownBody #noscript-warning-header p { margin: 10px; }
+      nav#sidebar { padding-top: 160px; } /* avoid overlap with page header */
+    </style>
+  </noscript>
+</head>
+
+<body class="page-adventure dropcaps-de-zs">
+  <!-- SSI: Inlined asset links -->
+  <!-- INLINED-ASSET-LINKS-BEGIN-->
+  <!--#include virtual="/static/include/inlined-asset-links.html" -->
+  <!-- INLINED-ASSET-LINKS-END -->
+
+  <main>
+    <a id="skip-to-content-link" href="#markdownBody">Skip to main content</a>
+
+    <!-- SSI: Sidebar -->
+    <!-- SIDEBAR-BEGIN-->
+    <!--#include virtual="/static/include/sidebar.html" -->
+    <!-- SIDEBAR-END -->
+
+    <article>
+
+      <header>
+        <h1>On Adventure</h1>
+      </header>
+
+      
+      <div class="markdownBody" id="page-metadata">
+          
+        <div class="page-description"><p>How important are sidequests?</p></div>
+        <div class="page-metadata-fields">
+            
+            <span class="page-date-range">2025-04-05–2025-12-02</span>
+            <span class="page-status" title="Writing status of current page: ranges 'abandoned'/'notes'/'draft'/'in progress'/'finished'"><em><span class="completion-status" data-progress-percentage="75">in progress</span></em></span>
+            <span class="page-confidence"><a href="/about#confidence-tags" title="Explanation of 'confidence' metadata: probability of overall being meaningfully correct, expressed as Kesselman Estimative Words (ranging 0–100%: 'certain'/'highly likely'/'likely'/'possible'/'unlikely'/'highly unlikely'/'remote'/'impossible')">certainty</a>: <em><span class="completion-status" data-progress-percentage="84">highly likely</span></em></span>
+            <span class="page-importance"><a href="/about#importance-tags" title="Explanation of 'importance' metadata: rating 1–10 about how much a topic matters to the world.">importance</a>: <em>6</em></span>
+            
+            
+            
+        </div>
+      </div>
+      
+
+      <div id="TOC" class="TOC"></div> <div id="markdownBody" class="markdownBody">
+
+      
+      <noscript><div id="noscript-warning-footer" class="admonition error" title="Warning to NoScript Users"><div class="admonition-title"><p>[<strong>Error</strong>: JavaScript disabled.]</p></div> <p>[Backlinks, similar links, and the bibliography require JS enabled to load.]</p></div></noscript>
+      
+      
+      
+      
+      </div> <!-- NOTE: unmatched, because it closes the opening div from the hakyll.hs $body$ Pandoc template -->
+
+    </article>
+
+    
+    <!-- SSI: Footer -->
+    <!-- FOOTER-BEGIN-->
+    <!--#include virtual="/static/include/footer.html" -->
+    <!-- FOOTER-END -->
+    
+    <div id="footer-decoration-container"> <!-- Mandatory element for layout -->
+      <a rel="home me contents" title="Gwern.net homepage" class="footer-logo dark-mode-invert" href="/index">​</a>
+    </div>
+
+  </main>
+
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-18912926-1" onload="GW.googleAnalyticsLoaded = true;"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-18912926-1');
+  </script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SSI: CSS+JS inline for speed -->
+  <!-- INLINED-HEAD-BEGIN -->
+  <style id="inlined-styles-colors">
+:root {
+    /*  General.
+     */
+    --GW-body-background-color: #fff;
+    --GW-body-text-color: #000;
+
+    /*  Selection.
+     */
+    --GW-text-selection-background-color: #333;
+    --GW-text-selection-color: #fff;
+
+	/*	Links.
+	 */
+    --GW-body-link-color: #333;
+    --GW-body-link-hover-color: #888;
+    --GW-body-link-visited-color: #666;
+    --GW-body-link-inverted-color: #eee;
+    --GW-body-link-inverted-hover-color: #ccc;
+    --GW-body-link-inverted-visited-color: #ddd;
+
+    /*  Blockquotes.
+     */
+    --GW-blockquote-border-color-level-one: #ccc;
+    --GW-blockquote-border-color-level-two: #c4c4c4;
+    --GW-blockquote-border-color-level-three: #b3b3b3;
+    --GW-blockquote-border-color-level-four: #a6a6a6;
+    --GW-blockquote-background-color-level-one: #f8f8f8;
+    --GW-blockquote-background-color-level-two: #e6e6e6;
+    --GW-blockquote-background-color-level-three: #d8d8d8;
+
+    /*  Abstracts.
+     */
+    --GW-abstract-border-color: #bbb;
+
+	/*	Block context highlighting.
+	 */
+	--GW-block-context-span-highlight-color: #ddd;
+
+    /*  Table of contents.
+     */
+    --GW-TOC-border-color: #ccc;
+    --GW-TOC-background-color: #f8f8f8;
+    --GW-TOC-collapse-button-text-color: #ccc;
+    --GW-TOC-collapse-button-text-hover-color: #fff;
+    --GW-TOC-collapse-button-color: rgba(248, 248, 248, 0.8);
+    --GW-TOC-collapse-button-hover-color: #ddd;
+    --GW-TOC-collapse-button-border-hover-color: #000;
+    --GW-TOC-link-hover-background-color: #ececec;
+    --GW-TOC-link-hover-color: #000;
+    --GW-TOC-link-hover-indicator-bar-color: #ccc;
+    --GW-TOC-number-color: #909090;
+    --GW-TOC-number-hover-color: #313131;
+
+    /*  Collapse blocks.
+        */
+	--GW-collapse-abstract-blockquote-hover-color: #eee;
+	--GW-collapse-disclosure-button-color: #eee;
+	--GW-collapse-disclosure-button-hover-color: #ddd;
+	--GW-collapse-in-blockquote-disclosure-button-color: #ddd;
+	--GW-collapse-in-blockquote-disclosure-button-hover-color: #ccc;
+	--GW-collapse-disclosure-button-text-color: #bbb;
+	--GW-collapse-disclosure-button-text-hover-color: #fff;
+	--GW-collapse-in-blockquote-disclosure-button-text-color: #999;
+	--GW-collapse-in-blockquote-disclosure-button-text-hover-color: #888;
+
+	/*	Inline collapses.
+	 */
+	--GW-collapse-inline-disclosure-button-text-color: #555;
+	--GW-collapse-inline-disclosure-button-text-hover-color: #999;
+
+	/*	Aux-links collapse blocks.
+	 */
+	--GW-aux-links-collapse-border-color: #c4c4c4;
+
+    /*  Headings.
+     */
+    --GW-H1-border-color: #888;
+    --GW-H2-border-color: #888;
+
+    /*  Comments.
+     */
+    --GW-comment-section-top-border-color: #999;
+
+    /*  Lists.
+     */
+    --GW-bulleted-list-marker-color: #808080;
+
+    /*  Figures.
+     */
+    --GW-figure-outline-color: #888;
+    --GW-figure-caption-outline-color: #888;
+
+	/*	Embeds.
+	 */
+	--GW-embed-border-color: #ddd;
+
+    /*  Epigraphs.
+     */
+    --GW-epigraph-quotation-mark-color: #808080;
+
+    /*  Footnotes.
+     */
+    --GW-footnote-border-color: #aaa;
+    --GW-footnote-highlighted-border-color: #aaa;
+    --GW-footnotes-section-top-rule-color: #ccc;
+    --GW-footnote-backlink-border-color: #000;
+    --GW-footnote-backlink-border-hover-color: #999;
+
+    /*  Footnote references.
+     */
+    --GW-highlighted-link-outline-color: #999;
+
+    /*  Sidenotes.
+     */
+    --GW-sidenote-highlight-box-shadow-color: #aaa;
+    --GW-sidenote-border-color: #aaa;
+    --GW-sidenote-scrollbar-thumb-color: #aaa;
+    --GW-sidenote-scrollbar-thumb-hover-color: #999;
+    --GW-sidenote-self-link-border-color: #aaa;
+
+	/*	Annotations.
+	 */
+	--GW-section-highlighted-border-color: #666;
+
+    /*  Tables.
+     */
+    --GW-table-border-color: #000;
+    --GW-table-caption-border-color: #000;
+    --GW-table-row-horizontal-border-color: #000;
+    --GW-table-scrollbar-thumb-color: #aaa;
+    --GW-table-scrollbar-thumb-hover-color: #999;
+    --GW-table-scrollbar-border-color: #000;
+    --GW-table-column-heading-hover-background-color: #e2f0f2;
+    --GW-table-sorted-column-heading-background-color: #8bd0ed;
+    --GW-table-sorted-column-heading-text-color: #fff;
+    --GW-table-sorted-column-heading-text-shadow-color: #000;
+    --GW-table-zebra-stripe-alternate-row-background-color: #f6f6f6;
+    --GW-table-row-hover-outline-color: #000;
+
+    /*  Code blocks.
+     */
+    --GW-code-element-border-color: #c8c8c8;
+    --GW-code-element-background-color: #fafafa;
+    --GW-pre-element-border-color: #c8c8c8;
+    --GW-pre-element-background-color: #fafafa;
+    --GW-pre-element-scrollbar-track-color: #fafafa;
+    --GW-pre-element-scrollbar-thumb-color: #ccc;
+    --GW-pre-element-scrollbar-thumb-hover-color: #999;
+    --GW-code-block-line-highlight-background-color: #ffd;
+    --GW-code-block-line-highlight-border-color: #ddd;
+    --GW-code-block-line-number-color: #aaa;
+    --GW-code-block-line-number-divider-color: #ccc;
+
+
+    /*  Syntax highlight theme.
+     */
+    --GW-syntax-highlight-color-normal: #1f1c1b;
+    --GW-syntax-highlight-color-attribute: #002561;
+    --GW-syntax-highlight-color-data-type: inherit;
+    --GW-syntax-highlight-color-variable: #666666;
+    --GW-syntax-highlight-color-other: inherit;
+    --GW-syntax-highlight-color-preprocessor: inherit;
+    --GW-syntax-highlight-color-extension: #777;
+    --GW-syntax-highlight-color-comment: #77947b;
+    --GW-syntax-highlight-color-control-flow: #003900;
+    --GW-syntax-highlight-color-keyword: #002561;
+    --GW-syntax-highlight-color-operator: #002561;
+    --GW-syntax-highlight-color-special-char: #607880;
+    --GW-syntax-highlight-color-built-in: #002561;
+    --GW-syntax-highlight-color-function: #002561;
+    --GW-syntax-highlight-color-constant: inherit;
+    --GW-syntax-highlight-color-base-n: inherit;
+    --GW-syntax-highlight-color-dec-val: inherit;
+    --GW-syntax-highlight-color-float: inherit;
+    --GW-syntax-highlight-color-information: inherit;
+    --GW-syntax-highlight-color-char: inherit;
+    --GW-syntax-highlight-color-string: inherit;
+    --GW-syntax-highlight-color-verbatim-string: inherit;
+    --GW-syntax-highlight-color-alert: #bf0303;
+    --GW-syntax-highlight-color-error: #ff0000;
+    --GW-syntax-highlight-color-import: #777777;
+    --GW-syntax-highlight-color-special-string: #666666;
+
+    /*  Math.
+     */
+    --GW-math-block-background-color: #f6f6f6;
+    --GW-math-block-background-color-flash: #fff;
+    --GW-math-block-scrollbar-border-color: #ccc;
+    --GW-math-block-scrollbar-thumb-color: #ccc;
+    --GW-math-block-scrollbar-thumb-hover-color: #999;
+
+    /*  Dropcaps.
+     */
+    --GW-dropcaps-goudy-color: #000;
+    --GW-dropcaps-yinit-color: #0d0d0d;
+    --GW-dropcaps-yinit-text-shadow-color: #777;
+    --GW-dropcaps-de-zs-color: #1b1b1b;
+    --GW-dropcaps-cheshire-color: #191919;
+    --GW-dropcaps-kanzlei-color: #191919;
+
+    /*  Admonitions.
+     */
+    --GW-admonition-note-left-border-color: #909090;
+    --GW-admonition-note-background-color: #d8d8d8;
+    --GW-admonition-tip-left-border-color: #d8d8d8;
+    --GW-admonition-tip-background-color: #f0f0f0;
+    --GW-admonition-warning-left-border-color: #5a5a5a;
+    --GW-admonition-warning-background-color: #9a9a9a;
+    --GW-admonition-warning-text-color: #fff;
+    --GW-admonition-error-left-border-color: #2d2d2d;
+    --GW-admonition-error-background-color: #5a5a5a;
+    --GW-admonition-error-text-color: #fff;
+    --GW-admonition-reversed-link-color: #ddd;
+    --GW-admonition-reversed-link-color-hover: #ccc;
+    --GW-admonition-reversed-link-underline-gradient-line-color: #ccc;
+    --GW-admonition-reversed-link-underline-gradient-line-color-hover: #bbb;
+
+	/*	Footer.
+	 */
+    --GW-bottom-ornament-line-color: #000;
+
+	/*	Pop-frames (popups or popins).
+	 */
+    --GW-popframes-object-popframe-background-color: #fff;
+
+    --GW-extracts-options-dialog-backdrop-background-color: rgba(255, 255, 255, 0.95);
+    --GW-extracts-options-dialog-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-border-color: #aaa;
+    --GW-extracts-options-dialog-box-shadow-color: #444;
+    --GW-extracts-options-dialog-horizontal-rule-color: #ccc;
+    --GW-extracts-options-dialog-button-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-button-text-color: #000;
+    --GW-extracts-options-dialog-button-border-color: #000;
+    --GW-extracts-options-dialog-button-hover-box-shadow-color: #000;
+    --GW-extracts-options-dialog-option-button-explanation-text-color: #777;
+    --GW-extracts-options-dialog-option-button-hover-text-color: #777;
+    --GW-extracts-options-dialog-radio-button-border-color: #000;
+
+    /*  Popups.
+     */
+    --GW-popups-popup-background-color: var(--GW-body-background-color);
+
+    --GW-popups-popup-border-color: #ccc;
+    --GW-popups-popup-box-shadow-color: #ccc;
+    --GW-popups-popup-border-focused-color: #aaa;
+    --GW-popups-popup-box-shadow-focused-color: #aaa;
+
+    --GW-popups-popup-title-bar-background-color: #fff;
+    --GW-popups-popup-title-bar-button-color: #bbb;
+    --GW-popups-popup-title-bar-button-color-hover: #000;
+    --GW-popups-popup-title-bar-button-color-disabled: #eee;
+	--GW-popups-popup-title-color: #aaa;
+    --GW-popups-popup-title-link-hover-color: var(--GW-body-link-hover-color);
+    --GW-popups-popup-title-bar-button-focused-color: #777;
+    --GW-popups-popup-title-bar-button-focused-color-hover: #000;
+    --GW-popups-popup-title-bar-button-focused-color-disabled: #ddd;
+    --GW-popups-popup-title-bar-submenu-box-shadow-color: #ddd;
+	--GW-popups-popup-title-focused-color: #000;
+    --GW-popups-popup-title-link-hover-focused-color: var(--GW-body-link-hover-color);
+
+    --GW-popups-popup-scrollbar-thumb-color: #ddd;
+    --GW-popups-popup-scrollbar-thumb-hover-color: #bbb;
+    --GW-popups-popup-scrollbar-thumb-focused-color: #ccc;
+    --GW-popups-popup-scrollbar-thumb-hover-focused-color: #999;
+
+    /*  Popins.
+     */
+    --GW-popins-popin-background-color: var(--GW-body-background-color);
+
+    --GW-popins-popin-border-color: #aaa;
+    --GW-popins-popin-backdrop-color: rgba(0, 0, 0, 0.4);
+    --GW-popins-popin-box-shadow-color: #aaa;
+
+    --GW-popins-popin-title-bar-background-color: #fff;
+    --GW-popins-popin-title-bar-button-color: #777;
+
+    --GW-popins-popin-scrollbar-thumb-color: #ccc;
+    --GW-popins-popin-scrollbar-thumb-hover-color: #999;
+
+    --GW-popins-popin-stack-counter-text-color: #fff;
+    --GW-popins-popin-stack-counter-background-color: #bbb;
+
+    /*  Image focus.
+     */
+    --GW-image-focus-image-hover-drop-shadow-color: #777;
+
+	/*	Page toolbar.
+	 */
+    --GW-page-toolbar-border-color: #aaa;
+	--GW-page-toolbar-control-button-color: #aaa;
+	--GW-page-toolbar-control-button-active-color: #000;
+
+	/*	Page toolbar widgets.
+	 */
+	--GW-page-toolbar-button-icon-color: #aaa;
+	--GW-page-toolbar-button-selectable-icon-color: #e4e4e4;
+	--GW-page-toolbar-button-selected-icon-color: #777;
+    --GW-page-toolbar-button-text-color: #666;
+    --GW-page-toolbar-button-disabled-text-color: #ccc;
+    --GW-page-toolbar-button-highlighted-text-color: #000;
+
+	/*	Reader mode.
+	 */
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-background-color: rgba(0, 0, 0, 0.8);
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-color: #fff;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color: #000;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-border-color: #bbb;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-background-color: #444;
+
+	/*	“Back to top” link.
+	 */
+	--GW-back-to-top-link-color: #ccc;
+	--GW-back-to-top-link-hover-color: #999;
+
+	/*	Mobile floating header.
+	 */
+	--GW-floating-header-box-shadow-color: #ccc;
+	--GW-floating-header-scroll-indicator-color: #999;
+
+	/*	“Skip to content” accessibility link.
+	 */
+	--GW-skip-to-content-text-color: #fff;
+	--GW-skip-to-content-border-color: #fff;
+	--GW-skip-to-content-background-color: #bf1722;
+
+	/*	Nav header.
+	 */
+	--GW-nav-header-link-color: #888;
+	--GW-nav-header-link-hover-color: #000;
+
+	/*	X of the day.
+	 */
+	--GW-x-of-the-day-border-color: #ccc;
+}
+:root {
+    --GW-popups-popup-title-bar-pattern: var(--GW-image-pattern-dotted-e6e6e6-on-fff-2x-gif);
+    --GW-popups-popup-title-bar-pattern-focused: var(--GW-image-pattern-dotted-fff-on-e6e6e6-2x-gif);
+
+	--GW-checkerboard-scrollbar-background-image: var(--GW-image-checkerboard-777-fff-2x-gif);
+	--GW-checkerboard-scrollbar-hover-background-image: var(--GW-image-checkerboard-000-fff-2x-gif);
+}
+</style>
+<style id="inlined-styles-colors-dark" media="all and (prefers-color-scheme: dark)">
+:root {
+    /*  General.
+     */
+    --GW-body-background-color: #000;
+    --GW-body-text-color: #fff;
+
+    /*  Selection.
+     */
+    --GW-text-selection-background-color: #dcdcdc;
+    --GW-text-selection-color: #000;
+
+	/*	Links.
+	 */
+    --GW-body-link-color: #dcdcdc;
+    --GW-body-link-hover-color: #999;
+    --GW-body-link-visited-color: #b4b4b4;
+    --GW-body-link-inverted-color: #333;
+    --GW-body-link-inverted-hover-color: #5c5c5c;
+    --GW-body-link-inverted-visited-color: #494949;
+
+    /*  Blockquotes.
+     */
+    --GW-blockquote-border-color-level-one: #5c5c5c;
+    --GW-blockquote-border-color-level-two: #646464;
+    --GW-blockquote-border-color-level-three: #747474;
+    --GW-blockquote-border-color-level-four: #7f7f7f;
+    --GW-blockquote-background-color-level-one: #212121;
+    --GW-blockquote-background-color-level-two: #3e3e3e;
+    --GW-blockquote-background-color-level-three: #4f4f4f;
+
+    /*  Abstracts.
+     */
+    --GW-abstract-border-color: #6c6c6c;
+
+	/*	Block context highlighting.
+	 */
+	--GW-block-context-span-highlight-color: #494949;
+
+    /*  Table of contents.
+     */
+    --GW-TOC-border-color: #5c5c5c;
+    --GW-TOC-background-color: #212121;
+    --GW-TOC-collapse-button-text-color: #5c5c5c;
+    --GW-TOC-collapse-button-text-hover-color: #000;
+    --GW-TOC-collapse-button-color: rgba(33, 33, 33, 0.8);
+    --GW-TOC-collapse-button-hover-color: #494949;
+    --GW-TOC-collapse-button-border-hover-color: #fff;
+    --GW-TOC-link-hover-background-color: #363636;
+    --GW-TOC-link-hover-color: #fff;
+    --GW-TOC-link-hover-indicator-bar-color: #5c5c5c;
+    --GW-TOC-number-color: #929292;
+    --GW-TOC-number-hover-color: #ddd;
+
+    /*  Collapse blocks.
+        */
+	--GW-collapse-abstract-blockquote-hover-color: #333;
+	--GW-collapse-disclosure-button-color: #333;
+	--GW-collapse-disclosure-button-hover-color: #494949;
+	--GW-collapse-in-blockquote-disclosure-button-color: #494949;
+	--GW-collapse-in-blockquote-disclosure-button-hover-color: #5c5c5c;
+	--GW-collapse-disclosure-button-text-color: #6c6c6c;
+	--GW-collapse-disclosure-button-text-hover-color: #000;
+	--GW-collapse-in-blockquote-disclosure-button-text-color: #8b8b8b;
+	--GW-collapse-in-blockquote-disclosure-button-text-hover-color: #999;
+
+	/*	Inline collapses.
+	 */
+	--GW-collapse-inline-disclosure-button-text-color: #c1c1c1;
+	--GW-collapse-inline-disclosure-button-text-hover-color: #8b8b8b;
+
+	/*	Aux-links collapse blocks.
+	 */
+	--GW-aux-links-collapse-border-color: #646464;
+
+    /*  Headings.
+     */
+    --GW-H1-border-color: #999;
+    --GW-H2-border-color: #999;
+
+    /*  Comments.
+     */
+    --GW-comment-section-top-border-color: #8b8b8b;
+
+    /*  Lists.
+     */
+    --GW-bulleted-list-marker-color: #9f9f9f;
+
+    /*  Figures.
+     */
+    --GW-figure-outline-color: #999;
+    --GW-figure-caption-outline-color: #999;
+
+	/*	Embeds.
+	 */
+	--GW-embed-border-color: #494949;
+
+    /*  Epigraphs.
+     */
+    --GW-epigraph-quotation-mark-color: #9f9f9f;
+
+    /*  Footnotes.
+     */
+    --GW-footnote-border-color: #7c7c7c;
+    --GW-footnote-highlighted-border-color: #7c7c7c;
+    --GW-footnotes-section-top-rule-color: #5c5c5c;
+    --GW-footnote-backlink-border-color: #fff;
+    --GW-footnote-backlink-border-hover-color: #8b8b8b;
+
+    /*  Footnote references.
+     */
+    --GW-highlighted-link-outline-color: #8b8b8b;
+
+    /*  Sidenotes.
+     */
+    --GW-sidenote-highlight-box-shadow-color: #7c7c7c;
+    --GW-sidenote-border-color: #7c7c7c;
+    --GW-sidenote-scrollbar-thumb-color: #7c7c7c;
+    --GW-sidenote-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-sidenote-self-link-border-color: #7c7c7c;
+
+	/*	Annotations.
+	 */
+	--GW-section-highlighted-border-color: #b4b4b4;
+
+    /*  Tables.
+     */
+    --GW-table-border-color: #fff;
+    --GW-table-caption-border-color: #fff;
+    --GW-table-row-horizontal-border-color: #fff;
+    --GW-table-scrollbar-thumb-color: #7c7c7c;
+    --GW-table-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-table-scrollbar-border-color: #fff;
+    --GW-table-column-heading-hover-background-color: #2b3637;
+    --GW-table-sorted-column-heading-background-color: #216983;
+    --GW-table-sorted-column-heading-text-color: #000;
+    --GW-table-sorted-column-heading-text-shadow-color: #fff;
+    --GW-table-zebra-stripe-alternate-row-background-color: #252525;
+    --GW-table-row-hover-outline-color: #fff;
+
+    /*  Code blocks.
+     */
+    --GW-code-element-border-color: #606060;
+    --GW-code-element-background-color: #1d1d1d;
+    --GW-pre-element-border-color: #606060;
+    --GW-pre-element-background-color: #1d1d1d;
+    --GW-pre-element-scrollbar-track-color: #1d1d1d;
+    --GW-pre-element-scrollbar-thumb-color: #5c5c5c;
+    --GW-pre-element-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-code-block-line-highlight-background-color: #171600;
+    --GW-code-block-line-highlight-border-color: #494949;
+    --GW-code-block-line-number-color: #7c7c7c;
+    --GW-code-block-line-number-divider-color: #5c5c5c;
+
+
+    /*  Syntax highlight theme.
+     */
+    --GW-syntax-highlight-color-normal: #f1edec;
+    --GW-syntax-highlight-color-attribute: #b9e8ff;
+    --GW-syntax-highlight-color-data-type: inherit;
+    --GW-syntax-highlight-color-variable: #b4b4b4;
+    --GW-syntax-highlight-color-other: inherit;
+    --GW-syntax-highlight-color-preprocessor: inherit;
+    --GW-syntax-highlight-color-extension: #a6a6a6;
+    --GW-syntax-highlight-color-comment: #7f9c83;
+    --GW-syntax-highlight-color-control-flow: #b4edaf;
+    --GW-syntax-highlight-color-keyword: #b9e8ff;
+    --GW-syntax-highlight-color-operator: #b9e8ff;
+    --GW-syntax-highlight-color-special-char: #94adb6;
+    --GW-syntax-highlight-color-built-in: #b9e8ff;
+    --GW-syntax-highlight-color-function: #b9e8ff;
+    --GW-syntax-highlight-color-constant: inherit;
+    --GW-syntax-highlight-color-base-n: inherit;
+    --GW-syntax-highlight-color-dec-val: inherit;
+    --GW-syntax-highlight-color-float: inherit;
+    --GW-syntax-highlight-color-information: inherit;
+    --GW-syntax-highlight-color-char: inherit;
+    --GW-syntax-highlight-color-string: inherit;
+    --GW-syntax-highlight-color-verbatim-string: inherit;
+    --GW-syntax-highlight-color-alert: #ff8470;
+    --GW-syntax-highlight-color-error: #ff4a39;
+    --GW-syntax-highlight-color-import: #a6a6a6;
+    --GW-syntax-highlight-color-special-string: #b4b4b4;
+
+    /*  Math.
+     */
+    --GW-math-block-background-color: #252525;
+    --GW-math-block-background-color-flash: #000;
+    --GW-math-block-scrollbar-border-color: #5c5c5c;
+    --GW-math-block-scrollbar-thumb-color: #5c5c5c;
+    --GW-math-block-scrollbar-thumb-hover-color: #8b8b8b;
+
+    /*  Dropcaps.
+     */
+    --GW-dropcaps-goudy-color: #fff;
+    --GW-dropcaps-yinit-color: #f9f9f9;
+    --GW-dropcaps-yinit-text-shadow-color: #a6a6a6;
+    --GW-dropcaps-de-zs-color: #efefef;
+    --GW-dropcaps-cheshire-color: #f1f1f1;
+    --GW-dropcaps-kanzlei-color: #f1f1f1;
+
+    /*  Admonitions.
+     */
+    --GW-admonition-note-left-border-color: #929292;
+    --GW-admonition-note-background-color: #4f4f4f;
+    --GW-admonition-tip-left-border-color: #4f4f4f;
+    --GW-admonition-tip-background-color: #303030;
+    --GW-admonition-warning-left-border-color: #bdbdbd;
+    --GW-admonition-warning-background-color: #8a8a8a;
+    --GW-admonition-warning-text-color: #000;
+    --GW-admonition-error-left-border-color: #e1e1e1;
+    --GW-admonition-error-background-color: #bdbdbd;
+    --GW-admonition-error-text-color: #000;
+    --GW-admonition-reversed-link-color: #494949;
+    --GW-admonition-reversed-link-color-hover: #5c5c5c;
+    --GW-admonition-reversed-link-underline-gradient-line-color: #5c5c5c;
+    --GW-admonition-reversed-link-underline-gradient-line-color-hover: #6c6c6c;
+
+	/*	Footer.
+	 */
+    --GW-bottom-ornament-line-color: #fff;
+
+	/*	Pop-frames (popups or popins).
+	 */
+    --GW-popframes-object-popframe-background-color: #000;
+
+    --GW-extracts-options-dialog-backdrop-background-color: rgba(0, 0, 0, 0.95);
+    --GW-extracts-options-dialog-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-border-color: #7c7c7c;
+    --GW-extracts-options-dialog-box-shadow-color: #cecece;
+    --GW-extracts-options-dialog-horizontal-rule-color: #5c5c5c;
+    --GW-extracts-options-dialog-button-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-button-text-color: #fff;
+    --GW-extracts-options-dialog-button-border-color: #fff;
+    --GW-extracts-options-dialog-button-hover-box-shadow-color: #fff;
+    --GW-extracts-options-dialog-option-button-explanation-text-color: #a6a6a6;
+    --GW-extracts-options-dialog-option-button-hover-text-color: #a6a6a6;
+    --GW-extracts-options-dialog-radio-button-border-color: #fff;
+
+    /*  Popups.
+     */
+    --GW-popups-popup-background-color: var(--GW-body-background-color);
+
+    --GW-popups-popup-border-color: #5c5c5c;
+    --GW-popups-popup-box-shadow-color: #5c5c5c;
+    --GW-popups-popup-border-focused-color: #7c7c7c;
+    --GW-popups-popup-box-shadow-focused-color: #7c7c7c;
+
+    --GW-popups-popup-title-bar-background-color: #000;
+    --GW-popups-popup-title-bar-button-color: #6c6c6c;
+    --GW-popups-popup-title-bar-button-color-hover: #fff;
+    --GW-popups-popup-title-bar-button-color-disabled: #333;
+	--GW-popups-popup-title-color: #7c7c7c;
+    --GW-popups-popup-title-link-hover-color: var(--GW-body-link-hover-color);
+    --GW-popups-popup-title-bar-button-focused-color: #a6a6a6;
+    --GW-popups-popup-title-bar-button-focused-color-hover: #fff;
+    --GW-popups-popup-title-bar-button-focused-color-disabled: #494949;
+    --GW-popups-popup-title-bar-submenu-box-shadow-color: #494949;
+	--GW-popups-popup-title-focused-color: #fff;
+    --GW-popups-popup-title-link-hover-focused-color: var(--GW-body-link-hover-color);
+
+    --GW-popups-popup-scrollbar-thumb-color: #494949;
+    --GW-popups-popup-scrollbar-thumb-hover-color: #6c6c6c;
+    --GW-popups-popup-scrollbar-thumb-focused-color: #5c5c5c;
+    --GW-popups-popup-scrollbar-thumb-hover-focused-color: #8b8b8b;
+
+    /*  Popins.
+     */
+    --GW-popins-popin-background-color: var(--GW-body-background-color);
+
+    --GW-popins-popin-border-color: #7c7c7c;
+    --GW-popins-popin-backdrop-color: rgba(255, 255, 255, 0.4);
+    --GW-popins-popin-box-shadow-color: #7c7c7c;
+
+    --GW-popins-popin-title-bar-background-color: #000;
+    --GW-popins-popin-title-bar-button-color: #a6a6a6;
+
+    --GW-popins-popin-scrollbar-thumb-color: #5c5c5c;
+    --GW-popins-popin-scrollbar-thumb-hover-color: #8b8b8b;
+
+    --GW-popins-popin-stack-counter-text-color: #000;
+    --GW-popins-popin-stack-counter-background-color: #6c6c6c;
+
+    /*  Image focus.
+     */
+    --GW-image-focus-image-hover-drop-shadow-color: #a6a6a6;
+
+	/*	Page toolbar.
+	 */
+    --GW-page-toolbar-border-color: #7c7c7c;
+	--GW-page-toolbar-control-button-color: #7c7c7c;
+	--GW-page-toolbar-control-button-active-color: #fff;
+
+	/*	Page toolbar widgets.
+	 */
+	--GW-page-toolbar-button-icon-color: #7c7c7c;
+	--GW-page-toolbar-button-selectable-icon-color: #404040;
+	--GW-page-toolbar-button-selected-icon-color: #a6a6a6;
+    --GW-page-toolbar-button-text-color: #b4b4b4;
+    --GW-page-toolbar-button-disabled-text-color: #5c5c5c;
+    --GW-page-toolbar-button-highlighted-text-color: #fff;
+
+	/*	Reader mode.
+	 */
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-background-color: rgba(255, 255, 255, 0.8);
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-color: #000;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color: #fff;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-border-color: #6c6c6c;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-background-color: #cecece;
+
+	/*	“Back to top” link.
+	 */
+	--GW-back-to-top-link-color: #5c5c5c;
+	--GW-back-to-top-link-hover-color: #8b8b8b;
+
+	/*	Mobile floating header.
+	 */
+	--GW-floating-header-box-shadow-color: #5c5c5c;
+	--GW-floating-header-scroll-indicator-color: #8b8b8b;
+
+	/*	“Skip to content” accessibility link.
+	 */
+	--GW-skip-to-content-text-color: #000;
+	--GW-skip-to-content-border-color: #000;
+	--GW-skip-to-content-background-color: #ff847b;
+
+	/*	Nav header.
+	 */
+	--GW-nav-header-link-color: #999;
+	--GW-nav-header-link-hover-color: #fff;
+
+	/*	X of the day.
+	 */
+	--GW-x-of-the-day-border-color: #5c5c5c;
+}
+:root {
+    /*  Adjust background color to prevent pixels from turning off (contrary to 
+    	popular belief, pixels turning off saves trivial energy, like <1% in 
+    	measurements, and causes nasty scrolling/update jank due to delay in 
+    	pixels turning back on), and improve contrast with the white.
+     */
+    --GW-body-background-color: #161616;
+
+    /*  Dial back from pure white to keep contrast from being *too* high & 
+    	‘stark’ (#fff bg / #000 text seems to work in light mode, but not in 
+    	dark mode, perhaps because of differences in lighting environment?)
+     */
+    --GW-body-text-color: #f1f1f1;
+
+    --GW-popups-popup-title-bar-pattern: var(--GW-image-pattern-dotted-161616-on-252525-2x-gif);
+    --GW-popups-popup-title-bar-pattern-focused: var(--GW-image-pattern-dotted-161616-on-3e3e3e-2x-gif);
+
+    --GW-popins-popin-backdrop-color: rgba(0, 0, 0, 0.6);
+
+    --GW-popins-popin-title-bar-button-color: #bbb;
+
+    --GW-checkerboard-scrollbar-background-image: var(--GW-image-checkerboard-888-000-2x-gif);
+    --GW-checkerboard-scrollbar-hover-background-image: var(--GW-image-checkerboard-bfbfbf-000-2x-gif);
+}
+
+.dark-mode-invert,
+.dark-mode-invert::before,
+.dark-mode-invert::after {
+	filter: var(--dark-mode-invert-filter, none);
+}
+
+/*  Admonition icons.
+ */
+div.admonition.tip::before {
+    filter: invert(1);
+}
+div.admonition.note::before {
+    filter: none;
+}
+div.admonition.warning::before {
+    filter: none;
+}
+div.admonition.error::before {
+    filter: none;
+}
+
+/*  SVG icons in the two darker styles of admonitions.
+ */
+div.admonition.warning a[data-link-icon-type='svg'] .link-icon-hook::after,
+div.admonition.error a[data-link-icon-type='svg'] .link-icon-hook::after {
+    filter: none;
+}
+
+/*  For sortable table column headings, we use dark versions of the up/down/both
+    arrow icons.
+ */
+table th.tablesorter-header {
+    background-image: url('/static/img/tablesorter/tablesorter-bg-dark.gif');
+}
+table th.tablesorter-headerAsc {
+    background-image: url('/static/img/tablesorter/tablesorter-asc-dark.gif');
+}
+table th.tablesorter-headerDesc {
+    background-image: url('/static/img/tablesorter/tablesorter-desc-dark.gif');
+}
+
+/*  Images that are marked as '.invert' by the server are inverted,
+    hue-rotated, and desaturated. Other (non-invertible) images are merely
+    desaturated. Hovering over an image restores it to its original state.
+    Hierarchy: ‘.invert-not’/‘.invert-not-auto’: no inversion or grayscale;
+    ‘.invert’/‘.invert-auto’: inverted (uninverted upon mouse hover);
+    none: grayscaled (ungrayscaled on hover).
+ */
+figure img.invert,
+figure img.invert-auto {
+    filter: grayscale(50%) invert(100%) brightness(95%) hue-rotate(180deg);
+}
+figure img:not(.invert):not(.invert-auto) {
+    filter: grayscale(50%);
+}
+figure img,
+figure img.invert,
+figure img.invert-auto {
+    transition: filter 0.25s ease;
+}
+figure img:not(.drop-filter-on-hover-not):hover,
+figure img:not(.drop-filter-on-hover-not).invert:hover,
+figure img:not(.drop-filter-on-hover-not).invert-auto:hover,
+figure img:not(.drop-filter-on-hover-not):not(.invert):not(.invert-auto):hover {
+    filter: none;
+    transition: filter 0s ease 0.25s;
+}
+
+figure img[src$=".svg"].invert:hover,
+figure img[src$=".svg"].invert-auto:hover {
+    filter: grayscale(50%) invert(100%) brightness(95%) hue-rotate(180deg);
+}
+
+/*  Image alt-text.
+ */
+figure img.invert::before,
+figure img.invert-auto::before {
+    filter: invert(1);
+}
+figure img.invert:hover::before,
+figure img.invert-auto:hover::before {
+    filter: none;
+}
+/*  Styling the image alt-text interferes with the transitions in dark mode.
+    (We include non-class’d `img` in this selector for consistency.)
+
+    TEMPORARY until we transition to a color-based instead of filter-based
+    scheme for this. —SA 2022-07-29
+ */
+figure img,
+figure img:hover,
+figure img.invert,
+figure img.invert:hover,
+figure img.invert-auto,
+figure img.invert-auto:hover {
+    transition: none;
+}
+
+/*  For images which have been marked up (manually or automatically) with 
+	‘.invert-not’, we avoid any filtering at all. If they are manually marked up
+	(artwork, diagrams with multiple subtly-different colors matched to a 
+	legend/caption), the color is important and shouldn’t be faded out by 
+	default. (Or invertOrNot has judged the image to be non-invertible, which
+	presumably means something like the above also.)
+ */
+#markdownBody figure img.invert-not,
+#markdownBody figure img.invert-not-auto {
+    filter: none;
+}
+
+/*  The loading spinner for object popups (image, iframe, object) is inverted
+    and made more visible in dark mode.
+ */
+.popframe.loading::before {
+    filter: invert(1);
+    opacity: 0.4;
+}
+
+/*  “Loading failed” messages for object popups.
+ */
+.popframe.loading-failed::after {
+    opacity: 0.4;
+}
+
+/*  Masked links key toggle info alert panel.
+ */
+div#masked-links-key-toggle-info-alert img {
+    filter: drop-shadow(0 0 3px var(--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color));
+}
+
+/*  Recently-modified icon, manicule
+ */
+.has-recently-modified-icon .recently-modified-icon-hook::before,
+.manicule svg {
+    filter: invert(1);
+}
+
+</style>
+<link rel="stylesheet" href="/static/css/head.css?v=1761963665">
+<script src="/static/js/head.js?v=1764359351"></script>
+<link rel="preload" href="/static/img/icon/icons.svg?v=1761617795" as="image">
+
+  <!-- INLINED-HEAD-END -->
+
+    <!-- Hint at necessary third-party domains -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <meta name="title" content="">
+  <meta name="citation_title" content="">
+  <meta name="og:title" content="">
+  <meta name="twitter:title" content="">
+  <meta name="generator" content="https://github.com/progyan/progyan.net/">
+  <meta name="creator" content="progyan.net">
+    <meta name="author" content="Progyan">
+  <meta name="citation_author" content="Progyan">
+    <meta name="contact" content="https://progyan.net/me#contact">
+  <link rel="index" title="Progyan.net homepage" href="https://progyan.net/index">
+  <link href="https://progyan.substack.com/feed" type="application/rss+xml" rel="alternate" title="ATOM/RSS feed of Progyan.net newsletters with additions and links.">
+
+  <meta name="twitter:creator" content="progyan">
+  <meta name="twitter:site" content="progyan.net">
+  <meta name="og:site" content="progyan.net">
+  <meta name="og:type" content="article">
+  
+  <meta property="og:image" content="https://progyan.net/static/img/logo/logo-whitebg-large-border.png">
+  <meta property="og:image:alt" content="Default thumbnail text: the Progyan.net site logo, a logotype of a large blackletter fraktur capital letter 'G' on a white background.">
+  <meta property="og:image:height" content="">
+  <meta property="og:image:width" content="">
+  <meta property="progyan:thumbnail:css-classes" content="">
+  
+  <meta name="dc.date.issued" content="2025-01-01">
+  
+  <meta name="citation_publication_date" content="2025-01-01">
+  <meta name="dcterms.modified" content="2025-12-02">
+  <link rel="schema.dcterms" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">
+  <meta name="dcterms.rights" content="CC PD-0">
+  <meta name="dc.rights" content="https://creativecommons.org/publicdomain/zero/1.0/">
+  <link rel="canonical" href="https://progyan.net">
+  <meta name="citation_fulltext_html_url" content="https://progyan.net">
+  <meta name="og:url" content="https://progyan.net">
+  <link rel="alternate" type="text/markdown" href="https://progyan.net.md" title="Markdown source of ‘’ page"> <!-- Also available via Accept header -->
+  <meta name="page-body-classes" content="page- ">
+  <meta name="citation_fulltext_world_readable" content="">
+  <meta name="color-scheme" content="light dark">
+
+    <title> · Progyan.net</title>
+  
+  <link id="favicon" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small.png">
+  <link id="favicon-dark" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small-dark.png" media="all and (prefers-color-scheme: dark)">
+  <link id="favicon-apple-touch" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch.png">
+  <link id="favicon-apple-touch-dark" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch-dark.png" media="all and (prefers-color-scheme: dark)">
+
+  <!-- CSS for JS-disabled users: ensure that NoScripters know what they are missing even if they jump to a section & miss the warning at top/bottom. -->
+  <noscript>
+    <style>
+      #markdownBody #noscript-warning-header {
+          position: fixed; /* sticky */
+          top: 6px; /* at top */
+          width: 58%;
+          z-index: 99; /* Make sure it is on top */
+          background-color: #f8f8f8; /* Set a solid background color so legible while positioned over text */
+          border-color: var(--GW-abstract-border-color); /* Make look like theme-toggle/admonitions a bit more */
+          border-width: 6px 6px 6px 6px;
+          border-style: double;
+      }
+      #markdownBody #noscript-warning-header p { margin: 10px; }
+      nav#sidebar { padding-top: 160px; } /* avoid overlap with page header */
+    </style>
+  </noscript>
+
+  <!-- Site-specific tweaks -->
+  <link rel="stylesheet" href="/static/css/local-overrides.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+  <!-- MathJax for LaTeX math rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$$', '$$'], ['\\(', '\\)']],
+        displayMath: [['$$$$', '$$$$'], ['\\[', '\\]']],
+        macros: {
+          textsc: ['{\\text{#1}}', 1],
+          ket: ['{|#1\\rangle}', 1],
+          bra: ['{\\langle#1|}', 1],
+          braket: ['{\\langle#1\\rangle}', 1],
+          mathds: ['{\\mathbb{#1}}', 1]
+        },
+        tags: 'ams'
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body class="hyphenate page- ">
+  <!-- SSI: Inlined asset links -->
+  <!-- INLINED-ASSET-LINKS-BEGIN-->
+  <link rel="stylesheet" href="/static/css/style.css?v=1761963665" media="print" onload="this.media=`all`">
+<script src="/static/js/script.js?v=1763447916" defer></script>
+
+  <!-- INLINED-ASSET-LINKS-END -->
+
+  <main>
+    <a id="skip-to-content-link" href="#markdownBody">Skip to main content</a>
+
+    <!-- SSI: Sidebar -->
+    <!-- SIDEBAR-BEGIN-->
+        <nav id="sidebar">
+      <a class="logo" rel="home me contents" href="/index" accesskey="\" title="Homepage: categorized list of articles index"><svg class="logo-image" viewbox="0 0 64 75">
+      <use href="/static/img/logo/logo-smooth.svg#logo"></use></svg></a>
+      <div class="sidebar-links">
+        <a class="about link-page link-annotated" href="/about" title="Site ideals, source, content, traffic, examples, license" rel="author">About</a>
+        <a class="science link-page link-annotated" href="/science" title="Who am I online, what have I done, what am I like? Contact information; sites I use; things I've worked on" rel="author">Science</a>
+        <a class="demotheosis link-page link-annotated" href="/demotheosis" title="Changelog of what’s new or updated">Demotheosis</a>
+        <a class="blog link-page" href="/blog/index" title="Shortform Gwern writings">Blog</a>
+        <a class="links link-page" href="/doc/newest/index" title="Most recent link annotations">Links</a>
+        <a class="new" href="/changelog" title="Link to Patreon donation profile to support my writing" rel="me">New</a>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR-END -->
+
+    <article>
+
+      <header>
+        <h1>Braniac</h1>
+      </header>
+
+      <div class="markdownBody" id="markdownBody">
+
+      
+      <div id="page-metadata">
+        
+        <div class="page-description"><p>Massively distributed training
+at scale.</p></div>
+        <div class="page-metadata-fields">
+            
+            
+            <span class="page-status" title="Writing status of current page: ranges 'abandoned'/'notes'/'draft'/'in progress'/'finished'"><em></em></span>
+            <span class="page-confidence"><a href="/about#confidence-tags" title="Explanation of 'confidence' metadata: probability of overall being meaningfully correct, expressed as Kesselman Estimative Words (ranging 0–100%: 'certain'/'highly likely'/'likely'/'possible'/'unlikely'/'highly unlikely'/'remote'/'impossible')">certainty</a>: <em></em></span>
+            <span class="page-importance"><a href="/about#importance-tags" title="Explanation of 'importance' metadata: rating 1–10 about how much a topic matters to the world.">importance</a>: <em>10</em></span>
+            
+            
+            
+        </div>
+      </div>
+      
+
+      <p>Chief idea is to either: add fast-interconnect islands to <a
+      href="https://arxiv.org/abs/2311.08105">DiLoCo</a>, in order to
+      train foundational models over scattered shards of compute, of the
+      scale of a commercial mobile phone.</p>
+      <p>My target roughly corresponds to orchestrating a 1B <a
+      href="https://github.com/KellerJordan/modded-nanogpt"><code>KellerJordan/modded-nanogpt</code></a>
+      run over a minimal cluster of 6 GB RAM devices. These numbers are
+      for the simple reason that a 1B model fits in inference-mode in a
+      6 GB RAM device, with some RAM to spare for the operating system.
+      (Exact calculations here).</p>
+      <p>DiLoCo, which stands for Distributed Low Communication
+      training, is a method for training an LLM with very low comms
+      requirements, while remaining nearly optimal in FLOPs used to
+      reach a certain perplexity. It has a few implementations across
+      the internet, and is part of a few other notable methods that have
+      recently arisen to tackle the problem of training models over the
+      internet. See: [Psyche Network], [DeMo], [DisTro],
+      [Prime-Intellect].</p>
+      <p>For scalable training, a lot needs to be optimized for. The
+      right mix should be somewhere between Model Parallelism + DisTro +
+      Modula (Bernstein et al). Model parallelism needs to be figured
+      out; see: DiPaCo,</p>
+      <h2 id="on-optimization">On Optimization</h2>
+      <ul>
+      <li><p><a href="https://www.youtube.com/watch?v=4OAiakkmKQs">Talk
+      by Jeremy Bernstein</a> on <a
+      href="https://arxiv.org/abs/2405.14813">Optimization in the
+      Modular norm</a>. Talks about splitting optimizers by assigning
+      different metrics/dis-funcs to different layers (or “blocks”).
+      Split into atoms, bonds, compounds; see more in <a
+      href="https://www.youtube.com/watch?v=td9r0D3VARk">Bernstein’s
+      Cohere</a> talk.</p></li>
+      <li><p><a
+      href="https://docs.modula.systems/examples/hello-gpt/"><code>modula</code></a>,
+      library for metrized Deep Learning (from OpenAI, Thinking
+      Machines).</p></li>
+      </ul>
+      <h2 id="on-distributed-training">On Distributed Training</h2>
+      <ul>
+      <li><a href="https://www.youtube.com/watch?v=eLMJoCSjFbs">Bowen
+      Peng on Distributed Training</a>; primarily, critique on <span
+      class="smallcaps">diloco</span>, in that the communication
+      reduction is in the <strong>amortized</strong> case, i.e, once
+      every H calls, there needs to be a huge transfer between GPUs, and
+      in that time if something goes off, it stops working.
+      <ul>
+      <li>This is fair, this disqualifies <span
+      class="smallcaps">diloco</span> from our consideration as
+      well.</li>
+      <li>Instead, proposes <span class="smallcaps">distro</span>, which
+      is designed for <strong>data-parallel</strong> over heterogeneous
+      compute – which is what we want, minus the model parallelism.</li>
+      <li>Hence, inspect work by <a
+      href="https://thinkingmachines.ai/blog/">Thinking Machines</a>,
+      and by</li>
+      </ul></li>
+      <li><a href="https://arxiv.org/abs/2403.10616">DiPaCo</a> is
+      something entirely different. Should keep an eye.</li>
+      </ul>
+      <h2 id="personal-todos">Personal ToDos:</h2>
+      <ul>
+      <li>Seems like a nice forcing function to learn <a
+      href="">rust</a></li>
+      </ul>
+      <h1
+      id="matformer-matlm-matvit-deep-technical-interview-qa-bank">MatFormer
+      / MatLM / MatViT — Deep Technical Interview Q&amp;A Bank</h1>
+      <p>This file converts the earlier question bank into a <strong>Q/A
+      format</strong>.</p>
+      <p><strong>Caveat (honest + practical):</strong> Some
+      “code-reading” questions depend on exact repository implementation
+      details (e.g., precise config schema, internal module names,
+      caching hooks). Where those file-level details are not reliably
+      visible from the GitHub web UI in this environment, answers give
+      the <strong>most likely/standard implementation</strong>
+      consistent with the paper and the repo READMEs, plus a
+      <strong>“verify in code”</strong> note describing what to
+      check.</p>
+      <hr />
+      <h2 id="quick-calibration-prompts-510-min">0) Quick calibration
+      prompts (5–10 min)</h2>
+      <p><strong>Q:</strong> In one minute: what <em>problem</em> does
+      MatFormer solve, and why is “train 4 sizes” not good enough?<br />
+      <strong>A:</strong> MatFormer trains <strong>one set of
+      weights</strong> that supports <strong>many compute/quality
+      points</strong> by nesting submodels (primarily via FFN width).
+      Training four separate sizes is (i) <strong>4× training
+      cost</strong>, (ii) yields <strong>inconsistent
+      behaviours</strong> (distributional drift, different logits), and
+      (iii) can’t cheaply produce <strong>exponentially many</strong>
+      intermediate models or allow per-layer mix-and-match. MatFormer
+      aims for <strong>elastic inference</strong> (dynamic sizing), with
+      <strong>high behavioural consistency</strong> because the models
+      share weights.</p>
+      <p><strong>Q:</strong> What does “matryoshka” mean <em>in weight
+      space</em> vs “matryoshka representation learning” in
+      <em>activation/output space</em>?<br />
+      <strong>A:</strong> In MatFormer, “matryoshka” means
+      <strong>nested parameter subspaces</strong>: smaller models are
+      <strong>prefix slices</strong> of larger ones (e.g., first (h/2)
+      FFN neurons). In “matryoshka representation learning” (MRL), the
+      nesting is usually enforced on <strong>representations</strong>
+      (e.g., first (d’) dims of an embedding are useful), not
+      necessarily via shared weights. Weight nesting implies
+      <strong>shared training dynamics</strong> and stronger
+      consistency; representation nesting can be added as an auxiliary
+      constraint but doesn’t automatically give weight-sharing.</p>
+      <p><strong>Q:</strong> If you could only make <strong>one</strong>
+      transformer component elastic (embeddings / attention / FFN), why
+      does the paper focus on <strong>FFN</strong>? Quantify the share
+      of params/latency.<br />
+      <strong>A:</strong> In standard Transformers (GPT-like),
+      <strong>FFNs dominate parameters</strong> for typical
+      configurations because FFN params scale as (pprox 2 d h) per layer
+      (often (h pprox 4d)), while attention projections scale as (pprox
+      4 d^2). With (h=4d), FFN params (pprox 8d^2) vs attention (pprox
+      4d^2) (roughly <strong>~2× more</strong> in FFN than attention,
+      per layer). Latency often also has a large FFN contribution
+      (especially for moderate context lengths), so shrinking FFN offers
+      a big compute/parameter lever without changing
+      sequence-length–dependent attention complexity.</p>
+      <p><strong>Q:</strong> Define “<strong>behavioral
+      consistency</strong>” between two generative models in a way you
+      can actually measure.<br />
+      <strong>A:</strong> A measurable definition: for matched prompts
+      and decoding settings, compare (i) <strong>distributional
+      consistency</strong> such as average per-token <strong>KL</strong>
+      ((p_{small}|p_{large})) or cross-entropy of large under small, and
+      (ii) <strong>trajectory consistency</strong> such as <strong>exact
+      token match rate</strong> under greedy decoding or matched
+      sampling seeds. Also track <strong>accept rate</strong> in
+      speculative decoding as an operational proxy.</p>
+      <hr />
+      <h2 id="core-architecture-the-nested-ffn-block">1) Core
+      architecture: the nested FFN block</h2>
+      <h3 id="a.-formal-definition-invariances">A. Formal definition
+      &amp; invariances</h3>
+      <p><strong>Q:</strong> Write the MatFormer FFN for granularity
+      (g): which rows/cols of (W_1, W_2) are used, and what is the
+      “first neurons are most significant” claim?<br />
+      <strong>A:</strong> Let hidden size for granularity (g) be (h_g)
+      with (h_g h). For input (x^d), a vanilla FFN is <span
+      class="math display">\[\text{FFN}(x)=W_2\,\sigma(W_1 x +
+      b_1)+b_2\]</span>with (W_1^{hd}), (W_2^{dh}).<br />
+      MatFormer uses the <strong>prefix</strong> of the hidden
+      dimension: - (W_{1,g} = W_1[:h_g, :]), (b_{1,g}=b_1[:h_g]) -
+      (W_{2,g} = W_2[:, :h_g]), (b_2) unchanged<br />
+      So<span class="math display">\[
+      \text{FFN}_g(x)=W_2[:, :h_g]\,\sigma(W_1[:h_g,:]x+b_1[:h_g]) + b_2
+      \]</span>“First neurons are most significant” is <strong>not true
+      a priori</strong> (hidden units are permutation-symmetric), but
+      MatFormer’s joint training <strong>breaks symmetry</strong> by
+      forcing early units to be used by <strong>all</strong> submodels,
+      so they become the most “universally useful” ones.</p>
+      <p><strong>Q:</strong> Explain the <strong>permutation
+      symmetry</strong> of FFN hidden units in a vanilla transformer.
+      How does MatFormer <em>break</em> it, and why doesn’t training
+      just reintroduce arbitrary permutations?<br />
+      <strong>A:</strong> In a vanilla FFN, hidden units can be
+      permuted: if (P) is a permutation matrix, replacing (W_1PW_1) and
+      (W_2W_2P^{-1}) leaves the function unchanged (up to corresponding
+      bias permutation). MatFormer breaks this because submodels must
+      use <strong>the prefix</strong> of neurons; a permutation that
+      moves a “good” neuron out of the prefix would harm smaller
+      submodels, so the joint loss discourages it. Training won’t
+      reintroduce arbitrary permutations because the <strong>objective
+      is not permutation-invariant</strong> anymore: the prefix
+      constraint defines an ordering that the optimiser must
+      respect.</p>
+      <p><strong>Q:</strong> Suppose you initialise MatFormer from a
+      pretrained dense model: what neuron ordering do you choose and how
+      (e.g., by norm / Fisher / activation stats / learned reordering)?
+      What failure modes appear if ordering is bad?<br />
+      <strong>A:</strong> Options: - <strong>Magnitude / norm</strong>
+      ordering: rank neurons by (|W_2[:,j]|) or combined norm
+      (|W_1[j,:]||W_2[:,j]|). - <strong>Activation stats</strong>: run
+      data through model, rank by mean activation, variance, or
+      contribution to output norm. - <strong>Fisher / saliency</strong>:
+      approximate importance via gradient-based criteria. -
+      <strong>Learned reordering</strong>: train a small
+      permutation/assignment or do fine-tuning with a soft mask then
+      harden to prefix.<br />
+      Bad ordering can cause: small submodels underperform (because
+      important neurons were placed late), unstable joint training
+      (small loss high → large gradients), and slow convergence until
+      fine-tuning reassigns importance.</p>
+      <p><strong>Q:</strong> Does nesting induce an implicit
+      <strong>regularisation</strong>? If so, what kind (capacity
+      control, shared features, implicit distillation), and how would
+      you test it?<br />
+      <strong>A:</strong> Yes: it encourages <strong>shared,
+      general-purpose features</strong> in early neurons, acting like
+      (i) <strong>capacity sharing</strong> (multiple tasks = multiple
+      widths) and (ii) an <strong>implicit distillation</strong> where
+      smaller models’ gradients steer shared parameters toward broader
+      utility. Test via: - compare overfitting/validation gap vs
+      baseline - representational similarity of early neurons across
+      widths - add/remove small-model losses and see generalisation
+      changes - evaluate robustness/OOD sensitivity vs baseline.</p>
+      <h3 id="b.-granularities-parameter-accounting">B. Granularities
+      &amp; parameter accounting</h3>
+      <p><strong>Q:</strong> Paper + repo mention <strong>exponentially
+      spaced widths</strong> (e.g., (h, h/2, h/4, h/8)). Why
+      exponential, not linear?<br />
+      <strong>A:</strong> Exponential spacing gives (i) roughly
+      <strong>constant relative compute ratio</strong> between
+      neighbouring sizes, (ii) wide coverage of the Pareto frontier with
+      few points, and (iii) aligns with practical deployment tiers (2×,
+      4×, 8×). Linear spacing would waste points in regimes where
+      marginal gains are small and increases training overhead.</p>
+      <p><strong>Q:</strong> Given model dim (d) and FFN hidden (h),
+      derive FFN parameter count and FLOPs; then compute savings for
+      each granularity.<br />
+      <strong>A:</strong> Parameters per FFN (ignoring biases): (#dh +
+      hd = 2dh). If (h_g = h/k), then (#_g 2d(h/k)= (1/k)(2dh)). FLOPs
+      per token similarly scale (2dh) for the two matmuls (activation
+      cost smaller), so savings are roughly proportional to (h_g/h). For
+      widths (h, h/2, h/4, h/8), savings relative to full are (1, 1/2,
+      1/4, 1/8) in FFN compute/params.</p>
+      <p><strong>Q:</strong> If you only shrink FFN, when does attention
+      dominate latency? What does that imply for <em>diminishing
+      returns</em> of MatFormer at small widths?<br />
+      <strong>A:</strong> Attention cost scales roughly as (O(n d^2))
+      for projections plus (O(n^2 d)) for attention scores (depending on
+      kernel/fusion), while FFN scales (O(n d h)). As (h) shrinks, FFN
+      cost drops linearly but attention stays. For sufficiently small
+      (h_g), attention becomes dominant, so further shrinking FFN yields
+      diminishing latency gains. Practically: MatFormer’s best latency
+      leverage is in regimes where FFN is a large slice of runtime
+      (moderate context length, large (h)).</p>
+      <p><strong>Q:</strong> The paper says nesting could also apply to
+      <strong>attention heads</strong> and/or embeddings. Sketch a
+      consistent nesting scheme for attention that preserves tensor
+      shapes and doesn’t require reparameterising projections.<br />
+      <strong>A:</strong> One scheme: keep model dimension (d) fixed but
+      nest <strong>heads</strong> by prefixing head groups. Implement
+      (W_Q,W_K,W_V^{dd}) but define head count (H_gH) and only use the
+      first (H_g) heads’ slices in the reshape/split into heads (i.e.,
+      use first (H_gd_h) channels, where (d_h=d/H)). You must ensure
+      (d_h) constant and choose (H) so it divides (d). Alternative: nest
+      <strong>per-head MLP projections</strong> via block-diagonal
+      structure, but that’s more invasive.</p>
+      <h3 id="c.-numerical-implementation-details">C. Numerical /
+      implementation details</h3>
+      <p><strong>Q:</strong> How do you implement “first (h_g) neurons”
+      in PyTorch so gradients flow correctly to shared weights? (Views
+      vs copies; slicing semantics; contiguous memory;
+      checkpointing.)<br />
+      <strong>A:</strong> Use <strong>tensor views</strong> (slicing) on
+      parameters in forward: - <code>W1_g = W1[:hg, :]</code>,
+      <code>b1_g = b1[:hg]</code>, <code>W2_g = W2[:, :hg]</code>. This
+      preserves gradient flow into the underlying parameter storage.
+      Avoid <code>.clone()</code> or <code>.detach()</code>. Ensure
+      slices are contiguous if needed for kernel performance (use
+      <code>.contiguous()</code> cautiously—this creates a copy, but
+      gradients still route back if created via view? In general, prefer
+      views; if you must make contiguous, verify gradient mapping). For
+      checkpointing, wrap the FFN forward in
+      <code>torch.utils.checkpoint.checkpoint</code> at the module level
+      so autograd recomputes correctly.</p>
+      <p><strong>Q:</strong> What is the most efficient way to compute
+      outputs for <strong>all</strong> granularities in a forward pass:
+      naive multiple FFN passes / compute maximal hidden activations
+      once + reuse slices / compute incremental contributions
+      (prefix-sums style). Which is correct, and which is fastest on
+      GPUs?<br />
+      <strong>A:</strong> Correct approaches: - <strong>Max hidden once
+      + slice:</strong> compute (z=(W_1 x)) for full (h), then for each
+      (g) compute output (W_2[:, :h_g] z[:h_g]). This shares the
+      expensive first matmul. - <strong>Incremental
+      contributions:</strong> partition hidden into blocks (e.g., ranges
+      corresponding to (h/2, h/4)) and accumulate outputs via block
+      matmuls; useful if you want all outputs and can reuse partial
+      sums.<br />
+      Naive multiple FFN passes repeats (W_1 x) matmuls and is typically
+      slowest. Fastest depends on kernel fusion and memory bandwidth;
+      “max once + multiple smaller GEMMs” is often good, while a
+      well-fused incremental kernel could be best but requires custom
+      kernels.</p>
+      <p><strong>Q:</strong> What subtle bug appears if you accidentally
+      let the smaller model use weights that were meant to be exclusive
+      to a larger granularity (off-by-one / wrong slice axis)? What unit
+      test catches it?<br />
+      <strong>A:</strong> Bug: small model’s output depends on “late”
+      neurons, violating nesting; you’ll see unexpectedly good/bad small
+      performance and broken consistency metrics. Unit tests: -
+      <strong>Dependency test:</strong> zero out exclusive weights (late
+      columns/rows) and verify small model output unchanged. -
+      <strong>Gradient test:</strong> backprop small loss and confirm
+      gradients are zero on exclusive weight regions. -
+      <strong>Shape-axis test:</strong> assert slicing is on the hidden
+      dimension, not input/output.</p>
+      <hr />
+      <h2 id="training-objective-optimisation">2) Training objective
+      &amp; optimisation</h2>
+      <h3 id="a.-joint-loss-weighting-and-gradient-interference">A.
+      Joint loss, weighting, and gradient interference</h3>
+      <p><strong>Q:</strong> State the training objective: weighted
+      average of submodel losses. Why does uniform weighting make sense
+      as a default, and when would you change it?<br />
+      <strong>A:</strong> Objective:<span
+      class="math display">\[\mathcal{L}=\sum_{g\in\mathcal{G}}\alpha_g\,\mathcal{L}_g\]</span>where
+      each (_g) is next-token loss from submodel (g). Uniform weights
+      (_g=1/||) is a reasonable default because it trains all
+      granularities comparably and maintains consistency. Change weights
+      if deployment priorities skew (e.g., most traffic on small model),
+      or if smallest models collapse (increase their weight early), or
+      if you want best full-size performance (increase large model
+      weight).</p>
+      <p><strong>Q:</strong> Show (mathematically or via intuition) how
+      shared parameters receive gradients from <em>multiple</em>
+      submodels. When can gradients conflict?<br />
+      <strong>A:</strong> For shared parameter (), <strong>Q:</strong>
+      Show (mathematically or via intuition) how shared parameters
+      receive gradients from <em>multiple</em> submodels. When can
+      gradients conflict?<br />
+      <strong>A:</strong> For shared parameter (),<span
+      class="math display">\[\nabla_\theta \mathcal{L}=\sum_g
+      \alpha_g\nabla_\theta \mathcal{L}_g\]</span>Conflict occurs when
+      gradient directions disagree (negative cosine similarity).hasise
+      small models vs late emphasise big model—what do you expect? How
+      would you decide?<br />
+      <strong>A:</strong> One schedule: early increase weight on
+      <strong>small widths</strong> to force robust “core” features;
+      later shift weight toward <strong>largest</strong> to maximise
+      final quality. Expect better small-model performance and possibly
+      better generalisation; but too much early small weighting may cap
+      large-model peak. Decide by monitoring (i) per-granularity losses,
+      (ii) consistency metrics, and (iii) final downstream evaluation;
+      use ablations.</p>
+      <p><strong>Q:</strong> What is the analogue of “<strong>sandwich
+      rule</strong>” from slimmable nets here? Does MatFormer implicitly
+      rely on it?<br />
+      <strong>A:</strong> Sandwich rule typically trains smallest +
+      largest + a few random intermediate widths per step to cover width
+      space efficiently. MatFormer can use an analogous strategy:
+      compute losses for extremes and a sampled subset of widths rather
+      than all. The paper’s setup often uses a fixed discrete set; but
+      sampling is a plausible efficiency extension.</p>
+      <p><strong>Q:</strong> If you observe the smallest submodel
+      collapsing (bad loss) while the largest is fine, what are your
+      first three interventions?<br />
+      <strong>A:</strong> (1) Increase (_{small}) and/or apply a
+      curriculum that prioritises small early. (2) Improve neuron
+      ordering / enforce stronger nesting (e.g., explicit regulariser
+      that encourages early neurons to carry more signal). (3) Reduce
+      learning rate or use per-granularity auxiliary distillation (small
+      logits distil from large), stabilising gradients.</p>
+      <h3 id="b.-compute-systems-efficiency">B. Compute &amp; systems
+      efficiency</h3>
+      <p><strong>Q:</strong> The paper notes joint training uses one
+      forward per submodel and benefits from shared computation. Where
+      exactly is compute shared, and where is it not?<br />
+      <strong>A:</strong> Shared: embeddings, attention blocks, layer
+      norms, residual stream up to FFN computation, and (if implemented)
+      the <strong>first FFN matmul</strong> (W_1 x) can be shared by
+      computing full hidden once. Not shared: the final projection
+      (W_2[:, :h_g] z[:h_g]) per granularity, plus per-granularity loss
+      computations; backward graphs also differ per slice.</p>
+      <p><strong>Q:</strong> What is the <strong>wall-clock
+      overhead</strong> vs training only the largest model? What
+      dominates it (extra matmuls, extra softmax, extra backward
+      graph)?<br />
+      <strong>A:</strong> Overhead comes mainly from additional FFN
+      output matmuls and additional backward contributions, plus extra
+      loss computations. If implemented naively, repeated (W_1 x)
+      matmuls dominate overhead; if shared, overhead is closer to “extra
+      (W_2) matmuls + extra backward ops.” Softmax/loss overhead is
+      small relative to matmuls.</p>
+      <p><strong>Q:</strong> If you were to implement a fused MatFormer
+      FFN kernel, what would the kernel signature look like? How would
+      you expose it cleanly to autograd?<br />
+      <strong>A:</strong> Signature could accept
+      <code>(x, W1, b1, W2, b2, widths)</code> and return outputs for
+      selected widths or a packed tensor. Internally it computes full
+      hidden once and produces multiple outputs with minimal memory
+      traffic. Expose via a custom <code>torch.autograd.Function</code>
+      with saved tensors (or recomputation) and implement backward that
+      accumulates gradients properly for shared regions.</p>
+      <p><strong>Q:</strong> How does gradient checkpointing interact
+      with multiple submodel forwards? What’s the right checkpoint
+      boundary?<br />
+      <strong>A:</strong> Checkpointing reduces activation memory by
+      recomputing forward during backward. With multiple submodel
+      losses, checkpoint boundaries should wrap the <strong>entire block
+      whose activations are otherwise replicated</strong>, e.g., the
+      transformer layer including FFN computation. If computing full
+      hidden once, checkpoint at the layer boundary and recompute shared
+      hidden during backward for each loss, or store shared hidden once
+      if memory allows. You must ensure recomputation is
+      deterministic.</p>
+      <h3 id="c.-inducing-structure-by-finetuning">C. Inducing structure
+      by finetuning</h3>
+      <p><strong>Q:</strong> The paper says you can induce MatFormer
+      structure via finetuning (not only pretraining). What assumptions
+      are required for this to work?<br />
+      <strong>A:</strong> Assumptions: the pretrained model has
+      redundant capacity and can reorganise features under the new
+      constraint; the task/data used for finetuning is sufficient to
+      shape neuron importance; training is long enough and
+      well-conditioned. It works better if you start with a reasonable
+      neuron ordering and avoid catastrophic forgetting.</p>
+      <p><strong>Q:</strong> If you finetune a pretrained dense model
+      into MatFormer, what do you do with “exclusive” neurons in larger
+      widths—initialise from existing weights or random? Why?<br />
+      <strong>A:</strong> Prefer initialising from existing weights
+      (same indices) because it preserves learned features and speeds
+      convergence. If you must change dimensionality/order, use a
+      deterministic mapping plus small noise. Random init risks
+      destabilising large model and harming consistency; it may be
+      acceptable if exclusive regions are truly new capacity.</p>
+      <hr />
+      <h2 id="mixnmatch-exponential-model-extraction">3) Mix’n’Match:
+      exponential model extraction</h2>
+      <h3 id="a.-combinatorics-feasibility">A. Combinatorics &amp;
+      feasibility</h3>
+      <p><strong>Q:</strong> If you have (G) granularities and (L)
+      layers, how many Mix’n’Match models exist? When is that number
+      meaningful vs purely theoretical?<br />
+      <strong>A:</strong> (G^L) possible per-layer assignments. It’s
+      meaningful when you can (i) evaluate or select among them
+      efficiently (DP/greedy/controller), and (ii) the extracted models
+      are “good” without per-model training. Otherwise it’s mostly
+      theoretical combinatorics.</p>
+      <p><strong>Q:</strong> The paper claims Mix’n’Match models (never
+      explicitly optimised) still lie on the accuracy–compute curve
+      traced by trained granularities. Why might this generalise? When
+      might it fail?<br />
+      <strong>A:</strong> It may generalise because each layer’s prefix
+      weights are trained under multiple widths, yielding modular
+      “cores” that compose. It can fail if there are strong inter-layer
+      dependencies (a narrow layer followed by wide layer causes
+      distribution shifts), or if training did not sufficiently cover
+      mixed configurations, leading to brittle compositions.</p>
+      <p><strong>Q:</strong> Given a target compute budget (latency),
+      how do you choose a per-layer granularity assignment? Formulate it
+      as an optimisation problem (knapsack / DP / greedy / learned
+      router).<br />
+      <strong>A:</strong> Let each layer-width choice (g) have cost
+      (c_{,g}) and predicted utility (u_{,g}) (e.g., marginal loss
+      reduction). Optimise:<span class="math display">\[
+      \max \sum_{\ell} u_{\ell,g_\ell} \quad \text{s.t.}\quad
+      \sum_{\ell} c_{\ell,g_\ell} \le C
+      \]</span><strong>A:</strong> Let each layer-width choice (g) have
+      cost (c_{,g}) and predicted utility (u_{,g}) (e.g., marginal loss
+      reduction). Optimise:<span class="math display">\[\max \sum_{\ell}
+      u_{\ell,g_\ell} \quad \text{s.t.}\quad \sum_{\ell} c_{\ell,g_\ell}
+      \le C\]</span> This is a knapsack-like problem; DP works if costs
+      are discretisedlarities (e.g., using first (h’) neurons for
+      intermediate (h’)). Why should intermediate prefixes be “good”?
+      What property of training makes that plausible?<br />
+      <strong>A:</strong> Because training enforces a ranking: early
+      neurons must serve all submodels, so features become progressively
+      more specialised as index increases. If this monotonic
+      “importance” emerges, then any prefix tends to be functional. This
+      is plausible when the loss includes multiple widths and gradients
+      repeatedly pressure early neurons to be universally useful.</p>
+      <p><strong>Q:</strong> If you implement intermediate widths, how
+      do you ensure shape alignment and avoid retracing/compiling too
+      many variants (TorchDynamo / XLA / TensorRT)?<br />
+      <strong>A:</strong> Use a universal model that always materialises
+      max shapes but masks/slices within kernels; or bucket widths into
+      a small set and reuse compiled graphs; or use dynamic shape
+      compilation if supported. For TensorRT-like systems, export a few
+      discrete width profiles, not every possible (h’).</p>
+      <h3 id="c.-practical-extraction">C. Practical extraction</h3>
+      <p><strong>Q:</strong> What is the cleanest API for extraction:
+      build a new model object with per-layer widths vs keep one
+      universal model and pass a “width map” at runtime. Which is better
+      for deployment? for training?<br />
+      <strong>A:</strong> For training, universal model + runtime width
+      map is cleaner (single set of params, avoids duplication). For
+      deployment, exporting fixed extracted submodels can simplify
+      compilation and runtime (static shapes), but universal+map is
+      great for dynamic serving if the backend supports it. A hybrid is
+      common: universal checkpoint + a small set of exported
+      profiles.</p>
+      <p><strong>Q:</strong> How would you checkpoint extracted
+      submodels: store full weights + metadata, or store only universal
+      + recipe?<br />
+      <strong>A:</strong> Prefer universal + recipe (width map +
+      versioning) to avoid duplication and keep consistency. For
+      production, you might also store “materialised” weights for
+      specific profiles to speed loading/compilation; but keep the
+      recipe path for reproducibility.</p>
+      <hr />
+      <h2 id="deployment-behavioral-consistency">4) Deployment &amp;
+      “behavioral consistency”</h2>
+      <p><strong>Q:</strong> Define two measures: (i) percent matching
+      generated tokens for same prefix, and (ii) KL divergence of
+      smaller model outputs vs larger model outputs. What are the
+      gotchas (sampling temperature, top-p, EOS handling)?<br />
+      <strong>A:</strong> (i) Token match rate: run greedy decoding or
+      fixed-seed sampling and compute fraction of tokens where outputs
+      match. Gotchas: sampling stochasticity, tie-breaking, EOS
+      differences; must fix decoding settings, temperature, top-p/top-k,
+      and prompt formatting.<br />
+      (ii) KL: compute KL between probability distributions over vocab
+      at each step; gotchas: must compare <em>aligned steps</em> (same
+      context), avoid numeric underflow (use log-softmax), and handle
+      tokens masked by top-p sampling (evaluate on full logits if
+      possible).</p>
+      <p><strong>Q:</strong> Why does high consistency matter for
+      speculative decoding / model cascades / cross-platform serving
+      drift?<br />
+      <strong>A:</strong> Speculative decoding requires the verifier to
+      accept draft tokens; acceptance depends directly on distributional
+      closeness. Cascades/early-exit require switching models without
+      changing outputs dramatically. Cross-platform drift: if mobile
+      uses small model and server uses large, you want user experience
+      stable and debuggable.</p>
+      <p><strong>Q:</strong> If consistency is high in KL but low in
+      exact token matches, how do you interpret that?<br />
+      <strong>A:</strong> Small differences in logits can flip the
+      argmax in competitive regions; KL can be low while argmax differs.
+      This suggests outputs are similar “in distribution” but decoding
+      is sensitive. Mitigations: use temperature smoothing, calibrate
+      small model, or focus on acceptance rates under the chosen
+      decoding scheme.</p>
+      <p><strong>Q:</strong> For dynamic workloads, the paper suggests
+      token-based routing / elastic deployment. What’s the control
+      signal? How do you prevent oscillations (thrashing) across
+      widths?<br />
+      <strong>A:</strong> Control signals: measured latency/queue depth,
+      per-token uncertainty (entropy), attention/FFN compute budget, or
+      task-specific difficulty signals. Prevent oscillations via
+      hysteresis (two thresholds), smoothing (EMA), minimum dwell time
+      per width, or a controller with a cost on switching.</p>
+      <hr />
+      <h2 id="speculative-decoding-with-matlm">5) Speculative decoding
+      with MatLM</h2>
+      <p><strong>Q:</strong> Walk through speculative decoding precisely
+      (draft generation, parallel verification, rollback). Where does
+      draft–verifier mismatch cost time?<br />
+      <strong>A:</strong> Steps: (1) Drafter generates a block of (k)
+      tokens. (2) Verifier runs on prompt + proposed tokens and checks
+      whether it would produce same tokens (or accepts via rejection
+      sampling criterion). (3) Accept prefix of tokens until first
+      mismatch; rollback remainder; continue. Cost arises when accept
+      rate is low: verifier work wasted on rejected tokens, plus
+      overhead of frequent rollbacks/synchronisation.</p>
+      <p><strong>Q:</strong> The paper claims MatLM submodels can be
+      “more consistent” than independently trained baselines, improving
+      speculative speedups. What causes that, mechanistically?<br />
+      <strong>A:</strong> Shared weights and joint training cause
+      smaller and larger models to share representations and logits more
+      closely. Independently trained models differ in hidden
+      representations and calibration, reducing accept rates.
+      MatFormer’s nesting effectively behaves like “built-in
+      distillation” across sizes.</p>
+      <p><strong>Q:</strong> The paper also mentions sharing attention
+      cache across models from MatLM being feasible (but infeasible for
+      baselines). Explain <em>exactly</em> how that can be correct given
+      that FFNs differ and residual streams change. If it’s approximate,
+      what’s the approximation?<br />
+      <strong>A:</strong> Exact cache sharing is correct
+      <strong>only</strong> if the inputs to attention (residual stream)
+      at each layer are identical between drafter and verifier. Since
+      FFNs differ, residuals generally differ, so exact cache sharing is
+      not generally valid. What can be valid: - share caches when the
+      <strong>same model</strong> verifies (trivial), or - share caches
+      up to layers where computation matches, or - approximate sharing
+      if differences are small and you accept slight drift (then it’s an
+      approximation, and must be validated).<br />
+      Practically: the safest cache-sharing is within the same universal
+      model by selecting widths in a way that preserves attention
+      inputs—or by verifying using the same hidden states computed
+      once.</p>
+      <p><strong>Q:</strong> If you used a Mix’n’Match model as a
+      drafter, how would you choose its per-layer widths to maximise
+      accept rate under a latency budget?<br />
+      <strong>A:</strong> Choose widths that preserve “core” semantics:
+      keep early layers wider (stabilise representations) and shrink
+      later layers more (where features are more task-specific).
+      Optimise for accept rate by measuring KL/entropy alignment to
+      verifier per layer and running a small search over width schedules
+      under cost constraints.</p>
+      <p><strong>Q:</strong> Design an ablation to separate gains from
+      (i) shared weights/consistency and (ii) any cache-sharing
+      trick.<br />
+      <strong>A:</strong> Compare four conditions: 1) baseline
+      independent small+large (no cache sharing), 2) MatFormer
+      small+large (no cache sharing), 3) baseline with any approximate
+      cache reuse (if possible), 4) MatFormer with cache reuse.<br />
+      Measure accept rate, verifier compute, and end-to-end latency. If
+      MatFormer beats baseline in (2) vs (1), it’s consistency; if (4)
+      adds extra gains over (2), it’s cache reuse.</p>
+      <hr />
+      <h2 id="matlm-experiments-scaling-behaviour">6) MatLM experiments
+      &amp; scaling behaviour</h2>
+      <p><strong>Q:</strong> What are MatLM-{S,M,L,XL}? What changes
+      across them (only FFN ratio vs depth/width/heads)?<br />
+      <strong>A:</strong> They are size tiers for the
+      <strong>largest</strong> model in the MatFormer family. Typically
+      changes include model width (d), depth (L), and sometimes FFN
+      ratio/head counts to reach parameter targets. The MatFormer
+      mechanism then yields nested smaller widths primarily by shrinking
+      FFNs. (Verify exact configs in the released checkpoints/config
+      files.)</p>
+      <p><strong>Q:</strong> Evaluation suite: 26 English tasks split
+      into “GEN” vs “RANK”. Why split this way, and how does it change
+      sensitivity to small distribution shifts?<br />
+      <strong>A:</strong> GEN tasks require generation quality under
+      decoding—more sensitive to calibration, sampling, and small logit
+      differences. RANK tasks (multiple-choice/ranking) are often
+      evaluated by scoring candidates, less sensitive to decoding
+      randomness and sometimes more stable across small distribution
+      shifts. The split helps separate “language modelling behaviour”
+      from “scoring behaviour.”</p>
+      <p><strong>Q:</strong> What does it mean that Mix’n’Match yields
+      many models “on the optimal loss–compute curve at zero cost”? What
+      is “cost” here: train cost, tune cost, or evaluate cost?<br />
+      <strong>A:</strong> “Zero cost” mainly means <strong>no additional
+      training</strong>: once you train the universal MatFormer, you can
+      extract many variants without retraining. There is still some
+      <strong>evaluation/selection cost</strong> if you want to choose
+      the best variant for a budget.</p>
+      <p><strong>Q:</strong> Scaling law fit: paper fits a function of
+      non-embedding params (N) and tokens (D) and gets similar fitted
+      parameters for baseline vs MatFormer. What conclusion is
+      justified—and what is <em>not</em> justified?<br />
+      <strong>A:</strong> Justified: MatFormer does not obviously break
+      scaling behaviour; its best-frontier points track similar trends.
+      Not justified: claiming universal equivalence of scaling constants
+      across all regimes or that MatFormer always matches baseline at
+      every compute point; scaling fits are empirical and limited by
+      measured ranges.</p>
+      <p><strong>Q:</strong> The paper notes MatLM and baseline of same
+      size can have different FLOPs/step. Why, and how should scaling
+      analysis account for it?<br />
+      <strong>A:</strong> Different FLOPs/step can arise from different
+      architectures (e.g., FFN ratio, head counts), or from extra
+      overhead of multi-width training. Scaling analysis should compare
+      models by <strong>actual compute</strong> (FLOPs) and tokens, not
+      just parameter count; ideally plot loss vs FLOPs or
+      wall-clock.</p>
+      <hr />
+      <h2 id="matvit-vision-retrieval">7) MatViT: vision &amp;
+      retrieval</h2>
+      <p><strong>Q:</strong> How is MatFormer applied to ViT encoders,
+      and what stays fixed?<br />
+      <strong>A:</strong> Apply nesting primarily to the MLP (FFN)
+      within each transformer block, keeping patch embedding and
+      attention shapes fixed (or less frequently, nesting heads). The
+      key is maintaining consistent residual dimension so the encoder
+      remains compatible with downstream heads/retrieval pipelines.</p>
+      <p><strong>Q:</strong> Training regimes mentioned: ViT-B/16 on
+      ImageNet-1K with AugReg; ViT-L/16 pretrain on ImageNet-21K then
+      finetune on ImageNet-1K (Scenic setup). Why does pretraining stage
+      matter for elasticity?<br />
+      <strong>A:</strong> Pretraining learns general visual features and
+      stabilises representations. Elasticity benefits from a strong
+      “core” representation that small prefixes can reuse; pretraining
+      increases the chance that early neurons encode robust general
+      features, improving small-width performance and retrieval
+      stability.</p>
+      <p><strong>Q:</strong> The paper claims smaller extracted encoders
+      preserve <strong>metric-space structure</strong> for adaptive
+      retrieval. What does “preserve structure” mean operationally?
+      Define a metric and an evaluation protocol.<br />
+      <strong>A:</strong> Operationally: distances/similarities between
+      embeddings are approximately preserved. Metrics: Spearman
+      correlation of pairwise similarities, Procrustes alignment error,
+      or neighbourhood overlap (kNN consistency). Protocol: compute
+      corpus embeddings with XL, query embeddings with smaller widths,
+      measure recall@K / mAP against ground truth labels, and measure
+      embedding-space distortion measures.</p>
+      <p><strong>Q:</strong> If your corpus embeddings are computed with
+      the universal model, what guarantees do you need for query
+      embeddings from smaller submodels to still retrieve well?<br />
+      <strong>A:</strong> You need approximate
+      <strong>alignment</strong>: queries from smaller widths should map
+      near the same regions as XL queries. This is supported if early
+      features are shared and small widths approximate the XL embedding
+      function. In practice, verify by measuring neighbourhood overlap
+      and retrieval accuracy; if mismatch is high, you may need to
+      compute corpus embeddings for the same width or learn a small
+      alignment mapping.</p>
+      <p><strong>Q:</strong> What breaks if you Mix’n’Match per-layer
+      widths arbitrarily in encoders used for retrieval? How would you
+      constrain width schedules to preserve isometry?<br />
+      <strong>A:</strong> Arbitrary mixing can introduce layerwise
+      distribution shifts that distort embeddings, harming retrieval.
+      Constrain schedules to be <strong>smooth</strong> (avoid sudden
+      width jumps), prefer monotonic shrinkage (later layers narrower),
+      or restrict to a small menu of validated schedules; optionally
+      train with random width schedules to improve robustness.</p>
+      <hr />
+      <h2 id="matformer-olmo-repo-trainingconfigdeployment">8)
+      MatFormer-OLMo repo: training/config/deployment</h2>
+      <h3 id="a.-training-entrypoint-config-system">A. Training
+      entrypoint &amp; config system</h3>
+      <p><strong>Q:</strong> The repo’s training script is
+      <code>scripts/train.py</code> and supports <strong>distributed
+      training only</strong> (torchrun/Slurm). What design choices force
+      distributed-only? What would you change to enable single-GPU debug
+      mode?<br />
+      <strong>A:</strong> Likely assumptions: initialisation of
+      distributed process group is mandatory, use of DDP/FSDP wrappers
+      everywhere, rank-aware dataloading, and config requiring
+      world-size. To enable single-GPU debug: allow
+      <code>world_size=1</code>, skip <code>init_process_group</code> if
+      not launched with torchrun, treat rank=0 as sole worker, and
+      disable sharded optimisers. Add a <code>--single_process</code>
+      flag and fall back to <code>cuda:0</code>.</p>
+      <p><strong>Q:</strong> Config: first argument is a config file;
+      overrides use <strong>dot-notation</strong> flags like
+      <code>--optimizer.learning_rate=...</code>. How would you
+      implement this override system robustly (types, nested structs,
+      lists)?<br />
+      <strong>A:</strong> Use a structured config system (e.g.,
+      OmegaConf/Hydra) or implement: 1) parse overrides as
+      <code>key=value</code> strings, 2) split key by dots into path, 3)
+      type-cast value using schema (dataclasses/Pydantic) or YAML parser
+      for scalars/lists, 4) update nested dict safely, validating keys
+      and types, and reporting unknown keys. Ensure list indices are
+      supported (e.g., <code>layers.3.hidden=...</code>) only if
+      needed.</p>
+      <p><strong>Q:</strong> Repo flag: <code>--matformer_factor</code>.
+      Explain precisely: <code>=1</code> baseline; <code>=8</code>
+      yields four granularities <code>{h, h/2, h/4, h/8}</code>. How is
+      “factor” mapped to widths?<br />
+      <strong>A:</strong> Standard mapping: if
+      <code>factor = 2^k</code>, create widths (h/2^i) for (i=0..k). So
+      <code>factor=8=2^3</code> → (i=0,1,2,3) → four widths.
+      Implementation likely computes <code>k = int(log2(factor))</code>
+      and generates <code>h // (2**i)</code> (with checks that divisions
+      are integral).</p>
+      <h3 id="b.-datatokenisation">B. Data/tokenisation</h3>
+      <p><strong>Q:</strong> The models are trained on <strong>The
+      Pile</strong> tokenised with <code>EleutherAI/gpt-neox-20b</code>.
+      What pitfalls arise from tokenizer choice when comparing baselines
+      vs MatFormer variants?<br />
+      <strong>A:</strong> Tokeniser affects: sequence lengths (tokens
+      per character), effective dataset size in tokens, OOV handling,
+      and perplexity comparability. If baselines use different
+      tokenisers, comparisons are confounded. Also ensure special tokens
+      (BOS/EOS) and truncation/padding rules match.</p>
+      <p><strong>Q:</strong> How would you validate that your dataloader
+      is deterministic across ranks and resumes (shuffling, epoch
+      boundaries, worker seeds)?<br />
+      <strong>A:</strong> Use <code>DistributedSampler</code> with fixed
+      seed and epoch set each epoch; set worker init seeds
+      deterministically; log first N batch sample IDs per rank; on
+      resume, verify global step aligns with sampler state; test by
+      running two short training runs and comparing batch hashes.</p>
+      <h3 id="c.-checkpoints-inference-api">C. Checkpoints &amp;
+      inference API</h3>
+      <p><strong>Q:</strong> The repo releases checkpoints and shows
+      loading via <code>Olmo.from_checkpoint()</code> and
+      <code>Tokenizer.from_checkpoint()</code>. What must a checkpoint
+      contain to support extraction / Mix’n’Match at inference
+      time?<br />
+      <strong>A:</strong> It must include: model architecture config
+      (layer count, d_model, FFN hidden, matformer_factor, activation,
+      rotary settings, etc.), weights for universal model (full
+      (W_1,W_2)), and metadata enabling width selection (list of
+      supported widths and mapping). For Mix’n’Match, you also want a
+      schema for per-layer width maps.</p>
+      <p><strong>Q:</strong> The repo provides <code>generate()</code>
+      with beam search. Where would you hook speculative decoding in
+      this API: inside <code>generate()</code>, or as a separate
+      decoding module?<br />
+      <strong>A:</strong> Prefer a separate decoding module that wraps
+      the model’s <code>forward()</code> and KV-cache interface, because
+      speculative decoding is a different algorithm with different
+      control flow. You can keep <code>generate()</code> as a generic
+      entrypoint that chooses between decoding strategies, but
+      implementing speculative inside the core beam search code can
+      become messy.</p>
+      <h3 id="d.-repro-cluster-engineering">D. Repro &amp; cluster
+      engineering</h3>
+      <p><strong>Q:</strong> The README mentions environment scripts and
+      Slurm setup. What are the three most common silent misconfigs
+      you’d expect (paths, HF cache, rank env vars), and how do you make
+      them fail loudly?<br />
+      <strong>A:</strong> Common: (1) wrong dataset path or insufficient
+      permissions, (2) HF cache collisions / missing tokenizer files,
+      (3) incorrect <code>MASTER_ADDR/PORT</code>, <code>RANK</code>,
+      <code>WORLD_SIZE</code>, or GPU visibility. Fail loudly via
+      explicit checks at startup: verify files exist, can read/write
+      cache, validate distributed env vars, and do a short all-reduce
+      sanity test.</p>
+      <p><strong>Q:</strong> What metrics would you log to ensure all
+      granularities are learning (per-granularity loss curves, gradient
+      norms on shared vs exclusive weights, consistency metrics)?<br />
+      <strong>A:</strong> Log: loss/perplexity per granularity, learning
+      rate, gradient norm split into shared-prefix and exclusive-tail
+      regions, cosine similarity between gradients from different
+      granularities, KL/token-match consistency between widths, and
+      accept-rate proxies if doing speculative tests.</p>
+      <hr />
+      <h2
+      id="devvritmatformer-repo-minimalalternate-implementation-prompts">9)
+      devvrit/matformer repo: minimal/alternate implementation
+      prompts</h2>
+      <p><strong>Q:</strong> You see <code>modified_llama.py</code> +
+      <code>train.py</code>. Describe the minimal changes needed to turn
+      a standard LLaMA FFN into a MatFormer FFN without breaking HF
+      weight loading.<br />
+      <strong>A:</strong> Keep parameter tensors at <strong>max
+      width</strong> so HF loading works. In forward, slice prefixes by
+      chosen width: <code>W1[:hg,:]</code>, <code>W2[:,:hg]</code>. Keep
+      module names/parameter shapes consistent with HF state dict. Add a
+      config flag <code>matformer_factor</code> and a runtime width
+      selection mechanism. Ensure outputs remain shape
+      <code>(batch, seq, d_model)</code>.</p>
+      <p><strong>Q:</strong> How do you expose per-layer granularity
+      choices cleanly through the forward signature (e.g.,
+      <code>width_map</code>, <code>layer_cfg</code>) while keeping HF
+      generation utilities working?<br />
+      <strong>A:</strong> Use
+      <code>model.forward(..., width_map=None)</code> with default
+      <code>None</code> meaning full width. HF <code>generate()</code>
+      passes extra kwargs via <code>model_kwargs</code>; ensure
+      <code>prepare_inputs_for_generation</code> forwards
+      <code>width_map</code>. Store <code>width_map</code> in the model
+      as a mutable attribute only if you must; explicit kwargs is
+      cleaner.</p>
+      <p><strong>Q:</strong> If you trained only with granularities
+      {S,M,L,XL}, what tests would convince you Mix’n’Match models are
+      “real” and not evaluation noise?<br />
+      <strong>A:</strong> (1) Evaluate many random Mix’n’Match schedules
+      and show smooth accuracy–compute curve with low variance. (2)
+      Compare to controls: random neuron permutations or random width
+      schedules without training. (3) Check consistency metrics and
+      downstream task scores; if performance correlates with predicted
+      compute and is stable across seeds, it’s real.</p>
+      <hr />
+      <h2 id="failure-modes-debugging-and-rigorous-ablations">10)
+      Failure modes, debugging, and rigorous ablations</h2>
+      <p><strong>Q:</strong> <strong>Gradient leakage:</strong> how do
+      you verify that the smallest model never updates “exclusive”
+      large-width weights (it shouldn’t touch them)?<br />
+      <strong>A:</strong> After a backward pass using only small-model
+      loss, inspect <code>.grad</code> on (W_1[h_s:,:]) and
+      (W_2[:,h_s:]); they should be exactly zero (or numerically ~0).
+      Add unit tests and runtime assertions in debug mode.</p>
+      <p><strong>Q:</strong> <strong>Dominance:</strong> if large model
+      loss dominates and small models stagnate, what measurable signals
+      show this early?<br />
+      <strong>A:</strong> Small-model loss plateaus; gradient norms on
+      shared prefix reflect mostly large-model gradients; negative
+      gradient cosine similarity between small and large grows;
+      consistency worsens. Also watch effective learning rate for shared
+      weights (large gradients overwhelm small contributions).</p>
+      <p><strong>Q:</strong> <strong>Consistency vs quality
+      trade:</strong> can you increase consistency at the cost of
+      accuracy? How (e.g., explicit KL regulariser to XL), and should
+      you?<br />
+      <strong>A:</strong> Yes: add a KL term (,(p_g|p_{XL})) to force
+      small outputs to match XL. This can reduce small model’s ability
+      to diverge when it would help its own accuracy. Whether you should
+      depends on product goals: for speculative decoding and cascades,
+      consistency can be worth a small accuracy hit.</p>
+      <p><strong>Q:</strong> <strong>Layerwise width
+      allocation:</strong> is it better to shrink early layers or late
+      layers under fixed FLOPs? Give a hypothesis and a way to
+      test.<br />
+      <strong>A:</strong> Hypothesis: keep early layers wider because
+      they build core representations; shrink later layers more because
+      they specialise. Test by fixing total cost and comparing
+      schedules: early-narrow vs late-narrow vs uniform; measure
+      downstream tasks and consistency.</p>
+      <p><strong>Q:</strong> <strong>Distribution shift:</strong> do
+      Mix’n’Match models degrade more under out-of-domain evaluation
+      than explicitly trained widths? Why might that happen?<br />
+      <strong>A:</strong> They can, because mixed schedules may yield
+      representation distributions not seen during training. Explicitly
+      trained widths are “on-manifold” for that width; Mix’n’Match can
+      be off-manifold. Mitigate by training with random schedules
+      (stochastic width per layer) or adding regularisers.</p>
+      <hr />
+      <h2 id="surrounding-questions-positioning-theory">11) Surrounding
+      questions (positioning &amp; theory)</h2>
+      <h3 id="comparisons-positioning">Comparisons &amp;
+      positioning</h3>
+      <p><strong>Q:</strong> Compare MatFormer to: OFA/slimmable nets,
+      pruning, distillation, quantisation, MoE routing, early-exit,
+      speculative decoding with separately trained models. Where does
+      MatFormer sit on the training-cost vs inference-flexibility
+      frontier?<br />
+      <strong>A:</strong> MatFormer is closest to slimmable/OFA ideas
+      but adapted to Transformers and aimed at <em>generative
+      consistency</em>. Versus pruning: MatFormer bakes in structure
+      rather than pruning post hoc. Versus distillation: it’s like
+      multi-student training inside one model, but with shared weights.
+      Versus quantisation: orthogonal (can combine). Versus MoE: MoE
+      adds conditional compute but more parameters/complexity; MatFormer
+      changes width deterministically. Early-exit changes depth;
+      MatFormer changes width (can be combined). For speculative
+      decoding, MatFormer provides a natural family of consistent
+      drafter/verifier pairs at low additional training cost.</p>
+      <p><strong>Q:</strong> MatFormer vs “train a dense model then do
+      structured pruning”: which gives better <em>behavioral
+      consistency</em> guarantees and why?<br />
+      <strong>A:</strong> MatFormer generally offers stronger
+      consistency because smaller models are trained jointly and share
+      weights. Post-hoc pruning changes the function after training and
+      can induce distributional drift; you can fine-tune, but
+      consistency is not guaranteed unless explicitly optimised.</p>
+      <h3 id="theoreticalempirical-grounding">Theoretical/empirical
+      grounding</h3>
+      <p><strong>Q:</strong> Why should the “prefix” of neurons be the
+      most important? Is there a plausible connection to feature
+      learning / lottery-ticket style arguments?<br />
+      <strong>A:</strong> The prefix becomes important because it is the
+      <strong>intersection</strong> of all submodels: it receives
+      gradients from every width. This is akin to learning a “core”
+      subnetwork (lottery-ticket-like) that works under multiple
+      constraints. The ordering is emergent, not fundamental—training
+      pressure creates it.</p>
+      <p><strong>Q:</strong> What does it mean for MatLM scaling trends
+      to “mimic” vanilla transformers? What evidence would falsify that
+      claim?<br />
+      <strong>A:</strong> It means loss vs compute/params follows
+      similar functional forms and exponents. Falsification: MatFormer
+      deviates systematically—e.g., worse asymptotic scaling, different
+      optimal data/param ratio, or consistent gaps not explained by
+      compute differences.</p>
+      <h3 id="productdeployment-design">Product/deployment design</h3>
+      <p><strong>Q:</strong> Suppose you’re serving 3 latency tiers
+      (mobile, edge GPU, datacenter). How do you ship MatFormer: one
+      universal checkpoint + recipes, or export three fixed
+      submodels?<br />
+      <strong>A:</strong> If backend supports dynamic width selection
+      and you want consistency + flexible routing, ship universal +
+      recipes. If you want maximum runtime simplicity and static
+      compilation, export fixed profiles. Many production systems ship
+      both: universal for experimentation, fixed for stable
+      deployment.</p>
+      <p><strong>Q:</strong> How would you build an adaptive controller
+      that chooses a Mix’n’Match width schedule per request/token while
+      enforcing SLOs?<br />
+      <strong>A:</strong> Define a budget (C) per request/token. Use
+      signals like queue depth and token entropy; choose a schedule via
+      DP/greedy or a learned policy. Add hysteresis and penalties for
+      switching. Validate with offline simulation and online A/B tests,
+      measuring latency tail and quality.</p>
+      <hr />
+      <h2 id="practical-take-home-exercises-with-expected-answers">12)
+      Practical take-home exercises (with expected answers)</h2>
+      <p><strong>Q:</strong> Implement a MatFormer FFN module in PyTorch
+      (4 granularities), with unit tests for slicing, gradient tests,
+      and Mix’n’Match extraction API. What would “done” look like?<br />
+      <strong>A:</strong> “Done” includes:<br />
+      - <code>MatFormerFFN(d, h, widths=[h, h/2, h/4, h/8])</code>
+      implementing prefix slicing,<br />
+      - tests: output equality with reference implementation; gradient
+      zero outside prefix for small loss; deterministic behaviour,<br />
+      - extraction: <code>extract(width_map)</code> returns a wrapper
+      model that uses chosen widths; plus docs/examples.</p>
+      <p><strong>Q:</strong> Profiling task: benchmark forward latency
+      vs width schedule; find the knee where attention dominates. What
+      should the report include?<br />
+      <strong>A:</strong> Include: per-layer and total latency breakdown
+      (attention vs FFN vs other), latency vs sequence length and width,
+      GPU utilisation, and identify regime where shrinking FFN stops
+      helping. Provide recommended width tiers for typical sequence
+      lengths.</p>
+      <p><strong>Q:</strong> Spec decoding prototype: drafter=small
+      submodel, verifier=XL; log accept rate, rollback rate, end-to-end
+      latency. What indicates success?<br />
+      <strong>A:</strong> Success: accept rate high enough that verifier
+      amortises; end-to-end tokens/sec improves vs baseline decoding
+      with XL alone; quality remains comparable (task eval or human
+      checks). Report curves vs drafter size and token block length
+      (k).</p>
+      <p><strong>Q:</strong> Retrieval task (encoder): compute corpus
+      embeddings with XL; query with smaller widths; quantify recall@K
+      vs compute. What indicates MatFormer helps?<br />
+      <strong>A:</strong> If recall@K degrades gracefully with width and
+      small widths still retrieve well compared to independently trained
+      small encoders, then MatFormer preserves embedding structure. Also
+      show embedding distortion metrics and compute savings.</p>
+      <hr />
+
+      
+      <noscript><div id="noscript-warning-footer" class="admonition error" title="Warning to NoScript Users"><div class="admonition-title"><p>[<strong>Error</strong>: JavaScript disabled.]</p></div> <p>[Backlinks, similar links, and the bibliography require JS enabled to load.]</p></div></noscript>
+      
+      
+      
+      
+      </div> <!-- /.markdownBody -->
+
+    </article>
+
+    
+    <!-- SSI: Footer -->
+    <!-- FOOTER-BEGIN-->
+        <nav id="navigation">
+      <svg id="navigation-left"><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#direction" /></svg>
+      <a id="navigation-center" class="link-page-not" title="Return to top of current page" href="#top"
+        ><svg><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#center" /></svg></a>
+      <svg id="navigation-right"><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#direction" /></svg>
+    </nav>
+    <div class="markdownBody" id="footer">
+      <p id="footer-anonymous-feedback">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7uqL7B_l1HFIfXc8D_nZyumaOv58msK7jhl4XzQjWODWKdA/viewform" title="Google Docs web form for submitting anonymized feedback to Gwern Branwen">[&hairsp;Send Anonymous Feedback&hairsp;]</a>
+      </p>
+      <div id="x-of-the-day" class="dark-mode-invert">
+        <p><a id="qotd" class="include include-spinner-not" href="/metadata/today-quote.html">[Quote Of The Day]</a></p>
+        <p><a id="sotd" class="include include-spinner-not" href="/metadata/today-site.html">[Site Of The Day]</a></p>
+        <p><a id="atod" class="include include-spinner-not" href="/metadata/today-annotation.html">[Annotation Of The Day]</a></p>
+      </div>
+      <p><a id="psa-adblock" class="include adsense include-spinner-not" href="/metadata/psa-adblock.html">[adblock public service announcement]</a></p>
+    </div>
+
+    <!-- FOOTER-END -->
+    
+    <div id="footer-decoration-container"> <!-- Mandatory element for layout -->
+      <a rel="home me contents" title="Progyan.net homepage" class="footer-logo dark-mode-invert" href="/index">​</a>
+    </div>
+
+  </main>
+
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-18912926-1" onload="GW.googleAnalyticsLoaded = true;"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-18912926-1');
+  </script>
+  
+  
+</body>
+</html>

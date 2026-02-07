@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SSI: CSS+JS inline for speed -->
+  <!-- INLINED-HEAD-BEGIN -->
+  <style id="inlined-styles-colors">
+:root {
+    /*  General.
+     */
+    --GW-body-background-color: #fff;
+    --GW-body-text-color: #000;
+
+    /*  Selection.
+     */
+    --GW-text-selection-background-color: #333;
+    --GW-text-selection-color: #fff;
+
+	/*	Links.
+	 */
+    --GW-body-link-color: #333;
+    --GW-body-link-hover-color: #888;
+    --GW-body-link-visited-color: #666;
+    --GW-body-link-inverted-color: #eee;
+    --GW-body-link-inverted-hover-color: #ccc;
+    --GW-body-link-inverted-visited-color: #ddd;
+
+    /*  Blockquotes.
+     */
+    --GW-blockquote-border-color-level-one: #ccc;
+    --GW-blockquote-border-color-level-two: #c4c4c4;
+    --GW-blockquote-border-color-level-three: #b3b3b3;
+    --GW-blockquote-border-color-level-four: #a6a6a6;
+    --GW-blockquote-background-color-level-one: #f8f8f8;
+    --GW-blockquote-background-color-level-two: #e6e6e6;
+    --GW-blockquote-background-color-level-three: #d8d8d8;
+
+    /*  Abstracts.
+     */
+    --GW-abstract-border-color: #bbb;
+
+	/*	Block context highlighting.
+	 */
+	--GW-block-context-span-highlight-color: #ddd;
+
+    /*  Table of contents.
+     */
+    --GW-TOC-border-color: #ccc;
+    --GW-TOC-background-color: #f8f8f8;
+    --GW-TOC-collapse-button-text-color: #ccc;
+    --GW-TOC-collapse-button-text-hover-color: #fff;
+    --GW-TOC-collapse-button-color: rgba(248, 248, 248, 0.8);
+    --GW-TOC-collapse-button-hover-color: #ddd;
+    --GW-TOC-collapse-button-border-hover-color: #000;
+    --GW-TOC-link-hover-background-color: #ececec;
+    --GW-TOC-link-hover-color: #000;
+    --GW-TOC-link-hover-indicator-bar-color: #ccc;
+    --GW-TOC-number-color: #909090;
+    --GW-TOC-number-hover-color: #313131;
+
+    /*  Collapse blocks.
+        */
+	--GW-collapse-abstract-blockquote-hover-color: #eee;
+	--GW-collapse-disclosure-button-color: #eee;
+	--GW-collapse-disclosure-button-hover-color: #ddd;
+	--GW-collapse-in-blockquote-disclosure-button-color: #ddd;
+	--GW-collapse-in-blockquote-disclosure-button-hover-color: #ccc;
+	--GW-collapse-disclosure-button-text-color: #bbb;
+	--GW-collapse-disclosure-button-text-hover-color: #fff;
+	--GW-collapse-in-blockquote-disclosure-button-text-color: #999;
+	--GW-collapse-in-blockquote-disclosure-button-text-hover-color: #888;
+
+	/*	Inline collapses.
+	 */
+	--GW-collapse-inline-disclosure-button-text-color: #555;
+	--GW-collapse-inline-disclosure-button-text-hover-color: #999;
+
+	/*	Aux-links collapse blocks.
+	 */
+	--GW-aux-links-collapse-border-color: #c4c4c4;
+
+    /*  Headings.
+     */
+    --GW-H1-border-color: #888;
+    --GW-H2-border-color: #888;
+
+    /*  Comments.
+     */
+    --GW-comment-section-top-border-color: #999;
+
+    /*  Lists.
+     */
+    --GW-bulleted-list-marker-color: #808080;
+
+    /*  Figures.
+     */
+    --GW-figure-outline-color: #888;
+    --GW-figure-caption-outline-color: #888;
+
+	/*	Embeds.
+	 */
+	--GW-embed-border-color: #ddd;
+
+    /*  Epigraphs.
+     */
+    --GW-epigraph-quotation-mark-color: #808080;
+
+    /*  Footnotes.
+     */
+    --GW-footnote-border-color: #aaa;
+    --GW-footnote-highlighted-border-color: #aaa;
+    --GW-footnotes-section-top-rule-color: #ccc;
+    --GW-footnote-backlink-border-color: #000;
+    --GW-footnote-backlink-border-hover-color: #999;
+
+    /*  Footnote references.
+     */
+    --GW-highlighted-link-outline-color: #999;
+
+    /*  Sidenotes.
+     */
+    --GW-sidenote-highlight-box-shadow-color: #aaa;
+    --GW-sidenote-border-color: #aaa;
+    --GW-sidenote-scrollbar-thumb-color: #aaa;
+    --GW-sidenote-scrollbar-thumb-hover-color: #999;
+    --GW-sidenote-self-link-border-color: #aaa;
+
+	/*	Annotations.
+	 */
+	--GW-section-highlighted-border-color: #666;
+
+    /*  Tables.
+     */
+    --GW-table-border-color: #000;
+    --GW-table-caption-border-color: #000;
+    --GW-table-row-horizontal-border-color: #000;
+    --GW-table-scrollbar-thumb-color: #aaa;
+    --GW-table-scrollbar-thumb-hover-color: #999;
+    --GW-table-scrollbar-border-color: #000;
+    --GW-table-column-heading-hover-background-color: #e2f0f2;
+    --GW-table-sorted-column-heading-background-color: #8bd0ed;
+    --GW-table-sorted-column-heading-text-color: #fff;
+    --GW-table-sorted-column-heading-text-shadow-color: #000;
+    --GW-table-zebra-stripe-alternate-row-background-color: #f6f6f6;
+    --GW-table-row-hover-outline-color: #000;
+
+    /*  Code blocks.
+     */
+    --GW-code-element-border-color: #c8c8c8;
+    --GW-code-element-background-color: #fafafa;
+    --GW-pre-element-border-color: #c8c8c8;
+    --GW-pre-element-background-color: #fafafa;
+    --GW-pre-element-scrollbar-track-color: #fafafa;
+    --GW-pre-element-scrollbar-thumb-color: #ccc;
+    --GW-pre-element-scrollbar-thumb-hover-color: #999;
+    --GW-code-block-line-highlight-background-color: #ffd;
+    --GW-code-block-line-highlight-border-color: #ddd;
+    --GW-code-block-line-number-color: #aaa;
+    --GW-code-block-line-number-divider-color: #ccc;
+
+
+    /*  Syntax highlight theme.
+     */
+    --GW-syntax-highlight-color-normal: #1f1c1b;
+    --GW-syntax-highlight-color-attribute: #002561;
+    --GW-syntax-highlight-color-data-type: inherit;
+    --GW-syntax-highlight-color-variable: #666666;
+    --GW-syntax-highlight-color-other: inherit;
+    --GW-syntax-highlight-color-preprocessor: inherit;
+    --GW-syntax-highlight-color-extension: #777;
+    --GW-syntax-highlight-color-comment: #77947b;
+    --GW-syntax-highlight-color-control-flow: #003900;
+    --GW-syntax-highlight-color-keyword: #002561;
+    --GW-syntax-highlight-color-operator: #002561;
+    --GW-syntax-highlight-color-special-char: #607880;
+    --GW-syntax-highlight-color-built-in: #002561;
+    --GW-syntax-highlight-color-function: #002561;
+    --GW-syntax-highlight-color-constant: inherit;
+    --GW-syntax-highlight-color-base-n: inherit;
+    --GW-syntax-highlight-color-dec-val: inherit;
+    --GW-syntax-highlight-color-float: inherit;
+    --GW-syntax-highlight-color-information: inherit;
+    --GW-syntax-highlight-color-char: inherit;
+    --GW-syntax-highlight-color-string: inherit;
+    --GW-syntax-highlight-color-verbatim-string: inherit;
+    --GW-syntax-highlight-color-alert: #bf0303;
+    --GW-syntax-highlight-color-error: #ff0000;
+    --GW-syntax-highlight-color-import: #777777;
+    --GW-syntax-highlight-color-special-string: #666666;
+
+    /*  Math.
+     */
+    --GW-math-block-background-color: #f6f6f6;
+    --GW-math-block-background-color-flash: #fff;
+    --GW-math-block-scrollbar-border-color: #ccc;
+    --GW-math-block-scrollbar-thumb-color: #ccc;
+    --GW-math-block-scrollbar-thumb-hover-color: #999;
+
+    /*  Dropcaps.
+     */
+    --GW-dropcaps-goudy-color: #000;
+    --GW-dropcaps-yinit-color: #0d0d0d;
+    --GW-dropcaps-yinit-text-shadow-color: #777;
+    --GW-dropcaps-de-zs-color: #1b1b1b;
+    --GW-dropcaps-cheshire-color: #191919;
+    --GW-dropcaps-kanzlei-color: #191919;
+
+    /*  Admonitions.
+     */
+    --GW-admonition-note-left-border-color: #909090;
+    --GW-admonition-note-background-color: #d8d8d8;
+    --GW-admonition-tip-left-border-color: #d8d8d8;
+    --GW-admonition-tip-background-color: #f0f0f0;
+    --GW-admonition-warning-left-border-color: #5a5a5a;
+    --GW-admonition-warning-background-color: #9a9a9a;
+    --GW-admonition-warning-text-color: #fff;
+    --GW-admonition-error-left-border-color: #2d2d2d;
+    --GW-admonition-error-background-color: #5a5a5a;
+    --GW-admonition-error-text-color: #fff;
+    --GW-admonition-reversed-link-color: #ddd;
+    --GW-admonition-reversed-link-color-hover: #ccc;
+    --GW-admonition-reversed-link-underline-gradient-line-color: #ccc;
+    --GW-admonition-reversed-link-underline-gradient-line-color-hover: #bbb;
+
+	/*	Footer.
+	 */
+    --GW-bottom-ornament-line-color: #000;
+
+	/*	Pop-frames (popups or popins).
+	 */
+    --GW-popframes-object-popframe-background-color: #fff;
+
+    --GW-extracts-options-dialog-backdrop-background-color: rgba(255, 255, 255, 0.95);
+    --GW-extracts-options-dialog-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-border-color: #aaa;
+    --GW-extracts-options-dialog-box-shadow-color: #444;
+    --GW-extracts-options-dialog-horizontal-rule-color: #ccc;
+    --GW-extracts-options-dialog-button-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-button-text-color: #000;
+    --GW-extracts-options-dialog-button-border-color: #000;
+    --GW-extracts-options-dialog-button-hover-box-shadow-color: #000;
+    --GW-extracts-options-dialog-option-button-explanation-text-color: #777;
+    --GW-extracts-options-dialog-option-button-hover-text-color: #777;
+    --GW-extracts-options-dialog-radio-button-border-color: #000;
+
+    /*  Popups.
+     */
+    --GW-popups-popup-background-color: var(--GW-body-background-color);
+
+    --GW-popups-popup-border-color: #ccc;
+    --GW-popups-popup-box-shadow-color: #ccc;
+    --GW-popups-popup-border-focused-color: #aaa;
+    --GW-popups-popup-box-shadow-focused-color: #aaa;
+
+    --GW-popups-popup-title-bar-background-color: #fff;
+    --GW-popups-popup-title-bar-button-color: #bbb;
+    --GW-popups-popup-title-bar-button-color-hover: #000;
+    --GW-popups-popup-title-bar-button-color-disabled: #eee;
+	--GW-popups-popup-title-color: #aaa;
+    --GW-popups-popup-title-link-hover-color: var(--GW-body-link-hover-color);
+    --GW-popups-popup-title-bar-button-focused-color: #777;
+    --GW-popups-popup-title-bar-button-focused-color-hover: #000;
+    --GW-popups-popup-title-bar-button-focused-color-disabled: #ddd;
+    --GW-popups-popup-title-bar-submenu-box-shadow-color: #ddd;
+	--GW-popups-popup-title-focused-color: #000;
+    --GW-popups-popup-title-link-hover-focused-color: var(--GW-body-link-hover-color);
+
+    --GW-popups-popup-scrollbar-thumb-color: #ddd;
+    --GW-popups-popup-scrollbar-thumb-hover-color: #bbb;
+    --GW-popups-popup-scrollbar-thumb-focused-color: #ccc;
+    --GW-popups-popup-scrollbar-thumb-hover-focused-color: #999;
+
+    /*  Popins.
+     */
+    --GW-popins-popin-background-color: var(--GW-body-background-color);
+
+    --GW-popins-popin-border-color: #aaa;
+    --GW-popins-popin-backdrop-color: rgba(0, 0, 0, 0.4);
+    --GW-popins-popin-box-shadow-color: #aaa;
+
+    --GW-popins-popin-title-bar-background-color: #fff;
+    --GW-popins-popin-title-bar-button-color: #777;
+
+    --GW-popins-popin-scrollbar-thumb-color: #ccc;
+    --GW-popins-popin-scrollbar-thumb-hover-color: #999;
+
+    --GW-popins-popin-stack-counter-text-color: #fff;
+    --GW-popins-popin-stack-counter-background-color: #bbb;
+
+    /*  Image focus.
+     */
+    --GW-image-focus-image-hover-drop-shadow-color: #777;
+
+	/*	Page toolbar.
+	 */
+    --GW-page-toolbar-border-color: #aaa;
+	--GW-page-toolbar-control-button-color: #aaa;
+	--GW-page-toolbar-control-button-active-color: #000;
+
+	/*	Page toolbar widgets.
+	 */
+	--GW-page-toolbar-button-icon-color: #aaa;
+	--GW-page-toolbar-button-selectable-icon-color: #e4e4e4;
+	--GW-page-toolbar-button-selected-icon-color: #777;
+    --GW-page-toolbar-button-text-color: #666;
+    --GW-page-toolbar-button-disabled-text-color: #ccc;
+    --GW-page-toolbar-button-highlighted-text-color: #000;
+
+	/*	Reader mode.
+	 */
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-background-color: rgba(0, 0, 0, 0.8);
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-color: #fff;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color: #000;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-border-color: #bbb;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-background-color: #444;
+
+	/*	“Back to top” link.
+	 */
+	--GW-back-to-top-link-color: #ccc;
+	--GW-back-to-top-link-hover-color: #999;
+
+	/*	Mobile floating header.
+	 */
+	--GW-floating-header-box-shadow-color: #ccc;
+	--GW-floating-header-scroll-indicator-color: #999;
+
+	/*	“Skip to content” accessibility link.
+	 */
+	--GW-skip-to-content-text-color: #fff;
+	--GW-skip-to-content-border-color: #fff;
+	--GW-skip-to-content-background-color: #bf1722;
+
+	/*	Nav header.
+	 */
+	--GW-nav-header-link-color: #888;
+	--GW-nav-header-link-hover-color: #000;
+
+	/*	X of the day.
+	 */
+	--GW-x-of-the-day-border-color: #ccc;
+}
+:root {
+    --GW-popups-popup-title-bar-pattern: var(--GW-image-pattern-dotted-e6e6e6-on-fff-2x-gif);
+    --GW-popups-popup-title-bar-pattern-focused: var(--GW-image-pattern-dotted-fff-on-e6e6e6-2x-gif);
+
+	--GW-checkerboard-scrollbar-background-image: var(--GW-image-checkerboard-777-fff-2x-gif);
+	--GW-checkerboard-scrollbar-hover-background-image: var(--GW-image-checkerboard-000-fff-2x-gif);
+}
+</style>
+<style id="inlined-styles-colors-dark" media="all and (prefers-color-scheme: dark)">
+:root {
+    /*  General.
+     */
+    --GW-body-background-color: #000;
+    --GW-body-text-color: #fff;
+
+    /*  Selection.
+     */
+    --GW-text-selection-background-color: #dcdcdc;
+    --GW-text-selection-color: #000;
+
+	/*	Links.
+	 */
+    --GW-body-link-color: #dcdcdc;
+    --GW-body-link-hover-color: #999;
+    --GW-body-link-visited-color: #b4b4b4;
+    --GW-body-link-inverted-color: #333;
+    --GW-body-link-inverted-hover-color: #5c5c5c;
+    --GW-body-link-inverted-visited-color: #494949;
+
+    /*  Blockquotes.
+     */
+    --GW-blockquote-border-color-level-one: #5c5c5c;
+    --GW-blockquote-border-color-level-two: #646464;
+    --GW-blockquote-border-color-level-three: #747474;
+    --GW-blockquote-border-color-level-four: #7f7f7f;
+    --GW-blockquote-background-color-level-one: #212121;
+    --GW-blockquote-background-color-level-two: #3e3e3e;
+    --GW-blockquote-background-color-level-three: #4f4f4f;
+
+    /*  Abstracts.
+     */
+    --GW-abstract-border-color: #6c6c6c;
+
+	/*	Block context highlighting.
+	 */
+	--GW-block-context-span-highlight-color: #494949;
+
+    /*  Table of contents.
+     */
+    --GW-TOC-border-color: #5c5c5c;
+    --GW-TOC-background-color: #212121;
+    --GW-TOC-collapse-button-text-color: #5c5c5c;
+    --GW-TOC-collapse-button-text-hover-color: #000;
+    --GW-TOC-collapse-button-color: rgba(33, 33, 33, 0.8);
+    --GW-TOC-collapse-button-hover-color: #494949;
+    --GW-TOC-collapse-button-border-hover-color: #fff;
+    --GW-TOC-link-hover-background-color: #363636;
+    --GW-TOC-link-hover-color: #fff;
+    --GW-TOC-link-hover-indicator-bar-color: #5c5c5c;
+    --GW-TOC-number-color: #929292;
+    --GW-TOC-number-hover-color: #ddd;
+
+    /*  Collapse blocks.
+        */
+	--GW-collapse-abstract-blockquote-hover-color: #333;
+	--GW-collapse-disclosure-button-color: #333;
+	--GW-collapse-disclosure-button-hover-color: #494949;
+	--GW-collapse-in-blockquote-disclosure-button-color: #494949;
+	--GW-collapse-in-blockquote-disclosure-button-hover-color: #5c5c5c;
+	--GW-collapse-disclosure-button-text-color: #6c6c6c;
+	--GW-collapse-disclosure-button-text-hover-color: #000;
+	--GW-collapse-in-blockquote-disclosure-button-text-color: #8b8b8b;
+	--GW-collapse-in-blockquote-disclosure-button-text-hover-color: #999;
+
+	/*	Inline collapses.
+	 */
+	--GW-collapse-inline-disclosure-button-text-color: #c1c1c1;
+	--GW-collapse-inline-disclosure-button-text-hover-color: #8b8b8b;
+
+	/*	Aux-links collapse blocks.
+	 */
+	--GW-aux-links-collapse-border-color: #646464;
+
+    /*  Headings.
+     */
+    --GW-H1-border-color: #999;
+    --GW-H2-border-color: #999;
+
+    /*  Comments.
+     */
+    --GW-comment-section-top-border-color: #8b8b8b;
+
+    /*  Lists.
+     */
+    --GW-bulleted-list-marker-color: #9f9f9f;
+
+    /*  Figures.
+     */
+    --GW-figure-outline-color: #999;
+    --GW-figure-caption-outline-color: #999;
+
+	/*	Embeds.
+	 */
+	--GW-embed-border-color: #494949;
+
+    /*  Epigraphs.
+     */
+    --GW-epigraph-quotation-mark-color: #9f9f9f;
+
+    /*  Footnotes.
+     */
+    --GW-footnote-border-color: #7c7c7c;
+    --GW-footnote-highlighted-border-color: #7c7c7c;
+    --GW-footnotes-section-top-rule-color: #5c5c5c;
+    --GW-footnote-backlink-border-color: #fff;
+    --GW-footnote-backlink-border-hover-color: #8b8b8b;
+
+    /*  Footnote references.
+     */
+    --GW-highlighted-link-outline-color: #8b8b8b;
+
+    /*  Sidenotes.
+     */
+    --GW-sidenote-highlight-box-shadow-color: #7c7c7c;
+    --GW-sidenote-border-color: #7c7c7c;
+    --GW-sidenote-scrollbar-thumb-color: #7c7c7c;
+    --GW-sidenote-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-sidenote-self-link-border-color: #7c7c7c;
+
+	/*	Annotations.
+	 */
+	--GW-section-highlighted-border-color: #b4b4b4;
+
+    /*  Tables.
+     */
+    --GW-table-border-color: #fff;
+    --GW-table-caption-border-color: #fff;
+    --GW-table-row-horizontal-border-color: #fff;
+    --GW-table-scrollbar-thumb-color: #7c7c7c;
+    --GW-table-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-table-scrollbar-border-color: #fff;
+    --GW-table-column-heading-hover-background-color: #2b3637;
+    --GW-table-sorted-column-heading-background-color: #216983;
+    --GW-table-sorted-column-heading-text-color: #000;
+    --GW-table-sorted-column-heading-text-shadow-color: #fff;
+    --GW-table-zebra-stripe-alternate-row-background-color: #252525;
+    --GW-table-row-hover-outline-color: #fff;
+
+    /*  Code blocks.
+     */
+    --GW-code-element-border-color: #606060;
+    --GW-code-element-background-color: #1d1d1d;
+    --GW-pre-element-border-color: #606060;
+    --GW-pre-element-background-color: #1d1d1d;
+    --GW-pre-element-scrollbar-track-color: #1d1d1d;
+    --GW-pre-element-scrollbar-thumb-color: #5c5c5c;
+    --GW-pre-element-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-code-block-line-highlight-background-color: #171600;
+    --GW-code-block-line-highlight-border-color: #494949;
+    --GW-code-block-line-number-color: #7c7c7c;
+    --GW-code-block-line-number-divider-color: #5c5c5c;
+
+
+    /*  Syntax highlight theme.
+     */
+    --GW-syntax-highlight-color-normal: #f1edec;
+    --GW-syntax-highlight-color-attribute: #b9e8ff;
+    --GW-syntax-highlight-color-data-type: inherit;
+    --GW-syntax-highlight-color-variable: #b4b4b4;
+    --GW-syntax-highlight-color-other: inherit;
+    --GW-syntax-highlight-color-preprocessor: inherit;
+    --GW-syntax-highlight-color-extension: #a6a6a6;
+    --GW-syntax-highlight-color-comment: #7f9c83;
+    --GW-syntax-highlight-color-control-flow: #b4edaf;
+    --GW-syntax-highlight-color-keyword: #b9e8ff;
+    --GW-syntax-highlight-color-operator: #b9e8ff;
+    --GW-syntax-highlight-color-special-char: #94adb6;
+    --GW-syntax-highlight-color-built-in: #b9e8ff;
+    --GW-syntax-highlight-color-function: #b9e8ff;
+    --GW-syntax-highlight-color-constant: inherit;
+    --GW-syntax-highlight-color-base-n: inherit;
+    --GW-syntax-highlight-color-dec-val: inherit;
+    --GW-syntax-highlight-color-float: inherit;
+    --GW-syntax-highlight-color-information: inherit;
+    --GW-syntax-highlight-color-char: inherit;
+    --GW-syntax-highlight-color-string: inherit;
+    --GW-syntax-highlight-color-verbatim-string: inherit;
+    --GW-syntax-highlight-color-alert: #ff8470;
+    --GW-syntax-highlight-color-error: #ff4a39;
+    --GW-syntax-highlight-color-import: #a6a6a6;
+    --GW-syntax-highlight-color-special-string: #b4b4b4;
+
+    /*  Math.
+     */
+    --GW-math-block-background-color: #252525;
+    --GW-math-block-background-color-flash: #000;
+    --GW-math-block-scrollbar-border-color: #5c5c5c;
+    --GW-math-block-scrollbar-thumb-color: #5c5c5c;
+    --GW-math-block-scrollbar-thumb-hover-color: #8b8b8b;
+
+    /*  Dropcaps.
+     */
+    --GW-dropcaps-goudy-color: #fff;
+    --GW-dropcaps-yinit-color: #f9f9f9;
+    --GW-dropcaps-yinit-text-shadow-color: #a6a6a6;
+    --GW-dropcaps-de-zs-color: #efefef;
+    --GW-dropcaps-cheshire-color: #f1f1f1;
+    --GW-dropcaps-kanzlei-color: #f1f1f1;
+
+    /*  Admonitions.
+     */
+    --GW-admonition-note-left-border-color: #929292;
+    --GW-admonition-note-background-color: #4f4f4f;
+    --GW-admonition-tip-left-border-color: #4f4f4f;
+    --GW-admonition-tip-background-color: #303030;
+    --GW-admonition-warning-left-border-color: #bdbdbd;
+    --GW-admonition-warning-background-color: #8a8a8a;
+    --GW-admonition-warning-text-color: #000;
+    --GW-admonition-error-left-border-color: #e1e1e1;
+    --GW-admonition-error-background-color: #bdbdbd;
+    --GW-admonition-error-text-color: #000;
+    --GW-admonition-reversed-link-color: #494949;
+    --GW-admonition-reversed-link-color-hover: #5c5c5c;
+    --GW-admonition-reversed-link-underline-gradient-line-color: #5c5c5c;
+    --GW-admonition-reversed-link-underline-gradient-line-color-hover: #6c6c6c;
+
+	/*	Footer.
+	 */
+    --GW-bottom-ornament-line-color: #fff;
+
+	/*	Pop-frames (popups or popins).
+	 */
+    --GW-popframes-object-popframe-background-color: #000;
+
+    --GW-extracts-options-dialog-backdrop-background-color: rgba(0, 0, 0, 0.95);
+    --GW-extracts-options-dialog-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-border-color: #7c7c7c;
+    --GW-extracts-options-dialog-box-shadow-color: #cecece;
+    --GW-extracts-options-dialog-horizontal-rule-color: #5c5c5c;
+    --GW-extracts-options-dialog-button-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-button-text-color: #fff;
+    --GW-extracts-options-dialog-button-border-color: #fff;
+    --GW-extracts-options-dialog-button-hover-box-shadow-color: #fff;
+    --GW-extracts-options-dialog-option-button-explanation-text-color: #a6a6a6;
+    --GW-extracts-options-dialog-option-button-hover-text-color: #a6a6a6;
+    --GW-extracts-options-dialog-radio-button-border-color: #fff;
+
+    /*  Popups.
+     */
+    --GW-popups-popup-background-color: var(--GW-body-background-color);
+
+    --GW-popups-popup-border-color: #5c5c5c;
+    --GW-popups-popup-box-shadow-color: #5c5c5c;
+    --GW-popups-popup-border-focused-color: #7c7c7c;
+    --GW-popups-popup-box-shadow-focused-color: #7c7c7c;
+
+    --GW-popups-popup-title-bar-background-color: #000;
+    --GW-popups-popup-title-bar-button-color: #6c6c6c;
+    --GW-popups-popup-title-bar-button-color-hover: #fff;
+    --GW-popups-popup-title-bar-button-color-disabled: #333;
+	--GW-popups-popup-title-color: #7c7c7c;
+    --GW-popups-popup-title-link-hover-color: var(--GW-body-link-hover-color);
+    --GW-popups-popup-title-bar-button-focused-color: #a6a6a6;
+    --GW-popups-popup-title-bar-button-focused-color-hover: #fff;
+    --GW-popups-popup-title-bar-button-focused-color-disabled: #494949;
+    --GW-popups-popup-title-bar-submenu-box-shadow-color: #494949;
+	--GW-popups-popup-title-focused-color: #fff;
+    --GW-popups-popup-title-link-hover-focused-color: var(--GW-body-link-hover-color);
+
+    --GW-popups-popup-scrollbar-thumb-color: #494949;
+    --GW-popups-popup-scrollbar-thumb-hover-color: #6c6c6c;
+    --GW-popups-popup-scrollbar-thumb-focused-color: #5c5c5c;
+    --GW-popups-popup-scrollbar-thumb-hover-focused-color: #8b8b8b;
+
+    /*  Popins.
+     */
+    --GW-popins-popin-background-color: var(--GW-body-background-color);
+
+    --GW-popins-popin-border-color: #7c7c7c;
+    --GW-popins-popin-backdrop-color: rgba(255, 255, 255, 0.4);
+    --GW-popins-popin-box-shadow-color: #7c7c7c;
+
+    --GW-popins-popin-title-bar-background-color: #000;
+    --GW-popins-popin-title-bar-button-color: #a6a6a6;
+
+    --GW-popins-popin-scrollbar-thumb-color: #5c5c5c;
+    --GW-popins-popin-scrollbar-thumb-hover-color: #8b8b8b;
+
+    --GW-popins-popin-stack-counter-text-color: #000;
+    --GW-popins-popin-stack-counter-background-color: #6c6c6c;
+
+    /*  Image focus.
+     */
+    --GW-image-focus-image-hover-drop-shadow-color: #a6a6a6;
+
+	/*	Page toolbar.
+	 */
+    --GW-page-toolbar-border-color: #7c7c7c;
+	--GW-page-toolbar-control-button-color: #7c7c7c;
+	--GW-page-toolbar-control-button-active-color: #fff;
+
+	/*	Page toolbar widgets.
+	 */
+	--GW-page-toolbar-button-icon-color: #7c7c7c;
+	--GW-page-toolbar-button-selectable-icon-color: #404040;
+	--GW-page-toolbar-button-selected-icon-color: #a6a6a6;
+    --GW-page-toolbar-button-text-color: #b4b4b4;
+    --GW-page-toolbar-button-disabled-text-color: #5c5c5c;
+    --GW-page-toolbar-button-highlighted-text-color: #fff;
+
+	/*	Reader mode.
+	 */
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-background-color: rgba(255, 255, 255, 0.8);
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-color: #000;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color: #fff;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-border-color: #6c6c6c;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-background-color: #cecece;
+
+	/*	“Back to top” link.
+	 */
+	--GW-back-to-top-link-color: #5c5c5c;
+	--GW-back-to-top-link-hover-color: #8b8b8b;
+
+	/*	Mobile floating header.
+	 */
+	--GW-floating-header-box-shadow-color: #5c5c5c;
+	--GW-floating-header-scroll-indicator-color: #8b8b8b;
+
+	/*	“Skip to content” accessibility link.
+	 */
+	--GW-skip-to-content-text-color: #000;
+	--GW-skip-to-content-border-color: #000;
+	--GW-skip-to-content-background-color: #ff847b;
+
+	/*	Nav header.
+	 */
+	--GW-nav-header-link-color: #999;
+	--GW-nav-header-link-hover-color: #fff;
+
+	/*	X of the day.
+	 */
+	--GW-x-of-the-day-border-color: #5c5c5c;
+}
+:root {
+    /*  Adjust background color to prevent pixels from turning off (contrary to 
+    	popular belief, pixels turning off saves trivial energy, like <1% in 
+    	measurements, and causes nasty scrolling/update jank due to delay in 
+    	pixels turning back on), and improve contrast with the white.
+     */
+    --GW-body-background-color: #161616;
+
+    /*  Dial back from pure white to keep contrast from being *too* high & 
+    	‘stark’ (#fff bg / #000 text seems to work in light mode, but not in 
+    	dark mode, perhaps because of differences in lighting environment?)
+     */
+    --GW-body-text-color: #f1f1f1;
+
+    --GW-popups-popup-title-bar-pattern: var(--GW-image-pattern-dotted-161616-on-252525-2x-gif);
+    --GW-popups-popup-title-bar-pattern-focused: var(--GW-image-pattern-dotted-161616-on-3e3e3e-2x-gif);
+
+    --GW-popins-popin-backdrop-color: rgba(0, 0, 0, 0.6);
+
+    --GW-popins-popin-title-bar-button-color: #bbb;
+
+    --GW-checkerboard-scrollbar-background-image: var(--GW-image-checkerboard-888-000-2x-gif);
+    --GW-checkerboard-scrollbar-hover-background-image: var(--GW-image-checkerboard-bfbfbf-000-2x-gif);
+}
+
+.dark-mode-invert,
+.dark-mode-invert::before,
+.dark-mode-invert::after {
+	filter: var(--dark-mode-invert-filter, none);
+}
+
+/*  Admonition icons.
+ */
+div.admonition.tip::before {
+    filter: invert(1);
+}
+div.admonition.note::before {
+    filter: none;
+}
+div.admonition.warning::before {
+    filter: none;
+}
+div.admonition.error::before {
+    filter: none;
+}
+
+/*  SVG icons in the two darker styles of admonitions.
+ */
+div.admonition.warning a[data-link-icon-type='svg'] .link-icon-hook::after,
+div.admonition.error a[data-link-icon-type='svg'] .link-icon-hook::after {
+    filter: none;
+}
+
+/*  For sortable table column headings, we use dark versions of the up/down/both
+    arrow icons.
+ */
+table th.tablesorter-header {
+    background-image: url('/static/img/tablesorter/tablesorter-bg-dark.gif');
+}
+table th.tablesorter-headerAsc {
+    background-image: url('/static/img/tablesorter/tablesorter-asc-dark.gif');
+}
+table th.tablesorter-headerDesc {
+    background-image: url('/static/img/tablesorter/tablesorter-desc-dark.gif');
+}
+
+/*  Images that are marked as '.invert' by the server are inverted,
+    hue-rotated, and desaturated. Other (non-invertible) images are merely
+    desaturated. Hovering over an image restores it to its original state.
+    Hierarchy: ‘.invert-not’/‘.invert-not-auto’: no inversion or grayscale;
+    ‘.invert’/‘.invert-auto’: inverted (uninverted upon mouse hover);
+    none: grayscaled (ungrayscaled on hover).
+ */
+figure img.invert,
+figure img.invert-auto {
+    filter: grayscale(50%) invert(100%) brightness(95%) hue-rotate(180deg);
+}
+figure img:not(.invert):not(.invert-auto) {
+    filter: grayscale(50%);
+}
+figure img,
+figure img.invert,
+figure img.invert-auto {
+    transition: filter 0.25s ease;
+}
+figure img:not(.drop-filter-on-hover-not):hover,
+figure img:not(.drop-filter-on-hover-not).invert:hover,
+figure img:not(.drop-filter-on-hover-not).invert-auto:hover,
+figure img:not(.drop-filter-on-hover-not):not(.invert):not(.invert-auto):hover {
+    filter: none;
+    transition: filter 0s ease 0.25s;
+}
+
+figure img[src$=".svg"].invert:hover,
+figure img[src$=".svg"].invert-auto:hover {
+    filter: grayscale(50%) invert(100%) brightness(95%) hue-rotate(180deg);
+}
+
+/*  Image alt-text.
+ */
+figure img.invert::before,
+figure img.invert-auto::before {
+    filter: invert(1);
+}
+figure img.invert:hover::before,
+figure img.invert-auto:hover::before {
+    filter: none;
+}
+/*  Styling the image alt-text interferes with the transitions in dark mode.
+    (We include non-class’d `img` in this selector for consistency.)
+
+    TEMPORARY until we transition to a color-based instead of filter-based
+    scheme for this. —SA 2022-07-29
+ */
+figure img,
+figure img:hover,
+figure img.invert,
+figure img.invert:hover,
+figure img.invert-auto,
+figure img.invert-auto:hover {
+    transition: none;
+}
+
+/*  For images which have been marked up (manually or automatically) with 
+	‘.invert-not’, we avoid any filtering at all. If they are manually marked up
+	(artwork, diagrams with multiple subtly-different colors matched to a 
+	legend/caption), the color is important and shouldn’t be faded out by 
+	default. (Or invertOrNot has judged the image to be non-invertible, which
+	presumably means something like the above also.)
+ */
+#markdownBody figure img.invert-not,
+#markdownBody figure img.invert-not-auto {
+    filter: none;
+}
+
+/*  The loading spinner for object popups (image, iframe, object) is inverted
+    and made more visible in dark mode.
+ */
+.popframe.loading::before {
+    filter: invert(1);
+    opacity: 0.4;
+}
+
+/*  “Loading failed” messages for object popups.
+ */
+.popframe.loading-failed::after {
+    opacity: 0.4;
+}
+
+/*  Masked links key toggle info alert panel.
+ */
+div#masked-links-key-toggle-info-alert img {
+    filter: drop-shadow(0 0 3px var(--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color));
+}
+
+/*  Recently-modified icon, manicule
+ */
+.has-recently-modified-icon .recently-modified-icon-hook::before,
+.manicule svg {
+    filter: invert(1);
+}
+
+</style>
+<link rel="stylesheet" href="/static/css/head.css?v=1761963665">
+<script src="/static/js/head.js?v=1764359351"></script>
+<link rel="preload" href="/static/img/icon/icons.svg?v=1761617795" as="image">
+
+  <!-- INLINED-HEAD-END -->
+
+    <!-- Hint at necessary third-party domains -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <meta name="title" content="">
+  <meta name="citation_title" content="">
+  <meta name="og:title" content="">
+  <meta name="twitter:title" content="">
+  <meta name="generator" content="https://github.com/progyan/progyan.net/">
+  <meta name="creator" content="progyan.net">
+    <meta name="author" content="Progyan">
+  <meta name="citation_author" content="Progyan">
+    <meta name="contact" content="https://progyan.net/me#contact">
+  <link rel="index" title="Progyan.net homepage" href="https://progyan.net/index">
+  <link href="https://progyan.substack.com/feed" type="application/rss+xml" rel="alternate" title="ATOM/RSS feed of Progyan.net newsletters with additions and links.">
+
+  <meta name="twitter:creator" content="progyan">
+  <meta name="twitter:site" content="progyan.net">
+  <meta name="og:site" content="progyan.net">
+  <meta name="og:type" content="article">
+  
+  <meta property="og:image" content="https://progyan.net/static/img/logo/logo-whitebg-large-border.png">
+  <meta property="og:image:alt" content="Default thumbnail text: the Progyan.net site logo, a logotype of a large blackletter fraktur capital letter 'G' on a white background.">
+  <meta property="og:image:height" content="">
+  <meta property="og:image:width" content="">
+  <meta property="progyan:thumbnail:css-classes" content="">
+  
+  <meta name="dc.date.issued" content="2025-01-01">
+  
+  <meta name="citation_publication_date" content="2025-01-01">
+  <meta name="dcterms.modified" content="2025-12-02">
+  <link rel="schema.dcterms" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">
+  <meta name="dcterms.rights" content="CC PD-0">
+  <meta name="dc.rights" content="https://creativecommons.org/publicdomain/zero/1.0/">
+  <link rel="canonical" href="https://progyan.net">
+  <meta name="citation_fulltext_html_url" content="https://progyan.net">
+  <meta name="og:url" content="https://progyan.net">
+  <link rel="alternate" type="text/markdown" href="https://progyan.net.md" title="Markdown source of ‘’ page"> <!-- Also available via Accept header -->
+  <meta name="page-body-classes" content="page- dropcaps-de-zs">
+  <meta name="citation_fulltext_world_readable" content="">
+  <meta name="color-scheme" content="light dark">
+
+    <title> · Progyan.net</title>
+  
+  <link id="favicon" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small.png">
+  <link id="favicon-dark" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small-dark.png" media="all and (prefers-color-scheme: dark)">
+  <link id="favicon-apple-touch" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch.png">
+  <link id="favicon-apple-touch-dark" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch-dark.png" media="all and (prefers-color-scheme: dark)">
+
+  <!-- CSS for JS-disabled users: ensure that NoScripters know what they are missing even if they jump to a section & miss the warning at top/bottom. -->
+  <noscript>
+    <style>
+      #markdownBody #noscript-warning-header {
+          position: fixed; /* sticky */
+          top: 6px; /* at top */
+          width: 58%;
+          z-index: 99; /* Make sure it is on top */
+          background-color: #f8f8f8; /* Set a solid background color so legible while positioned over text */
+          border-color: var(--GW-abstract-border-color); /* Make look like theme-toggle/admonitions a bit more */
+          border-width: 6px 6px 6px 6px;
+          border-style: double;
+      }
+      #markdownBody #noscript-warning-header p { margin: 10px; }
+      nav#sidebar { padding-top: 160px; } /* avoid overlap with page header */
+    </style>
+  </noscript>
+
+  <!-- Site-specific tweaks -->
+  <link rel="stylesheet" href="/static/css/local-overrides.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+  <!-- MathJax for LaTeX math rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$$', '$$'], ['\\(', '\\)']],
+        displayMath: [['$$$$', '$$$$'], ['\\[', '\\]']],
+        macros: {
+          textsc: ['{\\text{#1}}', 1],
+          ket: ['{|#1\\rangle}', 1],
+          bra: ['{\\langle#1|}', 1],
+          braket: ['{\\langle#1\\rangle}', 1],
+          mathds: ['{\\mathbb{#1}}', 1]
+        },
+        tags: 'ams'
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body class="hyphenate page- dropcaps-de-zs">
+  <!-- SSI: Inlined asset links -->
+  <!-- INLINED-ASSET-LINKS-BEGIN-->
+  <link rel="stylesheet" href="/static/css/style.css?v=1761963665" media="print" onload="this.media=`all`">
+<script src="/static/js/script.js?v=1763447916" defer></script>
+
+  <!-- INLINED-ASSET-LINKS-END -->
+
+  <main>
+    <a id="skip-to-content-link" href="#markdownBody">Skip to main content</a>
+
+    <!-- SSI: Sidebar -->
+    <!-- SIDEBAR-BEGIN-->
+        <nav id="sidebar">
+      <a class="logo" rel="home me contents" href="/index" accesskey="\" title="Homepage: categorized list of articles index"><svg class="logo-image" viewbox="0 0 64 75">
+      <use href="/static/img/logo/logo-smooth.svg#logo"></use></svg></a>
+      <div class="sidebar-links">
+        <a class="about link-page link-annotated" href="/about" title="Site ideals, source, content, traffic, examples, license" rel="author">About</a>
+        <a class="science link-page link-annotated" href="/science" title="Who am I online, what have I done, what am I like? Contact information; sites I use; things I've worked on" rel="author">Science</a>
+        <a class="demotheosis link-page link-annotated" href="/demotheosis" title="Changelog of what’s new or updated">Demotheosis</a>
+        <a class="blog link-page" href="/blog/index" title="Shortform Gwern writings">Blog</a>
+        <a class="links link-page" href="/doc/newest/index" title="Most recent link annotations">Links</a>
+        <a class="new" href="/changelog" title="Link to Patreon donation profile to support my writing" rel="me">New</a>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR-END -->
+
+    <article>
+
+      <header>
+        <h1>Distributed Computing</h1>
+      </header>
+
+      <div class="markdownBody" id="markdownBody">
+
+      
+      <div id="page-metadata">
+        
+        <div class="page-description"><p>Gemini-authored.</p></div>
+        <div class="page-metadata-fields">
+            
+            
+            <span class="page-status" title="Writing status of current page: ranges 'abandoned'/'notes'/'draft'/'in progress'/'finished'"><em></em></span>
+            <span class="page-confidence"><a href="/about#confidence-tags" title="Explanation of 'confidence' metadata: probability of overall being meaningfully correct, expressed as Kesselman Estimative Words (ranging 0–100%: 'certain'/'highly likely'/'likely'/'possible'/'unlikely'/'highly unlikely'/'remote'/'impossible')">certainty</a>: <em></em></span>
+            <span class="page-importance"><a href="/about#importance-tags" title="Explanation of 'importance' metadata: rating 1–10 about how much a topic matters to the world.">importance</a>: <em>-1</em></span>
+            
+            
+            
+        </div>
+      </div>
+      
+
+      <h1 id="the-distributed-mind-from-chaos-to-consensus">The
+      Distributed Mind: From Chaos to Consensus</h1>
+      <p>The transition from single-node programming to distributed
+      systems is not merely a change in scale; it is a change in
+      physics. In a single process, time is absolute, memory is shared,
+      and truth is singular. In a distributed system, time is relative,
+      memory is partitioned, and truth is merely an agreement between
+      unreliable observers.</p>
+      <p>This document is a reconstruction of the mental models required
+      to build <strong>Prime</strong>, a distributed training system
+      that survives the chaos of the WAN. We will not start with code.
+      We will start with the fundamental limitations of the
+      universe—causality, relativity, and the impossibility of perfect
+      consensus—and build our way up to the architecture of DiLoCo.</p>
+      <hr />
+      <h2 id="part-i-the-fragility-of-time">Part I: The Fragility of
+      Time</h2>
+      <h3 id="the-illusion-of-now">1.1 The Illusion of Now</h3>
+      <p>In a centralized system, we rely implicitly on the wall clock.
+      If we write a log entry at <code>12:00:01</code> and another at
+      <code>12:00:02</code>, we assume the first happened before the
+      second. In a distributed system, this assumption is dangerous.</p>
+      <p>Physical clocks are imperfect. They consist of oscillating
+      crystals that drift due to temperature, voltage, and age. Even
+      with NTP (Network Time Protocol), clocks across a cluster can skew
+      by milliseconds or seconds. <a href="#fn1" class="footnote-ref"
+      id="fnref1" role="doc-noteref"><sup>1</sup></a> In a
+      high-frequency trading system or a high-throughput parameter
+      server, a 5ms skew is an eternity.</p>
+      <p>If Node A sends a message at physical time <span
+      class="math inline">\(T=100\)</span> and Node B receives it at
+      physical time <span class="math inline">\(T=90\)</span> (because
+      B’s clock is slow), the system perceives an effect preceding its
+      cause. This violation of causality breaks state machines, confused
+      debuggers, and ruins consistency guarantees. Therefore, we must
+      abandon physical time as our source of truth.</p>
+      <h3 id="partial-orders-and-happens-before">1.2 Partial Orders and
+      Happens-Before</h3>
+      <p>If we cannot use time, we must use <strong>causality</strong>.
+      We define the relationship between events not by <em>when</em>
+      they happened, but by <em>what caused what</em>. Leslie Lamport
+      formalized this in 1978 with the “Happens-Before” relation,
+      denoted as <span class="math inline">\(\rightarrow\)</span>. <a
+      href="#fn2" class="footnote-ref" id="fnref2"
+      role="doc-noteref"><sup>2</sup></a></p>
+      <p>The rules are simple but absolute: 1. <strong>Program
+      Order:</strong> If event <span class="math inline">\(a\)</span>
+      and event <span class="math inline">\(b\)</span> occur in the same
+      process, and <span class="math inline">\(a\)</span> comes before
+      <span class="math inline">\(b\)</span>, then <span
+      class="math inline">\(a \rightarrow b\)</span>. 2. <strong>Message
+      Passing:</strong> If event <span class="math inline">\(a\)</span>
+      is the sending of a message and event <span
+      class="math inline">\(b\)</span> is the receipt of that message,
+      then <span class="math inline">\(a \rightarrow b\)</span>. 3.
+      <strong>Transitivity:</strong> If <span class="math inline">\(a
+      \rightarrow b\)</span> and <span class="math inline">\(b
+      \rightarrow c\)</span>, then <span class="math inline">\(a
+      \rightarrow c\)</span>.</p>
+      <p>If two events <span class="math inline">\(x\)</span> and <span
+      class="math inline">\(y\)</span> exist such that neither <span
+      class="math inline">\(x \rightarrow y\)</span> nor <span
+      class="math inline">\(y \rightarrow x\)</span>, they are
+      <strong>concurrent</strong> (<span class="math inline">\(x
+      \parallel y\)</span>). This does not mean they happened at the
+      exact same physical instant. It means they are causally
+      independent; the outcome of one could not have influenced the
+      other.</p>
+      <p>This structure creates a <strong>Partial Order</strong>. Unlike
+      a Total Order (where every pair of elements is comparable), a
+      Partial Order allows for islands of events that have no relative
+      ordering. Understanding this geometric structure is crucial for
+      debugging race conditions in parameter updates: if two gradients
+      are computed concurrently, the order in which they are applied is
+      arbitrary unless we impose a mechanism to order them.</p>
+      <h3 id="logical-clocks">1.3 Logical Clocks</h3>
+      <p>To make this partial order computable, we introduce
+      <strong>Logical Clocks</strong>. These are mechanisms to map
+      events to integers (or vectors) such that the numerical order
+      respects the causal order.</p>
+      <h4 id="lamport-clocks">Lamport Clocks</h4>
+      <p>A Lamport Clock is a simple counter maintained by each process.
+      * <strong>State:</strong> A single integer <span
+      class="math inline">\(C\)</span>, initialized to 0. *
+      <strong>Local Rule:</strong> Before executing an event, increment
+      <span class="math inline">\(C \leftarrow C + 1\)</span>. *
+      <strong>Send Rule:</strong> When sending a message <span
+      class="math inline">\(m\)</span>, attach <span
+      class="math inline">\(C\)</span>. (<span class="math inline">\(m,
+      C\)</span>). * <strong>Receive Rule:</strong> On receiving <span
+      class="math inline">\((m, C_{msg})\)</span>, update local clock:
+      <span class="math inline">\(C \leftarrow \max(C, C_{msg}) +
+      1\)</span>.</p>
+      <p>This algorithm guarantees that if <span class="math inline">\(a
+      \rightarrow b\)</span>, then <span class="math inline">\(C(a) &lt;
+      C(b)\)</span>. This is useful for consistent logging and
+      tie-breaking. However, it has a fatal flaw: the converse is not
+      true. If <span class="math inline">\(C(a) &lt; C(b)\)</span>, we
+      <em>cannot</em> conclude that <span class="math inline">\(a
+      \rightarrow b\)</span>. They might be concurrent events where
+      <span class="math inline">\(a\)</span> just happened to have a
+      smaller counter. <a href="#fn3" class="footnote-ref" id="fnref3"
+      role="doc-noteref"><sup>3</sup></a></p>
+      <h4 id="vector-clocks">Vector Clocks</h4>
+      <p>To capture the full geometry of causality, we need
+      <strong>Vector Clocks</strong>. Instead of a single integer, every
+      process maintains a vector <span class="math inline">\(V\)</span>
+      of length <span class="math inline">\(N\)</span> (the number of
+      processes). * <strong>State:</strong> <span
+      class="math inline">\(V_i[j] = 0\)</span> for all <span
+      class="math inline">\(j\)</span>. Process <span
+      class="math inline">\(i\)</span> tracks its knowledge of every
+      other process’s progress. * <strong>Local Rule:</strong> Process
+      <span class="math inline">\(i\)</span> increments its own
+      component: <span class="math inline">\(V_i[i] \leftarrow V_i[i] +
+      1\)</span>. * <strong>Send Rule:</strong> Send the full vector
+      <span class="math inline">\(V_i\)</span> with the message. *
+      <strong>Receive Rule:</strong> On receiving <span
+      class="math inline">\(V_{msg}\)</span>, update: <span
+      class="math inline">\(V_i[j] \leftarrow \max(V_i[j],
+      V_{msg}[j])\)</span> for all <span
+      class="math inline">\(j\)</span>. Then increment <span
+      class="math inline">\(V_i[i]\)</span>.</p>
+      <p>Vector clocks provide the <strong>Strong Consistency
+      Condition</strong>: <span class="math inline">\(V(a) &lt; V(b)
+      \iff a \rightarrow b\)</span>. If vectors are incomparable (e.g.,
+      <span class="math inline">\([2, 0]\)</span> vs <span
+      class="math inline">\([0, 2]\)</span>), the events are concurrent.
+      <a href="#fn4" class="footnote-ref" id="fnref4"
+      role="doc-noteref"><sup>4</sup></a></p>
+      <p>We shall go in more detail into this now;</p>
+      <p>In many ways, Distributed systems are the physics of computer
+      science. Just as Newtonian mechanics breaks down near the speed of
+      light, our intuitive understanding of “order” and “simultaneity”
+      disintegrates when we span a network. If you are building a system
+      like Prime or DiLoCo—where hundreds of GPUs must agree on the
+      state of a neural network—you are not just writing Python scripts;
+      you are legislating a universe. You define what “now” means. You
+      define what “happened” means. And, as we will see, you must accept
+      that some things are fundamentally unknowable.</p>
+      <p>To build the massive, elastic clusters required for modern AI,
+      we must first unlearn the concept of <strong>Time</strong>.</p>
+      <h3 id="the-hallucination-of-physical-clocks">1.1 The
+      Hallucination of Physical Clocks</h3>
+      <p>In a single-threaded program running on a single CPU core, time
+      is absolute. If you execute instruction <span
+      class="math inline">\(A\)</span> followed by instruction <span
+      class="math inline">\(B\)</span>, <span
+      class="math inline">\(A\)</span> happens before <span
+      class="math inline">\(B\)</span>. The CPU enforces this. The
+      operating system enforces this. The physics of the silicon
+      enforces this. We call this <strong>Program Order</strong>. <a
+      href="#fn5" class="footnote-ref" id="fnref5"
+      role="doc-noteref"><sup>5</sup></a></p>
+      <p>When we move to a distributed system—say, a cluster of H100s
+      training a transformer—we lose this guarantee. We have multiple
+      distinct processes, each with its own quartz crystal oscillator
+      vibrating at a specific frequency. These crystals are physical
+      objects; they are subject to heat, manufacturing variances, and
+      age. They drift. Two identical servers powered on at the same
+      moment will define “one second” slightly differently. Over days,
+      they drift apart by milliseconds or seconds. <a href="#fn6"
+      class="footnote-ref" id="fnref6"
+      role="doc-noteref"><sup>6</sup></a></p>
+      <p>This leads to a terrifying realization: <strong>we cannot rely
+      on physical timestamps to order events across
+      machines.</strong></p>
+      <p>Consider a scenario in Prime: 1. <strong>Node A</strong>
+      updates a gradient at physical time <span
+      class="math inline">\(t=100\)</span>. 2. <strong>Node A</strong>
+      sends a message to <strong>Node B</strong>. 3. <strong>Node
+      B</strong> receives the message. 4. <strong>Node B</strong>
+      updates its weights.</p>
+      <p>If Node B’s clock is running 500ms behind Node A, Node B might
+      assign timestamp <span class="math inline">\(t=90\)</span> to its
+      update. If we blindly trust these timestamps, it looks like Node B
+      updated its weights <em>before</em> Node A calculated the
+      gradient. The effect precedes the cause. Causality is
+      violated.</p>
+      <p>In distributed systems, we care about
+      <strong>Causality</strong>, not physical time. We don’t care
+      <em>when</em> something happened; we care <em>what caused</em> it
+      to happen. If an event <span class="math inline">\(A\)</span>
+      caused event <span class="math inline">\(B\)</span>, then <span
+      class="math inline">\(A\)</span> must happen before <span
+      class="math inline">\(B\)</span> in our model, regardless of what
+      the wall clocks say.</p>
+      <h3 id="partial-orders-and-the-happens-before-relation">1.2
+      Partial Orders and the Happens-Before Relation</h3>
+      <p>To formalize this, we turn to Leslie Lamport’s 1978 paper,
+      <em>“Time, Clocks, and the Ordering of Events in a Distributed
+      System.”</em> This is perhaps the most important paper in the
+      field. Lamport realized that “happening before” is not about time;
+      it’s about information flow.</p>
+      <p>We define a relation, denoted by the arrow <span
+      class="math inline">\(\rightarrow\)</span>, called
+      <strong>happens-before</strong>. It satisfies three axioms:</p>
+      <ol type="1">
+      <li><strong>Program Order</strong>: If event <span
+      class="math inline">\(a\)</span> and event <span
+      class="math inline">\(b\)</span> occur in the same process, and
+      <span class="math inline">\(a\)</span> comes before <span
+      class="math inline">\(b\)</span> in that process’s execution
+      trace, then <span class="math inline">\(a \rightarrow
+      b\)</span>.</li>
+      <li><strong>Message Passing</strong>: If event <span
+      class="math inline">\(a\)</span> is the sending of a message by
+      one process and event <span class="math inline">\(b\)</span> is
+      the receipt of that same message by another process, then <span
+      class="math inline">\(a \rightarrow b\)</span>. <a href="#fn7"
+      class="footnote-ref" id="fnref7"
+      role="doc-noteref"><sup>7</sup></a></li>
+      <li><strong>Transitivity</strong>: If <span
+      class="math inline">\(a \rightarrow b\)</span> and <span
+      class="math inline">\(b \rightarrow c\)</span>, then <span
+      class="math inline">\(a \rightarrow c\)</span>.</li>
+      </ol>
+      <p>If <span class="math inline">\(a \rightarrow b\)</span>, we say
+      <span class="math inline">\(a\)</span> causally precedes <span
+      class="math inline">\(b\)</span>. This seems trivial, but it has a
+      profound implication. What if we have two events, <span
+      class="math inline">\(x\)</span> and <span
+      class="math inline">\(y\)</span>, such that we cannot reach <span
+      class="math inline">\(y\)</span> from <span
+      class="math inline">\(x\)</span> via any chain of messages and
+      local steps, nor can we reach <span
+      class="math inline">\(x\)</span> from <span
+      class="math inline">\(y\)</span>?</p>
+      <p>If neither <span class="math inline">\(a \rightarrow b\)</span>
+      nor <span class="math inline">\(b \rightarrow a\)</span> holds,
+      then <span class="math inline">\(a\)</span> and <span
+      class="math inline">\(b\)</span> are <strong>concurrent</strong>.
+      We write this as <span class="math inline">\(a \parallel
+      b\)</span>.</p>
+      <p>Concurrency, in the distributed systems sense, does not mean
+      “simultaneous” (occurring at the same physical instant). It means
+      “causally independent.” It means that <span
+      class="math inline">\(a\)</span> could not have influenced <span
+      class="math inline">\(b\)</span>, and <span
+      class="math inline">\(b\)</span> could not have influenced <span
+      class="math inline">\(a\)</span>. They are oblivious to each
+      other. In the relativistic universe of a datacenter, they exists
+      in each other’s “Elsewhere”—outside their respective light cones.
+      <a href="#fn8" class="footnote-ref" id="fnref8"
+      role="doc-noteref"><sup>8</sup></a></p>
+      <h4 id="visualizing-with-space-time-diagrams">Visualizing with
+      Space-Time Diagrams</h4>
+      <p>To build intuition, we draw space-time diagrams. Time flows
+      downward. * <strong>Vertical lines</strong> represent processes
+      (timelines). * <strong>Dots</strong> on the lines represent
+      events. * <strong>Diagonal arrows</strong> between lines represent
+      messages.</p>
+      <pre class="text"><code>Process P1      Process P2      Process P3
+    |               |               |
+    a               |               |
+    | \             |               |
+    |  \ message    |               |
+    |   \           |               |
+    b    -----&gt;     c               |
+    |               |  \            |
+    |               |   \           |
+    |               d    -----&gt;     e
+    |               |               |</code></pre>
+      <p>In this diagram: * <span class="math inline">\(a \rightarrow
+      b\)</span> (Program order on P1). * <span class="math inline">\(b
+      \rightarrow c\)</span> (Message from P1 to P2). * <span
+      class="math inline">\(c \rightarrow d\)</span> (Program order on
+      P2). * <span class="math inline">\(d \rightarrow e\)</span>
+      (Message from P2 to P3).</p>
+      <p>By transitivity, <span class="math inline">\(a \rightarrow
+      e\)</span>. Event <span class="math inline">\(a\)</span> “happened
+      before” event <span class="math inline">\(e\)</span>. Information
+      from <span class="math inline">\(a\)</span> could have flowed to
+      <span class="math inline">\(e\)</span>.</p>
+      <p>Now consider an event <span class="math inline">\(z\)</span> on
+      Process P3 that happens physically <em>before</em> <span
+      class="math inline">\(e\)</span> arrives. Is <span
+      class="math inline">\(a \rightarrow z\)</span>? No. Is <span
+      class="math inline">\(z \rightarrow a\)</span>? No. They are
+      concurrent (<span class="math inline">\(a \parallel z\)</span>).
+      P3 has no way of knowing <span class="math inline">\(a\)</span>
+      happened until the chain of messages arrives. Until that moment,
+      the state of P1 is effectively in a quantum superposition from
+      P3’s perspective.</p>
+      <h3 id="logical-clocks-capturing-causality-with-integers">1.3
+      Logical Clocks: Capturing Causality with Integers</h3>
+      <p>We have a definition of order (<span
+      class="math inline">\(\rightarrow\)</span>), but we need a
+      mechanism to track it. We can’t query the global “happens-before”
+      graph in real-time. We need a way to stamp events locally such
+      that the stamps respect the causal order.</p>
+      <h4 id="lamport-clocks-1">1.3.1 Lamport Clocks</h4>
+      <p>The simplest mechanism is the <strong>Lamport Clock</strong>.
+      Every process <span class="math inline">\(P_i\)</span> maintains a
+      single integer counter, <span
+      class="math inline">\(C_i\)</span>.</p>
+      <p><strong>The Algorithm:</strong> 1. Initialize <span
+      class="math inline">\(C_i = 0\)</span>. 2. <strong>Local
+      Rule</strong>: Before executing any internal event, increment
+      <span class="math inline">\(C_i \leftarrow C_i + 1\)</span>. 3.
+      <strong>Send Rule</strong>: When sending a message <span
+      class="math inline">\(m\)</span>, attach the current timestamp
+      <span class="math inline">\(t = C_i\)</span>. Send <span
+      class="math inline">\((m, t)\)</span>. 4. <strong>Receive
+      Rule</strong>: On receiving <span class="math inline">\((m,
+      t)\)</span>, update the local clock: <span
+      class="math inline">\(C_i \leftarrow \max(C_i, t) +
+      1\)</span>.</p>
+      <p><strong>Properties:</strong> The Lamport Clock guarantees the
+      <strong>Clock Consistency Condition</strong>: <span
+      class="math display">\[ \text{if } a \rightarrow b, \text{ then }
+      C(a) &lt; C(b). \]</span></p>
+      <p>This is powerful. It allows us to totally order events in the
+      system. If we break ties using Process IDs (e.g., if <span
+      class="math inline">\(C(a) = C(b)\)</span>, use <span
+      class="math inline">\(ID(a) &lt; ID(b)\)</span>), we get a total
+      ordering that is consistent with causality. This is crucial for
+      things like a distributed mutex or a consistent log. <a
+      href="#fn9" class="footnote-ref" id="fnref9"
+      role="doc-noteref"><sup>9</sup></a></p>
+      <p><strong>The Limitation:</strong> Note the direction of the
+      implication. <span class="math inline">\(a \rightarrow b \implies
+      C(a) &lt; C(b)\)</span>. The converse is <strong>not</strong>
+      true. If we see <span class="math inline">\(C(a) &lt;
+      C(b)\)</span>, we <strong>cannot</strong> conclude that <span
+      class="math inline">\(a \rightarrow b\)</span>. They might be
+      concurrent events where <span class="math inline">\(a\)</span>
+      just happened to have a smaller counter.</p>
+      <p>In Prime/DiLoCo, this ambiguity matters. When we look at a
+      checkpoint from a peer, and its “step count” is lower than ours,
+      did it happen in our past (causality)? or is it a divergent branch
+      of training that happens to have a lower index (concurrency)? A
+      simple integer step counter is essentially a Lamport Clock. It
+      tells us strictly about ancestry <em>only if</em> we assume a
+      linear chain. In a branching/merging topology, it is
+      ambiguous.</p>
+      <h4 id="vector-clocks-1">1.3.2 Vector Clocks</h4>
+      <p>To solve the ambiguity of Lamport clocks, we need
+      <strong>Vector Clocks</strong>. Instead of a single integer, each
+      process maintains a vector of integers <span
+      class="math inline">\(V\)</span>, where <span
+      class="math inline">\(V[j]\)</span> represents the process’s
+      knowledge of the logical time at Process <span
+      class="math inline">\(j\)</span>.</p>
+      <p><strong>The Algorithm:</strong> 1. Initialize <span
+      class="math inline">\(V_i = [0, 0, \dots, 0]\)</span> for all
+      processes <span class="math inline">\(i\)</span>. 2. <strong>Local
+      Rule</strong>: On an event at process <span
+      class="math inline">\(i\)</span>, increment its own component:
+      <span class="math inline">\(V_i[i] \leftarrow V_i[i] + 1\)</span>.
+      3. <strong>Send Rule</strong>: Send the full vector <span
+      class="math inline">\(V_i\)</span> with the message. 4.
+      <strong>Receive Rule</strong>: On receiving vector <span
+      class="math inline">\(V_{msg}\)</span>, update local vector: <span
+      class="math display">\[ \forall k: V_i[k] \leftarrow \max(V_i[k],
+      V_{msg}[k]) \]</span> Then increment self: <span
+      class="math inline">\(V_i[i] \leftarrow V_i[i] + 1\)</span>.</p>
+      <p><strong>The Isomorphism:</strong> Vector clocks provide an
+      exact characterization of causality: <span class="math display">\[
+      V(a) &lt; V(b) \iff a \rightarrow b \]</span></p>
+      <p>We define “less than” for vectors as: <span
+      class="math inline">\(V_A &lt; V_B\)</span> if every component of
+      <span class="math inline">\(V_A\)</span> is less than or equal to
+      <span class="math inline">\(V_B\)</span>, and at least one
+      component is strictly smaller. If neither <span
+      class="math inline">\(V_A &lt; V_B\)</span> nor <span
+      class="math inline">\(V_B &lt; V_A\)</span>, then <span
+      class="math inline">\(a \parallel b\)</span>.</p>
+      <p><strong>Why don’t we use them everywhere?</strong> The size.
+      The vector grows linearly with <span
+      class="math inline">\(N\)</span>, the number of processes. In a
+      DiLoCo training run with 512 nodes, attaching a 512-integer vector
+      (2 KB) to every small metadata packet is wasteful. Furthermore,
+      managing dynamic membership (nodes joining and leaving) requires
+      resizing the vectors, which is algorithmically complex. <a
+      href="#fn10" class="footnote-ref" id="fnref10"
+      role="doc-noteref"><sup>10</sup></a></p>
+      <h3 id="the-flp-impossibility-result">1.4 The FLP Impossibility
+      Result</h3>
+      <p>We have established how to order events <em>if</em> they
+      happen. But can we get a group of computers to <em>agree</em> on
+      something?</p>
+      <p>In 1985, Fischer, Lynch, and Paterson published a result that
+      effectively said: <strong>“No.”</strong></p>
+      <p>The <strong>FLP Impossibility Result</strong> states: &gt; In
+      an asynchronous system (unbounded message delays, varying process
+      speeds) with reliable message delivery, if even
+      <strong>one</strong> process can crash, there is <strong>no
+      deterministic algorithm</strong> that can solve the Consensus
+      problem (guaranteeing both safety and termination).</p>
+      <p>This result is mind-bending. It doesn’t say consensus is
+      “hard”; it says it is <em>impossible</em>.</p>
+      <p><strong>The Intuition (The Adversary):</strong> Imagine a
+      system trying to decide between value “0” and value “1”. The
+      system starts in a “bivalent” state (it could eventually decide 0,
+      or it could decide 1). To reach a decision, the system must move
+      to a “univalent” state (where only one outcome is possible). FLP
+      proves that an adversary, who controls the scheduling of message
+      delivery, can always keep the system in a bivalent state. Just as
+      a process is about to receive the message that would tip the vote
+      to “1”, the adversary delays that message. The process might then
+      suspect the sender is dead and change its vote to “0” to keep
+      progress going. The adversary then delivers the delayed message,
+      pushing the system back toward “1”.</p>
+      <p>The adversary can maintain this teeter-totter forever. <a
+      href="#fn11" class="footnote-ref" id="fnref11"
+      role="doc-noteref"><sup>11</sup></a></p>
+      <p><strong>Escaping FLP in the Real World:</strong> If consensus
+      is impossible, how do Prime, Kubernetes, or Google Spanner work?
+      They “cheat” by weakening the assumptions of FLP.</p>
+      <ol type="1">
+      <li><strong>Partial Synchrony</strong>: We assume that
+      <em>eventually</em> the network behaves well. We use timeouts. A
+      timeout (e.g., in Raft) is a mechanism that sacrifices
+      <strong>Liveness</strong> for <strong>Safety</strong>. If the
+      network is truly partitioned, Raft stops processing writes
+      (liveness fails). But it never corrupts data (safety holds). When
+      the network heals (synchrony returns), it proceeds.</li>
+      <li><strong>Randomization</strong>: FLP applies to
+      <em>deterministic</em> algorithms. If we introduce randomness
+      (e.g., Raft’s randomized election timeouts), we can break the
+      symmetry that the adversary uses to maintain the bivalent state.
+      The probability of an infinite deadlock drops to zero
+      exponentially fast.</li>
+      </ol>
+      <h3 id="synthesis-the-mindset-for-phase-2">1.5 Synthesis: The
+      Mindset for Phase 2</h3>
+      <p>We conclude Phase 1 with a mental shift. When we design the
+      control plane for Prime/DiLoCo:</p>
+      <ol type="1">
+      <li>We will not trust <code>time.time()</code>. We will use
+      <strong>Epochs</strong> (terms) and <strong>Step Counts</strong>
+      (logical clocks).</li>
+      <li>We will understand that any “leader” we elect is only a leader
+      <em>assuming</em> the network is stable.</li>
+      <li>We will realize that <strong>partitions are
+      inevitable</strong>. When a node goes silent, we will be forced to
+      make a choice: do we wait forever (sacrificing availability for
+      consistency) or do we proceed without them (sacrificing
+      consistency for availability)?</li>
+      </ol>
+      <p>In DiLoCo, the answer is nuanced: * <strong>Inner
+      Loop</strong>: Purely local. Availability is 100%. * <strong>Outer
+      Loop</strong>: Requires consistency (All-Reduce). If the network
+      is bad, we stall. We chose Consistency over Availability for the
+      weight update. * <strong>Checkpointing</strong>: Uses “last writer
+      wins” or causal merging.</p>
+      <p>Armed with the theory of Order and the grim reality of FLP, we
+      are ready to construct the solution to Consensus. In Phase 2, we
+      will build <strong>Paxos</strong> and <strong>Raft</strong> from
+      scratch, seeing them not as magic libraries, but as direct
+      responses to the problems raised here.</p>
+      <hr />
+      <h2 id="part-ii-the-impossibility-of-agreement">Part II: The
+      Impossibility of Agreement</h2>
+      <p>Once we understand time, we encounter the next hurdle:
+      <strong>Consensus</strong>. How do we get a distributed set of
+      nodes to agree on a single value (e.g., “Commit transaction X” or
+      “Node Y is the leader”)?</p>
+      <h3 id="the-two-generals-problem">2.1 The Two Generals
+      Problem</h3>
+      <p>The fundamental constraint of distributed systems is that we
+      communicate over an unreliable channel. The <strong>Two Generals
+      Problem</strong> proves that strict consensus is impossible if the
+      communication link can drop messages.</p>
+      <p>Imagine two generals, Alice and Bob, camped on opposite hills
+      of a valley occupied by the enemy. They must attack simultaneously
+      to win; if they attack alone, they die. Alice sends a messenger:
+      “Attack at dawn?” The messenger might be captured. If Bob gets the
+      message, he sends a confirmation: “Yes, dawn.” But Bob doesn’t
+      know if Alice got his confirmation. If Alice doesn’t receive it,
+      she won’t attack. So Alice needs to acknowledge the
+      acknowledgement. This infinite regression means they can never
+      reach 100% common knowledge. <a href="#fn12" class="footnote-ref"
+      id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
+      <h3 id="the-flp-result">2.2 The FLP Result</h3>
+      <p>In 1985, Fischer, Lynch, and Paterson extended this to a more
+      subtle nightmare. They proved that in an
+      <strong>asynchronous</strong> system (where message delay is
+      unbounded) with <strong>reliable</strong> channels, if even
+      <strong>one</strong> process can crash, consensus is
+      impossible.</p>
+      <p>This is the <strong>FLP Impossibility Result</strong>. It
+      implies that no algorithm can guarantee both
+      <strong>Safety</strong> (agreement) and <strong>Liveness</strong>
+      (termination) in a purely asynchronous model.</p>
+      <p>The intuition is based on “bivalence.” At any point, the system
+      is in a state where it could eventually decide 0 or 1. If a
+      process is about to send a decisive message that would tip the
+      system to “1”, an adversary can delay that message. The system
+      remains “bivalent.” The adversary can play this game forever,
+      keeping the system in a livelock. <a href="#fn13"
+      class="footnote-ref" id="fnref13"
+      role="doc-noteref"><sup>13</sup></a></p>
+      <hr />
+      <h2 id="part-iii-the-parliament-of-protocols">Part III: The
+      Parliament of Protocols</h2>
+      <p>Since we cannot have perfect consensus, we build algorithms
+      that guarantee Safety absolutely, but rely on timing for Liveness.
+      These are the <strong>Consensus Protocols</strong>.</p>
+      <h3 id="paxos">3.1 Paxos</h3>
+      <p>Paxos is the grandfather of consensus. It operates using a
+      specific invariant: <strong>Quorum Intersection</strong>. If you
+      need a majority (<span class="math inline">\(N/2 + 1\)</span>) to
+      agree to something, any two majorities must share at least one
+      member. This overlap acts as the system’s memory.</p>
+      <p>Paxos defines three roles: 1. <strong>Proposers:</strong> Issue
+      proposals with a proposal number <span
+      class="math inline">\(N\)</span>. 2. <strong>Acceptors:</strong>
+      Vote on proposals. They store the highest proposal number they’ve
+      seen. 3. <strong>Learners:</strong> Listen for the chosen
+      value.</p>
+      <p>The protocol has two phases (like a handshake): * <strong>Phase
+      1 (Prepare):</strong> Proposer chooses <span
+      class="math inline">\(N\)</span>, sends “Prepare(<span
+      class="math inline">\(N\)</span>)” to a quorum. Acceptors respond
+      only if <span class="math inline">\(N &gt;\)</span> any proposal
+      they’ve ever promised to. They reply with their last accepted
+      value. * <strong>Phase 2 (Accept):</strong> If the Proposer hears
+      from a majority, it picks a value (preferring the one returned by
+      Acceptors) and sends “Accept(<span class="math inline">\(N,
+      Val\)</span>).” If Acceptors accept this, the value is chosen.</p>
+      <p>The complexity of Paxos lies in handling the failure modes.
+      What if the Proposer crashes after Phase 1? What if a higher <span
+      class="math inline">\(N\)</span> comes in during Phase 2? The
+      logic ensures that once a value is chosen, no future proposal can
+      choose a different value. <a href="#fn14" class="footnote-ref"
+      id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+      <h3 id="raft">3.2 Raft</h3>
+      <p>Raft was designed to be understandable. It solves the exact
+      same problem as Multi-Paxos (replicating a log) but decomposes it
+      into three sub-problems:</p>
+      <ol type="1">
+      <li><strong>Leader Election:</strong> Time is divided into
+      <strong>Terms</strong>. Nodes are Followers, Candidates, or
+      Leaders. If a Follower hears nothing (timeout), it increments the
+      Term, votes for itself, and requests votes. Majority vote
+      wins.</li>
+      <li><strong>Log Replication:</strong> The Leader accepts client
+      commands, appends them to its log, and sends
+      <code>AppendEntries</code> RPCs to followers.</li>
+      <li><strong>Safety:</strong>
+      <ul>
+      <li><strong>Election Safety:</strong> At most one leader per
+      term.</li>
+      <li><strong>Log Matching:</strong> If two logs contain an entry
+      with the same index and term, then the logs are identical in all
+      preceding entries.</li>
+      </ul></li>
+      </ol>
+      <p>The <strong>Log Matching Property</strong> is the subtle magic
+      of Raft. It creates a recursive proof of consistency. When a
+      follower acknowledges an entry at index 100, the leader knows for
+      a fact that the follower also has entries 1–99 matching the
+      leader’s log. This allows for simple “catch-up” logic: if logs
+      diverge, the leader simply finds the last common index and
+      overwrites the follower’s divergent suffix. <a href="#fn15"
+      class="footnote-ref" id="fnref15"
+      role="doc-noteref"><sup>15</sup></a></p>
+      <hr />
+      <h2 id="part-iv-consistency-models">Part IV: Consistency
+      Models</h2>
+      <p>When we build a datastore (or a distributed memory for
+      training), we must define what “reading” means. If I write <span
+      class="math inline">\(X=5\)</span> on Node A, when can Node B read
+      <span class="math inline">\(5\)</span>?</p>
+      <h3 id="linearizability-strong-consistency">4.1 Linearizability
+      (Strong Consistency)</h3>
+      <p>Linearizability provides the illusion of a single, global copy
+      of data. * <strong>Definition:</strong> Every operation takes
+      effect atomically at some point between its invocation and
+      response. * <strong>Constraint:</strong> Real-time ordering is
+      preserved. If Op A finishes before Op B starts, B <em>must</em>
+      see A.</p>
+      <p>Achieving this requires synchronization. To serve a
+      linearizable read, a node must consult the leader or a quorum to
+      ensure it isn’t holding stale data (e.g., if it was partitioned
+      away). This adds latency (RTT) to every read. <a href="#fn16"
+      class="footnote-ref" id="fnref16"
+      role="doc-noteref"><sup>16</sup></a></p>
+      <h3 id="sequential-consistency">4.2 Sequential Consistency</h3>
+      <p>Weaker than linearizability. It requires that operations appear
+      to take effect in some total order that is consistent with the
+      order seen on each individual process. *
+      <strong>Difference:</strong> It respects <em>program order</em>
+      but not <em>real-time</em> order. If I write <span
+      class="math inline">\(X\)</span> and tell you on the phone “check
+      X,” you might not see it yet, but once you see it, you will never
+      see an older value.</p>
+      <h3 id="causal-consistency">4.3 Causal Consistency</h3>
+      <p>This is the sweet spot for many high-performance systems. It
+      guarantees that operations that are causally related are seen in
+      the same order by everyone. Concurrent operations can be seen in
+      different orders. * <strong>Scenario:</strong> A user posts a
+      photo (Event A). The user comments on the photo (Event B). <span
+      class="math inline">\(A \rightarrow B\)</span>. Causal consistency
+      ensures no one sees the comment before the photo. However, if two
+      distinct users like the photo concurrently, different replicas
+      might see the likes arrive in different orders.</p>
+      <h3 id="session-guarantees">4.4 Session Guarantees</h3>
+      <p>For end-users, we often implement specific “Session Guarantees”
+      rather than system-wide consistency: * <strong>Read Your
+      Writes:</strong> If I write X, my subsequent reads see X (or
+      newer). * <strong>Monotonic Reads:</strong> If I see version <span
+      class="math inline">\(V\)</span>, I will never see a version older
+      than <span class="math inline">\(V\)</span> in the future.</p>
+      <p>In <strong>Prime</strong>, we utilize a mix. The parameter
+      updates in the outer loop strive for sequential consistency
+      (everyone applies updates in the same order), but the gradient
+      accumulation in the inner loop is purely local, and the checkpoint
+      recovery uses a causal check (step count) to prevent rolling back
+      training progress. <a href="#fn17" class="footnote-ref"
+      id="fnref17" role="doc-noteref"><sup>17</sup></a></p>
+      <hr />
+      <h2 id="part-v-architecture-of-prime-diloco">Part V: Architecture
+      of Prime (DiLoCo)</h2>
+      <p>Now we map these theoretical foundations to the concrete design
+      of Prime/DiLoCo.</p>
+      <h3 id="the-two-loop-strategy">5.1 The Two-Loop Strategy</h3>
+      <p>DiLoCo (Distributed Low-Communication) decouples the training
+      into two time scales to circumvent the bandwidth limits of the
+      WAN.</p>
+      <ol type="1">
+      <li><strong>Inner Loop (Local):</strong> Nodes run standard SGD on
+      local data for <span class="math inline">\(k\)</span> steps (e.g.,
+      500 steps). This generates a “pseudo-gradient”—the difference
+      between the starting weights and the current weights. This happens
+      entirely in standard data-parallel groups (using NCCL within a
+      region).</li>
+      <li><strong>Outer Loop (Global):</strong> The pseudo-gradients are
+      averaged across all regions. This is the
+      <strong>Consensus</strong> step. We are agreeing on the new global
+      state.</li>
+      </ol>
+      <p>By reducing the frequency of global synchronization by a factor
+      of <span class="math inline">\(k\)</span>, we reduce the bandwidth
+      requirement by <span class="math inline">\(k\)</span>. This allows
+      us to train across continents where latency is high (100ms+) and
+      bandwidth is low/expensive. <a href="#fn18" class="footnote-ref"
+      id="fnref18" role="doc-noteref"><sup>18</sup></a></p>
+      <h3 id="elasticity-and-membership-the-raft-of-prime">5.2
+      Elasticity and Membership (The “Raft” of Prime)</h3>
+      <p>A critical requirement for Prime is
+      <strong>Elasticity</strong>. Nodes on spot instances effectively
+      “crash” randomly. We need a membership service.</p>
+      <p>We implement a dynamic view system. * <strong>Store:</strong> A
+      persistent KV store (like etcd or a TCPStore) holds the “Ground
+      Truth.” * <strong>Heartbeats:</strong> Every node writes a
+      timestamp to the store every <span
+      class="math inline">\(T\)</span> seconds. *
+      <strong>Leader:</strong> One node is elected (via lowest rank or a
+      lock in the store) to monitor heartbeats. *
+      <strong>Re-Init:</strong> If the leader detects a timeout (FLP
+      suspicion), it declares a new “View.” It posts a new
+      <code>rank_map</code> to the store. * <strong>Barrier:</strong>
+      All surviving nodes pause, read the new map, rebuild their
+      NCCL/Gloo communicators, and resume.</p>
+      <p>This is a specialized implementation of <strong>Virtual
+      Synchrony</strong>. The system moves through a sequence of views.
+      Within a view, membership is static. <a href="#fn19"
+      class="footnote-ref" id="fnref19"
+      role="doc-noteref"><sup>19</sup></a></p>
+      <h3 id="the-causal-checkpoint">5.3 The Causal Checkpoint</h3>
+      <p>When a new node joins (or a node recovers), it needs the
+      current model state. It cannot just start from zero. *
+      <strong>Mechanism:</strong> The joiner sends an RPC:
+      <code>GetCheckpoint(view_id)</code>. * <strong>Invariant:</strong>
+      The joiner must not participate in the Outer Loop until it has a
+      model state consistent with the current <code>outer_step</code>. *
+      <strong>Implementation:</strong> We attach a monotonic counter
+      (Logical Clock) to every checkpoint. The joiner downloads the
+      checkpoint, verifies <code>ckpt.step == cluster.step</code>, and
+      only then enters the compute mesh.</p>
+      <h3 id="bandwidth-aware-topologies">5.4 Bandwidth-Aware
+      Topologies</h3>
+      <p>The “All-Reduce” operation (summing gradients) usually happens
+      on a Ring or a Tree. In a WAN, not all links are equal. A generic
+      Ring might route traffic A -&gt; B -&gt; C. If the A-&gt;B link is
+      slow, the whole cluster suffers (head-of-line blocking).</p>
+      <p>Prime constructs a weighted graph of the network (using active
+      bandwidth measurements). It then solves a <strong>Traveling
+      Salesman Problem (TSP)</strong> variant to find the Hamiltonian
+      path that maximizes total throughput. This is a static
+      optimization performed at every “View Change.”</p>
+      <p>Furthermore, we use <strong>Quantization</strong> as a form of
+      “approximate communication.” We cast 32-bit floats to 8-bit
+      integers for the network traversal. This loses precision. *
+      <strong>Systems View:</strong> We are relaxing the “correctness”
+      of the message content to gain “liveness” (throughput). *
+      <strong>Math View:</strong> We use a “Error Feedback” mechanism
+      (keeping the quantization error locally) to ensure that the error
+      cancels out over time and doesn’t diverge.</p>
+      <hr />
+      <h2 id="part-vi-implementing-the-roadmap">Part VI: Implementing
+      the Roadmap</h2>
+      <p>To build Prime from scratch, you do not start with PyTorch. You
+      start with the primitives discussed in Stages 1-4.</p>
+      <h3 id="phase-1-the-simulator">Phase 1: The Simulator</h3>
+      <p>Write a Python script that simulates generic processes with
+      message queues. * Implement Lamport Clocks. * Implement a
+      randomized delay function (chaos). * <strong>Exercise:</strong>
+      Create a trace where Process A thinks <span
+      class="math inline">\(X\)</span> happened before <span
+      class="math inline">\(Y\)</span>, but Process B thinks <span
+      class="math inline">\(Y\)</span> happened before <span
+      class="math inline">\(X\)</span>. Prove they are concurrent.</p>
+      <h3 id="phase-2-the-consensus-engine">Phase 2: The Consensus
+      Engine</h3>
+      <p>Implement a minimal Raft in Python. * Don’t optimize. Use a
+      <code>while True</code> loop and <code>time.sleep</code>. *
+      <strong>Invariant Check:</strong> Write a separate thread that
+      constantly reads the logs of all nodes and asserts
+      <code>LogMatching</code> (if logs match at index <span
+      class="math inline">\(i\)</span>, they match at <span
+      class="math inline">\(i-1\)</span>). * <strong>Chaos:</strong>
+      Kill the leader. Watch the election. Kill the network. Watch the
+      stall.</p>
+      <h3 id="phase-3-the-transactional-store">Phase 3: The
+      Transactional Store</h3>
+      <p>Build a Key-Value store on top of your Raft log. * Implement
+      <code>Put(k, v)</code> and <code>Get(k)</code>. * Implement
+      <strong>Linearizable Reads</strong>: A read must go to the leader
+      and confirm it is still the leader (heartbeat check) before
+      returning.</p>
+      <h3 id="phase-4-the-tensor-layer">Phase 4: The Tensor Layer</h3>
+      <p>Now, replace “strings” in your KV store with “Tensors.” *
+      Replace <code>Put</code> with <code>AllReduce</code>
+      (conceptually, a write that combines values). * Implement the
+      <strong>Inner/Outer Loop</strong> logic. * Add the
+      <strong>Elasticity</strong>: When a node dies, trigger the “View
+      Change” logic from Phase 2 to exclude it, re-mesh, and
+      continue.</p>
+      <h3 id="phase-5-the-prime-system">Phase 5: The Prime System</h3>
+      <p>Finally, swap your Python queues for TCP sockets (Gloo/NCCL),
+      your in-memory logs for disk checkpoints, and your simple tensors
+      for LLM weights.</p>
+      <p>You have now built DiLoCo.</p>
+      <hr />
+      <h2 id="conclusion">Conclusion</h2>
+      <p>Distributed systems is a discipline of pessimism. We assume the
+      network is hostile, clocks are liars, and nodes are ephemeral. By
+      accepting these hard truths and building upon the rigorous
+      mathematical foundations of partial orders, consensus, and
+      consistency models, we can construct systems like Prime that
+      appear coherent and reliable.</p>
+      <p>The code in this repository is the artifact of this thinking
+      process. As you explore <code>src/</code>, look for the shadows of
+      Lamport, the echoes of Paxos, and the safeguards against FLP. They
+      are the invisible struts holding the system up. <a href="#fn20"
+      class="footnote-ref" id="fnref20"
+      role="doc-noteref"><sup>20</sup></a></p>
+      <section id="footnotes"
+      class="footnotes footnotes-end-of-document" role="doc-endnotes">
+      <hr />
+      <ol>
+      <li id="fn1"><p>Strictly speaking, modern superscalar CPUs with
+      out-of-order execution do <em>not</em> execute instructions
+      sequentially. They speculate, reorder, and parallelize. However,
+      the CPU’s commit logic maintains the <em>illusion</em> of
+      sequential execution for the programmer. In distributed systems,
+      this illusion is shattered; there is no global CPU to maintain the
+      facade.<a href="#fnref1" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn2"><p>The Network Time Protocol (NTP) attempts to
+      synchronize these clocks by exchanging messages with reference
+      servers. However, NTP itself is subject to network latency
+      variance (jitter). In a busy datacenter where queue depths
+      fluctuate, NTP can typically guarantee synchronization only within
+      tens of milliseconds. For a database or a high-frequency trading
+      bot, 10ms is an eternity.<a href="#fnref2" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn3"><p>This axiom is the bridge that connects the
+      disjoint timelines of separate processes. Without message passing,
+      every process would exist in its own isolated universe, and no
+      inter-process ordering could essentially be established.<a
+      href="#fnref3" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn4"><p>In Special Relativity, the “light cone” defines
+      the region of spacetime that a particle can influence (future) or
+      be influenced by (past). Events outside the light cone are
+      causally disconnected. In distributed systems, the speed of light
+      is replaced by the latency of the network.<a href="#fnref4"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      <li id="fn5"><p>Strictly speaking, modern superscalar CPUs with
+      out-of-order execution do <em>not</em> execute instructions
+      sequentially. They speculate, reorder, and parallelize. However,
+      the CPU’s commit logic maintains the <em>illusion</em> of
+      sequential execution for the programmer. In distributed systems,
+      this illusion is shattered; there is no global CPU to maintain the
+      facade.<a href="#fnref5" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn6"><p>The Network Time Protocol (NTP) attempts to
+      synchronize these clocks by exchanging messages with reference
+      servers. However, NTP itself is subject to network latency
+      variance (jitter). In a busy datacenter where queue depths
+      fluctuate, NTP can typically guarantee synchronization only within
+      tens of milliseconds. For a database or a high-frequency trading
+      bot, 10ms is an eternity.<a href="#fnref6" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn7"><p>This axiom is the bridge that connects the
+      disjoint timelines of separate processes. Without message passing,
+      every process would exist in its own isolated universe, and no
+      inter-process ordering could essentially be established.<a
+      href="#fnref7" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn8"><p>In Special Relativity, the “light cone” defines
+      the region of spacetime that a particle can influence (future) or
+      be influenced by (past). Events outside the light cone are
+      causally disconnected. In distributed systems, the speed of light
+      is replaced by the latency of the network.<a href="#fnref8"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      <li id="fn9"><p>In engineering terms, this means we can never be
+      certain that a peer has received our last message. We must design
+      systems that rely on <em>quorums</em> and <em>timeouts</em> rather
+      than certainty.<a href="#fnref9" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn10"><p>While FLP is mathematically terrifying, it is
+      practically manageable. Real networks are not purely asynchronous;
+      they are “partially synchronous.” We use timeouts. If a leader
+      doesn’t respond in 500ms, we assume it’s dead. We might be wrong
+      (violating the async model), but this assumption allows us to
+      progress. We trade theoretical impossibility for practical
+      probability.<a href="#fnref10" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn11"><p>Paxos is notoriously difficult to implement
+      correctly. The paper “Paxos Made Simple” is deceptively titled.
+      Most “Paxos” implementations in the wild (Chubby, Zookeeper) are
+      actually variations like Multi-Paxos or Zab, which optimize for a
+      steady stream of decisions (logs) rather than single values.<a
+      href="#fnref11" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn12"><p>In engineering terms, this means we can never be
+      certain that a peer has received our last message. We must design
+      systems that rely on <em>quorums</em> and <em>timeouts</em> rather
+      than certainty.<a href="#fnref12" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn13"><p>While FLP is mathematically terrifying, it is
+      practically manageable. Real networks are not purely asynchronous;
+      they are “partially synchronous.” We use timeouts. If a leader
+      doesn’t respond in 500ms, we assume it’s dead. We might be wrong
+      (violating the async model), but this assumption allows us to
+      progress. We trade theoretical impossibility for practical
+      probability.<a href="#fnref13" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn14"><p>Paxos is notoriously difficult to implement
+      correctly. The paper “Paxos Made Simple” is deceptively titled.
+      Most “Paxos” implementations in the wild (Chubby, Zookeeper) are
+      actually variations like Multi-Paxos or Zab, which optimize for a
+      steady stream of decisions (logs) rather than single values.<a
+      href="#fnref14" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn15"><p>The beauty of Raft is its strong leadership. In
+      Paxos, any node can propose. In Raft, data only flows from Leader
+      to Follower. This simplifies the logic but puts a burden on the
+      leader. In Prime/DiLoCo, we use a variation of this for the
+      elastic mesh: a “coordinator” manages the group membership log.<a
+      href="#fnref15" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn16"><p>This is the CAP Theorem in action. If you want
+      Linearizability (Consistency), you must sacrifice Availability
+      during a Partition (CP system). If you want every read to succeed
+      immediately (Availability), you might serve stale data (AP
+      system).<a href="#fnref16" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn17"><p>Using strict linearizability for parameter
+      servers is overkill and performance suicide. We permit “staleness”
+      (Bounded Staleness) where workers might compute gradients on
+      weights that are a few milliseconds old. The noise inherent in SGD
+      (Stochastic Gradient Descent) makes the algorithm tolerant to this
+      lack of strict consistency.<a href="#fnref17"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      <li id="fn18"><p>In distributed systems terms, the Inner Loop
+      allows replicas to diverge (concurrent writes). The Outer Loop is
+      a <strong>Merge</strong> operation that reconciles this
+      divergence. The math of DiLoCo proves that averaging these
+      divergent paths results in a valid training trajectory,
+      effectively treating the local steps as a “batch.”<a
+      href="#fnref18" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn19"><p>Handling the transition between views is the
+      hardest part. What happens to the gradients computed during the
+      view change? In Prime, we discard the partial inner-loop progress
+      of the failed view to ensure safety (Log Matching), or we
+      checkpoint aggressively to save it.<a href="#fnref19"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      <li id="fn20"><p>Recommended reading to continue this journey:
+      “Designing Data-Intensive Applications” by Martin Kleppmann, and
+      the original Raft paper “In Search of an Understandable Consensus
+      Algorithm” by Ongaro and Ousterhout.<a href="#fnref20"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      </ol>
+      </section>
+
+      
+      <noscript><div id="noscript-warning-footer" class="admonition error" title="Warning to NoScript Users"><div class="admonition-title"><p>[<strong>Error</strong>: JavaScript disabled.]</p></div> <p>[Backlinks, similar links, and the bibliography require JS enabled to load.]</p></div></noscript>
+      
+      
+      
+      
+      </div> <!-- /.markdownBody -->
+
+    </article>
+
+    
+    <!-- SSI: Footer -->
+    <!-- FOOTER-BEGIN-->
+        <nav id="navigation">
+      <svg id="navigation-left"><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#direction" /></svg>
+      <a id="navigation-center" class="link-page-not" title="Return to top of current page" href="#top"
+        ><svg><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#center" /></svg></a>
+      <svg id="navigation-right"><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#direction" /></svg>
+    </nav>
+    <div class="markdownBody" id="footer">
+      <p id="footer-anonymous-feedback">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7uqL7B_l1HFIfXc8D_nZyumaOv58msK7jhl4XzQjWODWKdA/viewform" title="Google Docs web form for submitting anonymized feedback to Gwern Branwen">[&hairsp;Send Anonymous Feedback&hairsp;]</a>
+      </p>
+      <div id="x-of-the-day" class="dark-mode-invert">
+        <p><a id="qotd" class="include include-spinner-not" href="/metadata/today-quote.html">[Quote Of The Day]</a></p>
+        <p><a id="sotd" class="include include-spinner-not" href="/metadata/today-site.html">[Site Of The Day]</a></p>
+        <p><a id="atod" class="include include-spinner-not" href="/metadata/today-annotation.html">[Annotation Of The Day]</a></p>
+      </div>
+      <p><a id="psa-adblock" class="include adsense include-spinner-not" href="/metadata/psa-adblock.html">[adblock public service announcement]</a></p>
+    </div>
+
+    <!-- FOOTER-END -->
+    
+    <div id="footer-decoration-container"> <!-- Mandatory element for layout -->
+      <a rel="home me contents" title="Progyan.net homepage" class="footer-logo dark-mode-invert" href="/index">​</a>
+    </div>
+
+  </main>
+
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-18912926-1" onload="GW.googleAnalyticsLoaded = true;"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-18912926-1');
+  </script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SSI: CSS+JS inline for speed -->
+  <!-- INLINED-HEAD-BEGIN -->
+  <style id="inlined-styles-colors">
+:root {
+    /*  General.
+     */
+    --GW-body-background-color: #fff;
+    --GW-body-text-color: #000;
+
+    /*  Selection.
+     */
+    --GW-text-selection-background-color: #333;
+    --GW-text-selection-color: #fff;
+
+	/*	Links.
+	 */
+    --GW-body-link-color: #333;
+    --GW-body-link-hover-color: #888;
+    --GW-body-link-visited-color: #666;
+    --GW-body-link-inverted-color: #eee;
+    --GW-body-link-inverted-hover-color: #ccc;
+    --GW-body-link-inverted-visited-color: #ddd;
+
+    /*  Blockquotes.
+     */
+    --GW-blockquote-border-color-level-one: #ccc;
+    --GW-blockquote-border-color-level-two: #c4c4c4;
+    --GW-blockquote-border-color-level-three: #b3b3b3;
+    --GW-blockquote-border-color-level-four: #a6a6a6;
+    --GW-blockquote-background-color-level-one: #f8f8f8;
+    --GW-blockquote-background-color-level-two: #e6e6e6;
+    --GW-blockquote-background-color-level-three: #d8d8d8;
+
+    /*  Abstracts.
+     */
+    --GW-abstract-border-color: #bbb;
+
+	/*	Block context highlighting.
+	 */
+	--GW-block-context-span-highlight-color: #ddd;
+
+    /*  Table of contents.
+     */
+    --GW-TOC-border-color: #ccc;
+    --GW-TOC-background-color: #f8f8f8;
+    --GW-TOC-collapse-button-text-color: #ccc;
+    --GW-TOC-collapse-button-text-hover-color: #fff;
+    --GW-TOC-collapse-button-color: rgba(248, 248, 248, 0.8);
+    --GW-TOC-collapse-button-hover-color: #ddd;
+    --GW-TOC-collapse-button-border-hover-color: #000;
+    --GW-TOC-link-hover-background-color: #ececec;
+    --GW-TOC-link-hover-color: #000;
+    --GW-TOC-link-hover-indicator-bar-color: #ccc;
+    --GW-TOC-number-color: #909090;
+    --GW-TOC-number-hover-color: #313131;
+
+    /*  Collapse blocks.
+        */
+	--GW-collapse-abstract-blockquote-hover-color: #eee;
+	--GW-collapse-disclosure-button-color: #eee;
+	--GW-collapse-disclosure-button-hover-color: #ddd;
+	--GW-collapse-in-blockquote-disclosure-button-color: #ddd;
+	--GW-collapse-in-blockquote-disclosure-button-hover-color: #ccc;
+	--GW-collapse-disclosure-button-text-color: #bbb;
+	--GW-collapse-disclosure-button-text-hover-color: #fff;
+	--GW-collapse-in-blockquote-disclosure-button-text-color: #999;
+	--GW-collapse-in-blockquote-disclosure-button-text-hover-color: #888;
+
+	/*	Inline collapses.
+	 */
+	--GW-collapse-inline-disclosure-button-text-color: #555;
+	--GW-collapse-inline-disclosure-button-text-hover-color: #999;
+
+	/*	Aux-links collapse blocks.
+	 */
+	--GW-aux-links-collapse-border-color: #c4c4c4;
+
+    /*  Headings.
+     */
+    --GW-H1-border-color: #888;
+    --GW-H2-border-color: #888;
+
+    /*  Comments.
+     */
+    --GW-comment-section-top-border-color: #999;
+
+    /*  Lists.
+     */
+    --GW-bulleted-list-marker-color: #808080;
+
+    /*  Figures.
+     */
+    --GW-figure-outline-color: #888;
+    --GW-figure-caption-outline-color: #888;
+
+	/*	Embeds.
+	 */
+	--GW-embed-border-color: #ddd;
+
+    /*  Epigraphs.
+     */
+    --GW-epigraph-quotation-mark-color: #808080;
+
+    /*  Footnotes.
+     */
+    --GW-footnote-border-color: #aaa;
+    --GW-footnote-highlighted-border-color: #aaa;
+    --GW-footnotes-section-top-rule-color: #ccc;
+    --GW-footnote-backlink-border-color: #000;
+    --GW-footnote-backlink-border-hover-color: #999;
+
+    /*  Footnote references.
+     */
+    --GW-highlighted-link-outline-color: #999;
+
+    /*  Sidenotes.
+     */
+    --GW-sidenote-highlight-box-shadow-color: #aaa;
+    --GW-sidenote-border-color: #aaa;
+    --GW-sidenote-scrollbar-thumb-color: #aaa;
+    --GW-sidenote-scrollbar-thumb-hover-color: #999;
+    --GW-sidenote-self-link-border-color: #aaa;
+
+	/*	Annotations.
+	 */
+	--GW-section-highlighted-border-color: #666;
+
+    /*  Tables.
+     */
+    --GW-table-border-color: #000;
+    --GW-table-caption-border-color: #000;
+    --GW-table-row-horizontal-border-color: #000;
+    --GW-table-scrollbar-thumb-color: #aaa;
+    --GW-table-scrollbar-thumb-hover-color: #999;
+    --GW-table-scrollbar-border-color: #000;
+    --GW-table-column-heading-hover-background-color: #e2f0f2;
+    --GW-table-sorted-column-heading-background-color: #8bd0ed;
+    --GW-table-sorted-column-heading-text-color: #fff;
+    --GW-table-sorted-column-heading-text-shadow-color: #000;
+    --GW-table-zebra-stripe-alternate-row-background-color: #f6f6f6;
+    --GW-table-row-hover-outline-color: #000;
+
+    /*  Code blocks.
+     */
+    --GW-code-element-border-color: #c8c8c8;
+    --GW-code-element-background-color: #fafafa;
+    --GW-pre-element-border-color: #c8c8c8;
+    --GW-pre-element-background-color: #fafafa;
+    --GW-pre-element-scrollbar-track-color: #fafafa;
+    --GW-pre-element-scrollbar-thumb-color: #ccc;
+    --GW-pre-element-scrollbar-thumb-hover-color: #999;
+    --GW-code-block-line-highlight-background-color: #ffd;
+    --GW-code-block-line-highlight-border-color: #ddd;
+    --GW-code-block-line-number-color: #aaa;
+    --GW-code-block-line-number-divider-color: #ccc;
+
+
+    /*  Syntax highlight theme.
+     */
+    --GW-syntax-highlight-color-normal: #1f1c1b;
+    --GW-syntax-highlight-color-attribute: #002561;
+    --GW-syntax-highlight-color-data-type: inherit;
+    --GW-syntax-highlight-color-variable: #666666;
+    --GW-syntax-highlight-color-other: inherit;
+    --GW-syntax-highlight-color-preprocessor: inherit;
+    --GW-syntax-highlight-color-extension: #777;
+    --GW-syntax-highlight-color-comment: #77947b;
+    --GW-syntax-highlight-color-control-flow: #003900;
+    --GW-syntax-highlight-color-keyword: #002561;
+    --GW-syntax-highlight-color-operator: #002561;
+    --GW-syntax-highlight-color-special-char: #607880;
+    --GW-syntax-highlight-color-built-in: #002561;
+    --GW-syntax-highlight-color-function: #002561;
+    --GW-syntax-highlight-color-constant: inherit;
+    --GW-syntax-highlight-color-base-n: inherit;
+    --GW-syntax-highlight-color-dec-val: inherit;
+    --GW-syntax-highlight-color-float: inherit;
+    --GW-syntax-highlight-color-information: inherit;
+    --GW-syntax-highlight-color-char: inherit;
+    --GW-syntax-highlight-color-string: inherit;
+    --GW-syntax-highlight-color-verbatim-string: inherit;
+    --GW-syntax-highlight-color-alert: #bf0303;
+    --GW-syntax-highlight-color-error: #ff0000;
+    --GW-syntax-highlight-color-import: #777777;
+    --GW-syntax-highlight-color-special-string: #666666;
+
+    /*  Math.
+     */
+    --GW-math-block-background-color: #f6f6f6;
+    --GW-math-block-background-color-flash: #fff;
+    --GW-math-block-scrollbar-border-color: #ccc;
+    --GW-math-block-scrollbar-thumb-color: #ccc;
+    --GW-math-block-scrollbar-thumb-hover-color: #999;
+
+    /*  Dropcaps.
+     */
+    --GW-dropcaps-goudy-color: #000;
+    --GW-dropcaps-yinit-color: #0d0d0d;
+    --GW-dropcaps-yinit-text-shadow-color: #777;
+    --GW-dropcaps-de-zs-color: #1b1b1b;
+    --GW-dropcaps-cheshire-color: #191919;
+    --GW-dropcaps-kanzlei-color: #191919;
+
+    /*  Admonitions.
+     */
+    --GW-admonition-note-left-border-color: #909090;
+    --GW-admonition-note-background-color: #d8d8d8;
+    --GW-admonition-tip-left-border-color: #d8d8d8;
+    --GW-admonition-tip-background-color: #f0f0f0;
+    --GW-admonition-warning-left-border-color: #5a5a5a;
+    --GW-admonition-warning-background-color: #9a9a9a;
+    --GW-admonition-warning-text-color: #fff;
+    --GW-admonition-error-left-border-color: #2d2d2d;
+    --GW-admonition-error-background-color: #5a5a5a;
+    --GW-admonition-error-text-color: #fff;
+    --GW-admonition-reversed-link-color: #ddd;
+    --GW-admonition-reversed-link-color-hover: #ccc;
+    --GW-admonition-reversed-link-underline-gradient-line-color: #ccc;
+    --GW-admonition-reversed-link-underline-gradient-line-color-hover: #bbb;
+
+	/*	Footer.
+	 */
+    --GW-bottom-ornament-line-color: #000;
+
+	/*	Pop-frames (popups or popins).
+	 */
+    --GW-popframes-object-popframe-background-color: #fff;
+
+    --GW-extracts-options-dialog-backdrop-background-color: rgba(255, 255, 255, 0.95);
+    --GW-extracts-options-dialog-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-border-color: #aaa;
+    --GW-extracts-options-dialog-box-shadow-color: #444;
+    --GW-extracts-options-dialog-horizontal-rule-color: #ccc;
+    --GW-extracts-options-dialog-button-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-button-text-color: #000;
+    --GW-extracts-options-dialog-button-border-color: #000;
+    --GW-extracts-options-dialog-button-hover-box-shadow-color: #000;
+    --GW-extracts-options-dialog-option-button-explanation-text-color: #777;
+    --GW-extracts-options-dialog-option-button-hover-text-color: #777;
+    --GW-extracts-options-dialog-radio-button-border-color: #000;
+
+    /*  Popups.
+     */
+    --GW-popups-popup-background-color: var(--GW-body-background-color);
+
+    --GW-popups-popup-border-color: #ccc;
+    --GW-popups-popup-box-shadow-color: #ccc;
+    --GW-popups-popup-border-focused-color: #aaa;
+    --GW-popups-popup-box-shadow-focused-color: #aaa;
+
+    --GW-popups-popup-title-bar-background-color: #fff;
+    --GW-popups-popup-title-bar-button-color: #bbb;
+    --GW-popups-popup-title-bar-button-color-hover: #000;
+    --GW-popups-popup-title-bar-button-color-disabled: #eee;
+	--GW-popups-popup-title-color: #aaa;
+    --GW-popups-popup-title-link-hover-color: var(--GW-body-link-hover-color);
+    --GW-popups-popup-title-bar-button-focused-color: #777;
+    --GW-popups-popup-title-bar-button-focused-color-hover: #000;
+    --GW-popups-popup-title-bar-button-focused-color-disabled: #ddd;
+    --GW-popups-popup-title-bar-submenu-box-shadow-color: #ddd;
+	--GW-popups-popup-title-focused-color: #000;
+    --GW-popups-popup-title-link-hover-focused-color: var(--GW-body-link-hover-color);
+
+    --GW-popups-popup-scrollbar-thumb-color: #ddd;
+    --GW-popups-popup-scrollbar-thumb-hover-color: #bbb;
+    --GW-popups-popup-scrollbar-thumb-focused-color: #ccc;
+    --GW-popups-popup-scrollbar-thumb-hover-focused-color: #999;
+
+    /*  Popins.
+     */
+    --GW-popins-popin-background-color: var(--GW-body-background-color);
+
+    --GW-popins-popin-border-color: #aaa;
+    --GW-popins-popin-backdrop-color: rgba(0, 0, 0, 0.4);
+    --GW-popins-popin-box-shadow-color: #aaa;
+
+    --GW-popins-popin-title-bar-background-color: #fff;
+    --GW-popins-popin-title-bar-button-color: #777;
+
+    --GW-popins-popin-scrollbar-thumb-color: #ccc;
+    --GW-popins-popin-scrollbar-thumb-hover-color: #999;
+
+    --GW-popins-popin-stack-counter-text-color: #fff;
+    --GW-popins-popin-stack-counter-background-color: #bbb;
+
+    /*  Image focus.
+     */
+    --GW-image-focus-image-hover-drop-shadow-color: #777;
+
+	/*	Page toolbar.
+	 */
+    --GW-page-toolbar-border-color: #aaa;
+	--GW-page-toolbar-control-button-color: #aaa;
+	--GW-page-toolbar-control-button-active-color: #000;
+
+	/*	Page toolbar widgets.
+	 */
+	--GW-page-toolbar-button-icon-color: #aaa;
+	--GW-page-toolbar-button-selectable-icon-color: #e4e4e4;
+	--GW-page-toolbar-button-selected-icon-color: #777;
+    --GW-page-toolbar-button-text-color: #666;
+    --GW-page-toolbar-button-disabled-text-color: #ccc;
+    --GW-page-toolbar-button-highlighted-text-color: #000;
+
+	/*	Reader mode.
+	 */
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-background-color: rgba(0, 0, 0, 0.8);
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-color: #fff;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color: #000;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-border-color: #bbb;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-background-color: #444;
+
+	/*	“Back to top” link.
+	 */
+	--GW-back-to-top-link-color: #ccc;
+	--GW-back-to-top-link-hover-color: #999;
+
+	/*	Mobile floating header.
+	 */
+	--GW-floating-header-box-shadow-color: #ccc;
+	--GW-floating-header-scroll-indicator-color: #999;
+
+	/*	“Skip to content” accessibility link.
+	 */
+	--GW-skip-to-content-text-color: #fff;
+	--GW-skip-to-content-border-color: #fff;
+	--GW-skip-to-content-background-color: #bf1722;
+
+	/*	Nav header.
+	 */
+	--GW-nav-header-link-color: #888;
+	--GW-nav-header-link-hover-color: #000;
+
+	/*	X of the day.
+	 */
+	--GW-x-of-the-day-border-color: #ccc;
+}
+:root {
+    --GW-popups-popup-title-bar-pattern: var(--GW-image-pattern-dotted-e6e6e6-on-fff-2x-gif);
+    --GW-popups-popup-title-bar-pattern-focused: var(--GW-image-pattern-dotted-fff-on-e6e6e6-2x-gif);
+
+	--GW-checkerboard-scrollbar-background-image: var(--GW-image-checkerboard-777-fff-2x-gif);
+	--GW-checkerboard-scrollbar-hover-background-image: var(--GW-image-checkerboard-000-fff-2x-gif);
+}
+</style>
+<style id="inlined-styles-colors-dark" media="all and (prefers-color-scheme: dark)">
+:root {
+    /*  General.
+     */
+    --GW-body-background-color: #000;
+    --GW-body-text-color: #fff;
+
+    /*  Selection.
+     */
+    --GW-text-selection-background-color: #dcdcdc;
+    --GW-text-selection-color: #000;
+
+	/*	Links.
+	 */
+    --GW-body-link-color: #dcdcdc;
+    --GW-body-link-hover-color: #999;
+    --GW-body-link-visited-color: #b4b4b4;
+    --GW-body-link-inverted-color: #333;
+    --GW-body-link-inverted-hover-color: #5c5c5c;
+    --GW-body-link-inverted-visited-color: #494949;
+
+    /*  Blockquotes.
+     */
+    --GW-blockquote-border-color-level-one: #5c5c5c;
+    --GW-blockquote-border-color-level-two: #646464;
+    --GW-blockquote-border-color-level-three: #747474;
+    --GW-blockquote-border-color-level-four: #7f7f7f;
+    --GW-blockquote-background-color-level-one: #212121;
+    --GW-blockquote-background-color-level-two: #3e3e3e;
+    --GW-blockquote-background-color-level-three: #4f4f4f;
+
+    /*  Abstracts.
+     */
+    --GW-abstract-border-color: #6c6c6c;
+
+	/*	Block context highlighting.
+	 */
+	--GW-block-context-span-highlight-color: #494949;
+
+    /*  Table of contents.
+     */
+    --GW-TOC-border-color: #5c5c5c;
+    --GW-TOC-background-color: #212121;
+    --GW-TOC-collapse-button-text-color: #5c5c5c;
+    --GW-TOC-collapse-button-text-hover-color: #000;
+    --GW-TOC-collapse-button-color: rgba(33, 33, 33, 0.8);
+    --GW-TOC-collapse-button-hover-color: #494949;
+    --GW-TOC-collapse-button-border-hover-color: #fff;
+    --GW-TOC-link-hover-background-color: #363636;
+    --GW-TOC-link-hover-color: #fff;
+    --GW-TOC-link-hover-indicator-bar-color: #5c5c5c;
+    --GW-TOC-number-color: #929292;
+    --GW-TOC-number-hover-color: #ddd;
+
+    /*  Collapse blocks.
+        */
+	--GW-collapse-abstract-blockquote-hover-color: #333;
+	--GW-collapse-disclosure-button-color: #333;
+	--GW-collapse-disclosure-button-hover-color: #494949;
+	--GW-collapse-in-blockquote-disclosure-button-color: #494949;
+	--GW-collapse-in-blockquote-disclosure-button-hover-color: #5c5c5c;
+	--GW-collapse-disclosure-button-text-color: #6c6c6c;
+	--GW-collapse-disclosure-button-text-hover-color: #000;
+	--GW-collapse-in-blockquote-disclosure-button-text-color: #8b8b8b;
+	--GW-collapse-in-blockquote-disclosure-button-text-hover-color: #999;
+
+	/*	Inline collapses.
+	 */
+	--GW-collapse-inline-disclosure-button-text-color: #c1c1c1;
+	--GW-collapse-inline-disclosure-button-text-hover-color: #8b8b8b;
+
+	/*	Aux-links collapse blocks.
+	 */
+	--GW-aux-links-collapse-border-color: #646464;
+
+    /*  Headings.
+     */
+    --GW-H1-border-color: #999;
+    --GW-H2-border-color: #999;
+
+    /*  Comments.
+     */
+    --GW-comment-section-top-border-color: #8b8b8b;
+
+    /*  Lists.
+     */
+    --GW-bulleted-list-marker-color: #9f9f9f;
+
+    /*  Figures.
+     */
+    --GW-figure-outline-color: #999;
+    --GW-figure-caption-outline-color: #999;
+
+	/*	Embeds.
+	 */
+	--GW-embed-border-color: #494949;
+
+    /*  Epigraphs.
+     */
+    --GW-epigraph-quotation-mark-color: #9f9f9f;
+
+    /*  Footnotes.
+     */
+    --GW-footnote-border-color: #7c7c7c;
+    --GW-footnote-highlighted-border-color: #7c7c7c;
+    --GW-footnotes-section-top-rule-color: #5c5c5c;
+    --GW-footnote-backlink-border-color: #fff;
+    --GW-footnote-backlink-border-hover-color: #8b8b8b;
+
+    /*  Footnote references.
+     */
+    --GW-highlighted-link-outline-color: #8b8b8b;
+
+    /*  Sidenotes.
+     */
+    --GW-sidenote-highlight-box-shadow-color: #7c7c7c;
+    --GW-sidenote-border-color: #7c7c7c;
+    --GW-sidenote-scrollbar-thumb-color: #7c7c7c;
+    --GW-sidenote-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-sidenote-self-link-border-color: #7c7c7c;
+
+	/*	Annotations.
+	 */
+	--GW-section-highlighted-border-color: #b4b4b4;
+
+    /*  Tables.
+     */
+    --GW-table-border-color: #fff;
+    --GW-table-caption-border-color: #fff;
+    --GW-table-row-horizontal-border-color: #fff;
+    --GW-table-scrollbar-thumb-color: #7c7c7c;
+    --GW-table-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-table-scrollbar-border-color: #fff;
+    --GW-table-column-heading-hover-background-color: #2b3637;
+    --GW-table-sorted-column-heading-background-color: #216983;
+    --GW-table-sorted-column-heading-text-color: #000;
+    --GW-table-sorted-column-heading-text-shadow-color: #fff;
+    --GW-table-zebra-stripe-alternate-row-background-color: #252525;
+    --GW-table-row-hover-outline-color: #fff;
+
+    /*  Code blocks.
+     */
+    --GW-code-element-border-color: #606060;
+    --GW-code-element-background-color: #1d1d1d;
+    --GW-pre-element-border-color: #606060;
+    --GW-pre-element-background-color: #1d1d1d;
+    --GW-pre-element-scrollbar-track-color: #1d1d1d;
+    --GW-pre-element-scrollbar-thumb-color: #5c5c5c;
+    --GW-pre-element-scrollbar-thumb-hover-color: #8b8b8b;
+    --GW-code-block-line-highlight-background-color: #171600;
+    --GW-code-block-line-highlight-border-color: #494949;
+    --GW-code-block-line-number-color: #7c7c7c;
+    --GW-code-block-line-number-divider-color: #5c5c5c;
+
+
+    /*  Syntax highlight theme.
+     */
+    --GW-syntax-highlight-color-normal: #f1edec;
+    --GW-syntax-highlight-color-attribute: #b9e8ff;
+    --GW-syntax-highlight-color-data-type: inherit;
+    --GW-syntax-highlight-color-variable: #b4b4b4;
+    --GW-syntax-highlight-color-other: inherit;
+    --GW-syntax-highlight-color-preprocessor: inherit;
+    --GW-syntax-highlight-color-extension: #a6a6a6;
+    --GW-syntax-highlight-color-comment: #7f9c83;
+    --GW-syntax-highlight-color-control-flow: #b4edaf;
+    --GW-syntax-highlight-color-keyword: #b9e8ff;
+    --GW-syntax-highlight-color-operator: #b9e8ff;
+    --GW-syntax-highlight-color-special-char: #94adb6;
+    --GW-syntax-highlight-color-built-in: #b9e8ff;
+    --GW-syntax-highlight-color-function: #b9e8ff;
+    --GW-syntax-highlight-color-constant: inherit;
+    --GW-syntax-highlight-color-base-n: inherit;
+    --GW-syntax-highlight-color-dec-val: inherit;
+    --GW-syntax-highlight-color-float: inherit;
+    --GW-syntax-highlight-color-information: inherit;
+    --GW-syntax-highlight-color-char: inherit;
+    --GW-syntax-highlight-color-string: inherit;
+    --GW-syntax-highlight-color-verbatim-string: inherit;
+    --GW-syntax-highlight-color-alert: #ff8470;
+    --GW-syntax-highlight-color-error: #ff4a39;
+    --GW-syntax-highlight-color-import: #a6a6a6;
+    --GW-syntax-highlight-color-special-string: #b4b4b4;
+
+    /*  Math.
+     */
+    --GW-math-block-background-color: #252525;
+    --GW-math-block-background-color-flash: #000;
+    --GW-math-block-scrollbar-border-color: #5c5c5c;
+    --GW-math-block-scrollbar-thumb-color: #5c5c5c;
+    --GW-math-block-scrollbar-thumb-hover-color: #8b8b8b;
+
+    /*  Dropcaps.
+     */
+    --GW-dropcaps-goudy-color: #fff;
+    --GW-dropcaps-yinit-color: #f9f9f9;
+    --GW-dropcaps-yinit-text-shadow-color: #a6a6a6;
+    --GW-dropcaps-de-zs-color: #efefef;
+    --GW-dropcaps-cheshire-color: #f1f1f1;
+    --GW-dropcaps-kanzlei-color: #f1f1f1;
+
+    /*  Admonitions.
+     */
+    --GW-admonition-note-left-border-color: #929292;
+    --GW-admonition-note-background-color: #4f4f4f;
+    --GW-admonition-tip-left-border-color: #4f4f4f;
+    --GW-admonition-tip-background-color: #303030;
+    --GW-admonition-warning-left-border-color: #bdbdbd;
+    --GW-admonition-warning-background-color: #8a8a8a;
+    --GW-admonition-warning-text-color: #000;
+    --GW-admonition-error-left-border-color: #e1e1e1;
+    --GW-admonition-error-background-color: #bdbdbd;
+    --GW-admonition-error-text-color: #000;
+    --GW-admonition-reversed-link-color: #494949;
+    --GW-admonition-reversed-link-color-hover: #5c5c5c;
+    --GW-admonition-reversed-link-underline-gradient-line-color: #5c5c5c;
+    --GW-admonition-reversed-link-underline-gradient-line-color-hover: #6c6c6c;
+
+	/*	Footer.
+	 */
+    --GW-bottom-ornament-line-color: #fff;
+
+	/*	Pop-frames (popups or popins).
+	 */
+    --GW-popframes-object-popframe-background-color: #000;
+
+    --GW-extracts-options-dialog-backdrop-background-color: rgba(0, 0, 0, 0.95);
+    --GW-extracts-options-dialog-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-border-color: #7c7c7c;
+    --GW-extracts-options-dialog-box-shadow-color: #cecece;
+    --GW-extracts-options-dialog-horizontal-rule-color: #5c5c5c;
+    --GW-extracts-options-dialog-button-background-color: var(--GW-body-background-color);
+    --GW-extracts-options-dialog-button-text-color: #fff;
+    --GW-extracts-options-dialog-button-border-color: #fff;
+    --GW-extracts-options-dialog-button-hover-box-shadow-color: #fff;
+    --GW-extracts-options-dialog-option-button-explanation-text-color: #a6a6a6;
+    --GW-extracts-options-dialog-option-button-hover-text-color: #a6a6a6;
+    --GW-extracts-options-dialog-radio-button-border-color: #fff;
+
+    /*  Popups.
+     */
+    --GW-popups-popup-background-color: var(--GW-body-background-color);
+
+    --GW-popups-popup-border-color: #5c5c5c;
+    --GW-popups-popup-box-shadow-color: #5c5c5c;
+    --GW-popups-popup-border-focused-color: #7c7c7c;
+    --GW-popups-popup-box-shadow-focused-color: #7c7c7c;
+
+    --GW-popups-popup-title-bar-background-color: #000;
+    --GW-popups-popup-title-bar-button-color: #6c6c6c;
+    --GW-popups-popup-title-bar-button-color-hover: #fff;
+    --GW-popups-popup-title-bar-button-color-disabled: #333;
+	--GW-popups-popup-title-color: #7c7c7c;
+    --GW-popups-popup-title-link-hover-color: var(--GW-body-link-hover-color);
+    --GW-popups-popup-title-bar-button-focused-color: #a6a6a6;
+    --GW-popups-popup-title-bar-button-focused-color-hover: #fff;
+    --GW-popups-popup-title-bar-button-focused-color-disabled: #494949;
+    --GW-popups-popup-title-bar-submenu-box-shadow-color: #494949;
+	--GW-popups-popup-title-focused-color: #fff;
+    --GW-popups-popup-title-link-hover-focused-color: var(--GW-body-link-hover-color);
+
+    --GW-popups-popup-scrollbar-thumb-color: #494949;
+    --GW-popups-popup-scrollbar-thumb-hover-color: #6c6c6c;
+    --GW-popups-popup-scrollbar-thumb-focused-color: #5c5c5c;
+    --GW-popups-popup-scrollbar-thumb-hover-focused-color: #8b8b8b;
+
+    /*  Popins.
+     */
+    --GW-popins-popin-background-color: var(--GW-body-background-color);
+
+    --GW-popins-popin-border-color: #7c7c7c;
+    --GW-popins-popin-backdrop-color: rgba(255, 255, 255, 0.4);
+    --GW-popins-popin-box-shadow-color: #7c7c7c;
+
+    --GW-popins-popin-title-bar-background-color: #000;
+    --GW-popins-popin-title-bar-button-color: #a6a6a6;
+
+    --GW-popins-popin-scrollbar-thumb-color: #5c5c5c;
+    --GW-popins-popin-scrollbar-thumb-hover-color: #8b8b8b;
+
+    --GW-popins-popin-stack-counter-text-color: #000;
+    --GW-popins-popin-stack-counter-background-color: #6c6c6c;
+
+    /*  Image focus.
+     */
+    --GW-image-focus-image-hover-drop-shadow-color: #a6a6a6;
+
+	/*	Page toolbar.
+	 */
+    --GW-page-toolbar-border-color: #7c7c7c;
+	--GW-page-toolbar-control-button-color: #7c7c7c;
+	--GW-page-toolbar-control-button-active-color: #fff;
+
+	/*	Page toolbar widgets.
+	 */
+	--GW-page-toolbar-button-icon-color: #7c7c7c;
+	--GW-page-toolbar-button-selectable-icon-color: #404040;
+	--GW-page-toolbar-button-selected-icon-color: #a6a6a6;
+    --GW-page-toolbar-button-text-color: #b4b4b4;
+    --GW-page-toolbar-button-disabled-text-color: #5c5c5c;
+    --GW-page-toolbar-button-highlighted-text-color: #fff;
+
+	/*	Reader mode.
+	 */
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-background-color: rgba(255, 255, 255, 0.8);
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-color: #000;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color: #fff;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-border-color: #6c6c6c;
+	--GW-reader-mode-masked-links-key-toggle-info-alert-panel-key-icon-background-color: #cecece;
+
+	/*	“Back to top” link.
+	 */
+	--GW-back-to-top-link-color: #5c5c5c;
+	--GW-back-to-top-link-hover-color: #8b8b8b;
+
+	/*	Mobile floating header.
+	 */
+	--GW-floating-header-box-shadow-color: #5c5c5c;
+	--GW-floating-header-scroll-indicator-color: #8b8b8b;
+
+	/*	“Skip to content” accessibility link.
+	 */
+	--GW-skip-to-content-text-color: #000;
+	--GW-skip-to-content-border-color: #000;
+	--GW-skip-to-content-background-color: #ff847b;
+
+	/*	Nav header.
+	 */
+	--GW-nav-header-link-color: #999;
+	--GW-nav-header-link-hover-color: #fff;
+
+	/*	X of the day.
+	 */
+	--GW-x-of-the-day-border-color: #5c5c5c;
+}
+:root {
+    /*  Adjust background color to prevent pixels from turning off (contrary to 
+    	popular belief, pixels turning off saves trivial energy, like <1% in 
+    	measurements, and causes nasty scrolling/update jank due to delay in 
+    	pixels turning back on), and improve contrast with the white.
+     */
+    --GW-body-background-color: #161616;
+
+    /*  Dial back from pure white to keep contrast from being *too* high & 
+    	‘stark’ (#fff bg / #000 text seems to work in light mode, but not in 
+    	dark mode, perhaps because of differences in lighting environment?)
+     */
+    --GW-body-text-color: #f1f1f1;
+
+    --GW-popups-popup-title-bar-pattern: var(--GW-image-pattern-dotted-161616-on-252525-2x-gif);
+    --GW-popups-popup-title-bar-pattern-focused: var(--GW-image-pattern-dotted-161616-on-3e3e3e-2x-gif);
+
+    --GW-popins-popin-backdrop-color: rgba(0, 0, 0, 0.6);
+
+    --GW-popins-popin-title-bar-button-color: #bbb;
+
+    --GW-checkerboard-scrollbar-background-image: var(--GW-image-checkerboard-888-000-2x-gif);
+    --GW-checkerboard-scrollbar-hover-background-image: var(--GW-image-checkerboard-bfbfbf-000-2x-gif);
+}
+
+.dark-mode-invert,
+.dark-mode-invert::before,
+.dark-mode-invert::after {
+	filter: var(--dark-mode-invert-filter, none);
+}
+
+/*  Admonition icons.
+ */
+div.admonition.tip::before {
+    filter: invert(1);
+}
+div.admonition.note::before {
+    filter: none;
+}
+div.admonition.warning::before {
+    filter: none;
+}
+div.admonition.error::before {
+    filter: none;
+}
+
+/*  SVG icons in the two darker styles of admonitions.
+ */
+div.admonition.warning a[data-link-icon-type='svg'] .link-icon-hook::after,
+div.admonition.error a[data-link-icon-type='svg'] .link-icon-hook::after {
+    filter: none;
+}
+
+/*  For sortable table column headings, we use dark versions of the up/down/both
+    arrow icons.
+ */
+table th.tablesorter-header {
+    background-image: url('/static/img/tablesorter/tablesorter-bg-dark.gif');
+}
+table th.tablesorter-headerAsc {
+    background-image: url('/static/img/tablesorter/tablesorter-asc-dark.gif');
+}
+table th.tablesorter-headerDesc {
+    background-image: url('/static/img/tablesorter/tablesorter-desc-dark.gif');
+}
+
+/*  Images that are marked as '.invert' by the server are inverted,
+    hue-rotated, and desaturated. Other (non-invertible) images are merely
+    desaturated. Hovering over an image restores it to its original state.
+    Hierarchy: ‘.invert-not’/‘.invert-not-auto’: no inversion or grayscale;
+    ‘.invert’/‘.invert-auto’: inverted (uninverted upon mouse hover);
+    none: grayscaled (ungrayscaled on hover).
+ */
+figure img.invert,
+figure img.invert-auto {
+    filter: grayscale(50%) invert(100%) brightness(95%) hue-rotate(180deg);
+}
+figure img:not(.invert):not(.invert-auto) {
+    filter: grayscale(50%);
+}
+figure img,
+figure img.invert,
+figure img.invert-auto {
+    transition: filter 0.25s ease;
+}
+figure img:not(.drop-filter-on-hover-not):hover,
+figure img:not(.drop-filter-on-hover-not).invert:hover,
+figure img:not(.drop-filter-on-hover-not).invert-auto:hover,
+figure img:not(.drop-filter-on-hover-not):not(.invert):not(.invert-auto):hover {
+    filter: none;
+    transition: filter 0s ease 0.25s;
+}
+
+figure img[src$=".svg"].invert:hover,
+figure img[src$=".svg"].invert-auto:hover {
+    filter: grayscale(50%) invert(100%) brightness(95%) hue-rotate(180deg);
+}
+
+/*  Image alt-text.
+ */
+figure img.invert::before,
+figure img.invert-auto::before {
+    filter: invert(1);
+}
+figure img.invert:hover::before,
+figure img.invert-auto:hover::before {
+    filter: none;
+}
+/*  Styling the image alt-text interferes with the transitions in dark mode.
+    (We include non-class’d `img` in this selector for consistency.)
+
+    TEMPORARY until we transition to a color-based instead of filter-based
+    scheme for this. —SA 2022-07-29
+ */
+figure img,
+figure img:hover,
+figure img.invert,
+figure img.invert:hover,
+figure img.invert-auto,
+figure img.invert-auto:hover {
+    transition: none;
+}
+
+/*  For images which have been marked up (manually or automatically) with 
+	‘.invert-not’, we avoid any filtering at all. If they are manually marked up
+	(artwork, diagrams with multiple subtly-different colors matched to a 
+	legend/caption), the color is important and shouldn’t be faded out by 
+	default. (Or invertOrNot has judged the image to be non-invertible, which
+	presumably means something like the above also.)
+ */
+#markdownBody figure img.invert-not,
+#markdownBody figure img.invert-not-auto {
+    filter: none;
+}
+
+/*  The loading spinner for object popups (image, iframe, object) is inverted
+    and made more visible in dark mode.
+ */
+.popframe.loading::before {
+    filter: invert(1);
+    opacity: 0.4;
+}
+
+/*  “Loading failed” messages for object popups.
+ */
+.popframe.loading-failed::after {
+    opacity: 0.4;
+}
+
+/*  Masked links key toggle info alert panel.
+ */
+div#masked-links-key-toggle-info-alert img {
+    filter: drop-shadow(0 0 3px var(--GW-reader-mode-masked-links-key-toggle-info-alert-panel-text-shadow-color));
+}
+
+/*  Recently-modified icon, manicule
+ */
+.has-recently-modified-icon .recently-modified-icon-hook::before,
+.manicule svg {
+    filter: invert(1);
+}
+
+</style>
+<link rel="stylesheet" href="/static/css/head.css?v=1761963665">
+<script src="/static/js/head.js?v=1764359351"></script>
+<link rel="preload" href="/static/img/icon/icons.svg?v=1761617795" as="image">
+
+  <!-- INLINED-HEAD-END -->
+
+    <!-- Hint at necessary third-party domains -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <meta name="title" content="">
+  <meta name="citation_title" content="">
+  <meta name="og:title" content="">
+  <meta name="twitter:title" content="">
+  <meta name="generator" content="https://github.com/progyan/progyan.net/">
+  <meta name="creator" content="progyan.net">
+    <meta name="author" content="Progyan">
+  <meta name="citation_author" content="Progyan">
+    <meta name="contact" content="https://progyan.net/me#contact">
+  <link rel="index" title="Progyan.net homepage" href="https://progyan.net/index">
+  <link href="https://progyan.substack.com/feed" type="application/rss+xml" rel="alternate" title="ATOM/RSS feed of Progyan.net newsletters with additions and links.">
+
+  <meta name="twitter:creator" content="progyan">
+  <meta name="twitter:site" content="progyan.net">
+  <meta name="og:site" content="progyan.net">
+  <meta name="og:type" content="article">
+  
+  <meta property="og:image" content="https://progyan.net/static/img/logo/logo-whitebg-large-border.png">
+  <meta property="og:image:alt" content="Default thumbnail text: the Progyan.net site logo, a logotype of a large blackletter fraktur capital letter 'G' on a white background.">
+  <meta property="og:image:height" content="">
+  <meta property="og:image:width" content="">
+  <meta property="progyan:thumbnail:css-classes" content="">
+  
+  <meta name="dc.date.issued" content="2025-05-28">
+  
+  <meta name="citation_publication_date" content="2025-05-28">
+  <meta name="dcterms.modified" content="2026-01-17">
+  <link rel="schema.dcterms" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">
+  <meta name="dcterms.rights" content="CC PD-0">
+  <meta name="dc.rights" content="https://creativecommons.org/publicdomain/zero/1.0/">
+  <link rel="canonical" href="https://progyan.net">
+  <meta name="citation_fulltext_html_url" content="https://progyan.net">
+  <meta name="og:url" content="https://progyan.net">
+  <link rel="alternate" type="text/markdown" href="https://progyan.net.md" title="Markdown source of ‘’ page"> <!-- Also available via Accept header -->
+  <meta name="page-body-classes" content="page- ">
+  <meta name="citation_fulltext_world_readable" content="">
+  <meta name="color-scheme" content="light dark">
+
+    <title> · Progyan.net</title>
+  
+  <link id="favicon" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small.png">
+  <link id="favicon-dark" rel="icon" type="image/png" href="/static/img/logo/logo-favicon-small-dark.png" media="all and (prefers-color-scheme: dark)">
+  <link id="favicon-apple-touch" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch.png">
+  <link id="favicon-apple-touch-dark" rel="apple-touch-icon" type="image/png" href="/static/img/logo/logo-favicon-appletouch-dark.png" media="all and (prefers-color-scheme: dark)">
+
+  <!-- CSS for JS-disabled users: ensure that NoScripters know what they are missing even if they jump to a section & miss the warning at top/bottom. -->
+  <noscript>
+    <style>
+      #markdownBody #noscript-warning-header {
+          position: fixed; /* sticky */
+          top: 6px; /* at top */
+          width: 58%;
+          z-index: 99; /* Make sure it is on top */
+          background-color: #f8f8f8; /* Set a solid background color so legible while positioned over text */
+          border-color: var(--GW-abstract-border-color); /* Make look like theme-toggle/admonitions a bit more */
+          border-width: 6px 6px 6px 6px;
+          border-style: double;
+      }
+      #markdownBody #noscript-warning-header p { margin: 10px; }
+      nav#sidebar { padding-top: 160px; } /* avoid overlap with page header */
+    </style>
+  </noscript>
+
+  <!-- Site-specific tweaks -->
+  <link rel="stylesheet" href="/static/css/local-overrides.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+  <!-- MathJax for LaTeX math rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$$', '$$'], ['\\(', '\\)']],
+        displayMath: [['$$$$', '$$$$'], ['\\[', '\\]']],
+        macros: {
+          textsc: ['{\\text{#1}}', 1],
+          ket: ['{|#1\\rangle}', 1],
+          bra: ['{\\langle#1|}', 1],
+          braket: ['{\\langle#1\\rangle}', 1],
+          mathds: ['{\\mathbb{#1}}', 1]
+        },
+        tags: 'ams'
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body class="hyphenate page- ">
+  <!-- SSI: Inlined asset links -->
+  <!-- INLINED-ASSET-LINKS-BEGIN-->
+  <link rel="stylesheet" href="/static/css/style.css?v=1761963665" media="print" onload="this.media=`all`">
+<script src="/static/js/script.js?v=1763447916" defer></script>
+
+  <!-- INLINED-ASSET-LINKS-END -->
+
+  <main>
+    <a id="skip-to-content-link" href="#markdownBody">Skip to main content</a>
+
+    <!-- SSI: Sidebar -->
+    <!-- SIDEBAR-BEGIN-->
+        <nav id="sidebar">
+      <a class="logo" rel="home me contents" href="/index" accesskey="\" title="Homepage: categorized list of articles index"><svg class="logo-image" viewbox="0 0 64 75">
+      <use href="/static/img/logo/logo-smooth.svg#logo"></use></svg></a>
+      <div class="sidebar-links">
+        <a class="about link-page link-annotated" href="/about" title="Site ideals, source, content, traffic, examples, license" rel="author">About</a>
+        <a class="science link-page link-annotated" href="/science" title="Who am I online, what have I done, what am I like? Contact information; sites I use; things I've worked on" rel="author">Science</a>
+        <a class="demotheosis link-page link-annotated" href="/demotheosis" title="Changelog of what’s new or updated">Demotheosis</a>
+        <a class="blog link-page" href="/blog/index" title="Shortform Gwern writings">Blog</a>
+        <a class="links link-page" href="/doc/newest/index" title="Most recent link annotations">Links</a>
+        <a class="new" href="/changelog" title="Link to Patreon donation profile to support my writing" rel="me">New</a>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR-END -->
+
+    <article>
+
+      <header>
+        <h1>Causal Bandits</h1>
+      </header>
+
+      <div class="markdownBody" id="markdownBody">
+
+      
+      <div id="page-metadata">
+        
+        <div class="page-description"><p>Notes on learning good
+interventions via causal inference in bandit problems from Tor Lattimore
+et al</p></div>
+        <div class="page-metadata-fields">
+            
+            
+            <span class="page-status" title="Writing status of current page: ranges 'abandoned'/'notes'/'draft'/'in progress'/'finished'"><em></em></span>
+            <span class="page-confidence"><a href="/about#confidence-tags" title="Explanation of 'confidence' metadata: probability of overall being meaningfully correct, expressed as Kesselman Estimative Words (ranging 0–100%: 'certain'/'highly likely'/'likely'/'possible'/'unlikely'/'highly unlikely'/'remote'/'impossible')">certainty</a>: <em></em></span>
+            <span class="page-importance"><a href="/about#importance-tags" title="Explanation of 'importance' metadata: rating 1–10 about how much a topic matters to the world.">importance</a>: <em>8</em></span>
+            
+            
+            
+        </div>
+      </div>
+      
+
+      <h1 id="background">Background</h1>
+      <p>Drug testing, policy setting can be framed as <strong>Bandit
+      Problems</strong>. Single actions, or
+      <strong>Interventions</strong> from a pre-determined set are
+      repeatedly performed in order to evaluate their
+      <strong>effectiveness</strong> via <strong>feedback</strong> from
+      a single, real-valued <strong>reward signal</strong>.</p>
+      <p>The authors <em>generalize</em> this standard setting further
+      by assuming that in addition to the <strong>reward
+      signal</strong>, the learner observes the values of a drawn from a
+      <strong>Probabilitic Causal Model</strong><br />
+      (Causal models are commonly used in disciplines where explicit
+      experimentation is difficult – social science, demography, et
+      cetera – such as when predicting the <strong>effect of
+      changes</strong> of <em>childcare subsidies</em> <span
+      class="math inline">\(\rightarrow\)</span> <em>workforce
+      participation</em>, or <em>choice of schools</em> <span
+      class="math inline">\(\rightarrow\)</span> <em>grades</em>).</p>
+      <p>This is illustrated through an example – a farmer wishes to
+      optimise the yield of her crop. The crop yield is affected by
+      {temperature, soil nutrient, moisture}, <em>only</em>. He has a
+      particular cost to <strong>Intervene</strong> and adjust <em>at
+      most one</em> of these <em>variables</em> (I suppose these are the
+      mentioned <strong>Covariates</strong>?). There is also a general
+      <em>change</em> in the <em>variables</em> at the end of every
+      season, that is observed <em>at the end, along with the final crop
+      yield</em>. How is the farmer to best experiment to identify the
+      <strong>single, highest yielding intervention</strong> in a
+      <em>limited number of seasons</em>?</p>
+      <p>These <strong>Interventions</strong> are treated as
+      <strong>Arms</strong> in a <strong>Bandit problem</strong>, and
+      their <em>influence</em> on the <em>reward</em>, is assumed to
+      conform to some <strong>known causal graph</strong> – this seems
+      to be the <em>primary contribution of the paper, the addition of a
+      causal graph</em>. This <em>subsumes and generalizes</em> the
+      <em>classical bandits</em> framework which admits no additional
+      observations, and <strong>contextual stochastic bandit
+      problems</strong> – where the <em>observations are revealed before
+      an intervention</em> is chosen. In the most general case, as
+      presented here, the observations occur <em>after</em> the
+      <strong>Intervention</strong>. Interesting that the case where
+      observations come before are also subsumed by the case where
+      observations come later.</p>
+      <p>We shall define <strong>Regret</strong> as the
+      <em>difference</em> between the return of the optimal action and
+      the action chosen by the algorithm after <span
+      class="math inline">\(T\)</span> rounds.</p>
+      <h2 id="relation-to-previous-algorithms">Relation to Previous
+      Algorithms</h2>
+      <p><strong>Causal Bandit Problems</strong> <span
+      class="math inline">\(\rightarrow\)</span> <strong>Classical
+      Multi-Armed Bandit</strong> + <strong>Causal Model</strong> and
+      some <em>extra observations</em>. <strong>Gaurav suggests this
+      isn’t the right way to look at the problem.</strong></p>
+      <p>The classical multi-armed problem has existing algorithms.
+      However, it is <em>possible to show</em> (and is intuitive), that
+      ignoring the extra information is <em>suboptimal</em>.</p>
+      <p>The <strong>Contextual Bandits</strong> problem <em>does</em>
+      have side-information, and there is a <em>similarity</em> to
+      <strong>Contextual Bandits</strong>, since <em>extra</em>
+      observations on <em>non-intervened variables</em> (why only the
+      <strong>Non-Intervened Variables</strong>? Probably because I can
+      always see the effect of my <strong>Intervention</strong> anyway,
+      it’s the <em>side</em> information on the change of the crop yield
+      by the weather that’s new to me – albeit that it’s observed only
+      at the end) may be viewed as context. <em>However,</em>
+      importantly – we <em>don’t</em> have this context <em>before</em>
+      the <strong>Intervention</strong>, so cannot be
+      <strong>Context</strong>. It’s side-information nonetheless.</p>
+      <p>Difference between <strong>Cumulative Regret</strong> and
+      <strong>Simple Regret</strong> is <em>important</em> – there are
+      other papers that bring <em>causal inference</em> to
+      <strong>Bandit problems</strong> – in the presence of
+      <strong>Confounding Variables(?)</strong> the value that a
+      <em>variable would have taken had it not been intervened</em> can
+      provide important contextual information. Here, however, the focus
+      is on the <strong>Cumulative Regret</strong>, and the
+      <strong>Context</strong> is <em>observed before the action is
+      taken</em> and <em>cannot be controlled by the learning
+      agent</em>.</p>
+      <p><strong>Future Work Suggestions:</strong> <em>Ortega and Braun
+      (2014)</em> are based on learning an unknown Causal model instead
+      of <em>exploiting a known one.</em> Can we combine this?
+      <strong>Check.</strong></p>
+      <figure>
+      <img src="images/causal_graph.png" alt="Causal Graph examples" />
+      <figcaption aria-hidden="true">Causal Graph examples</figcaption>
+      </figure>
+      <h2 id="problem-formalization">Problem Formalization</h2>
+      <p>They introduce a class of a <strong>Stochastic Decision
+      Problems</strong>, that they call the <strong>Causal Bandit
+      Problem</strong>.</p>
+      <p>The model parameters are the following – <strong>A directed
+      acyclic graph <span
+      class="math inline">\(\mathcal{G}\)</span></strong> over a
+      <strong>Set of Random Variables <span
+      class="math inline">\(\mathcal{X} = \{X_1, \dots,
+      X_N\}\)</span></strong> and a <strong>Joint Distribution <span
+      class="math inline">\(P\)</span> over <span
+      class="math inline">\(\mathcal{X}\)</span> factorises
+      (<em>what?)</em> over <span
+      class="math inline">\(\mathcal{G}\)</span>.</strong></p>
+      <p><strong>Assumptions:</strong> Each variable only takes on a
+      finite number of distinct values.</p>
+      <p>An <em>edge</em> from variable <span
+      class="math inline">\(X_i\)</span> to <span
+      class="math inline">\(X_j\)</span> means that changes in value of
+      <span class="math inline">\(X_i\)</span> <em>may cause a change in
+      the value of <span class="math inline">\(X_j\)</span></em> – along
+      those lines, the <em>parents</em> of <span
+      class="math inline">\(X_i\)</span> are the subset <span
+      class="math inline">\(\mathcal{P}_{a_{X_i}}\)</span> of <span
+      class="math inline">\(\mathcal{X}\)</span>, whose edges
+      <em>terminate</em> on <span
+      class="math inline">\(X_j\)</span>.</p>
+      <p><em>do(<strong><span class="math inline">\(\textbf{X} =
+      \textbf{x}\)</span></strong></em>) assigns the value <span
+      class="math inline">\(\textbf{x} = \{x_1, \dots, x_n\}\)</span> to
+      corresponding variables <span class="math inline">\(\textbf{X} =
+      \{X_1, X_2, \dots, X_n\}\)</span>. The <em>empty intervention</em>
+      is denoted by <span class="math inline">\(do()\)</span>.</p>
+      <p><strong>Why does the following happen?</strong> The <span
+      class="math inline">\(do(\textbf{X} = \textbf{x})\)</span> action
+      <em>prunes</em> the <strong>Causal Graph</strong> such that the
+      elements <span class="math inline">\(X_i \in \textbf{X}\)</span>
+      are removed from <span
+      class="math inline">\(\mathcal{P}a_{X_i}\)</span>. The resulting
+      graph will define a <strong>Probability Distribution</strong>
+      <span class="math inline">\(P \{X^c | \textit{do(\textbf{X =
+      x}})\}\)</span> where <span
+      class="math inline">\(\textbf{X}^c\)</span> is the
+      <em>complement</em> of the set <span
+      class="math inline">\(\textbf{X}\)</span> passed as an argument to
+      <span class="math inline">\(do()\)</span>.</p>
+      <p>A <strong>Learner</strong> has access to the <strong>Causal
+      Graph</strong> <span class="math inline">\(\mathcal{G}\)</span>
+      and <em>a set of <strong>allowed actions</strong></em>, <span
+      class="math inline">\(\mathcal{A}\)</span>. In addition, <em>one
+      of the variables</em> in <span
+      class="math inline">\(\mathcal{X}\)</span> is designated as <span
+      class="math inline">\(Y\)</span>, the <strong>Reward
+      Variable</strong>, taking on values in <span
+      class="math inline">\(\{0, 1\}\)</span> (this seems incompatible
+      with the farmer example – do the crops only wilt or survive? Can
+      we extend this to real rewards?).</p>
+      <p>The <em>expected reward</em> for the action <span
+      class="math inline">\(a = do(\textbf{X} = \textbf{x})\)</span> is
+      given by <span class="math inline">\(\mu_a =
+      \mathbb{E}[Y | do(\textbf{X} = \textbf{x})]\)</span>. The
+      <em>optimal expected reward</em> by <span
+      class="math inline">\(\mu^* := \max_{a \in \mathcal{A}}
+      \mu_a\)</span>.</p>
+      <p>The <strong>Causal Bandit Game</strong> proceeds over <span
+      class="math inline">\(T\)</span> rounds; at round <span
+      class="math inline">\(t\)</span>, the learner intervenes by
+      choosing <span class="math inline">\(a_t = do(\textbf{X}_t =
+      \textbf{x}_t) \in \mathcal{A})\)</span>, based on <em>some
+      previous observations</em>. <strong>In addition:</strong>
+      <strong>all Non-Intervened variables <span
+      class="math inline">\(X_t^c\)</span> drawn from <span
+      class="math inline">\(P\{X_t^c|do(\textbf{X}_t =
+      \textbf{x}_t)\}\)</span></strong>, <em>including the reward, <span
+      class="math inline">\(Y_t \in \{0, 1\}\)</span></em>.</p>
+      <p><strong>The Aim:</strong> After <span
+      class="math inline">\(T\)</span> observations, the
+      <strong>Learner</strong> should output an estimate of the optimal
+      action <span class="math inline">\(\hat{a}^*_T \in
+      \mathcal{A}\)</span> based on the <em>prior observations</em>.</p>
+      <p><strong>The Objective:</strong> Minimize the <strong>Simple
+      Regret: <span class="math inline">\(R_T = \mu^* -
+      \mathbb{E}[\mu_{\hat{a}_T}\)</span></strong>, also called <em>pure
+      exploration</em>, or <em>best-arm identification</em>, where the
+      idea is that a policy will be fixed indefinitely.</p>
+      <p>We recognize that this structure allows us to recover past
+      frameworks by adjusting the <em>order of information</em> and/or
+      the <em>underlying causal graph</em>.</p>
+      <h2 id="analysis-parallel-bandit-problem">Analysis: Parallel
+      Bandit Problem</h2>
+      <p>We set up the problem as follows: we have <strong>N</strong>
+      binary variables <span class="math inline">\(\{X_1, \dots
+      X_N\}\)</span> where each <span class="math inline">\(X_i \in \{0,
+      1\}\)</span> are <strong>Independent Causes Hence the
+      <em>Parallel</em> in <em>parallel bandits?</em></strong> of a
+      reward variable <span class="math inline">\(Y \in \{0,
+      1\}\)</span>.</p>
+      <p>(This also generalizes the <em>farming example</em> – <span
+      class="math inline">\(X_1 = 0\)</span> or <span
+      class="math inline">\(1\)</span> may mean the temperature is high,
+      or low, and so on.)</p>
+      <p>Further, the <strong>Learner</strong> either purely observes by
+      <span class="math inline">\(do()\)</span> (do nothing), or sets
+      the value of a <em>single</em> variable. The <em>remaining
+      variables (non-intervened)</em> are set by
+      <em>independently-biased coin flips</em>, from a <strong>Bernoulli
+      Distribution</strong>, so <span class="math inline">\(X_i \sim
+      \text{Bernoulli}(q_i)\)</span> where <span
+      class="math inline">\(\textbf{q} = (q_1, \dots, q_N) \in [0,
+      1]^N\)</span>.</p>
+      <p><strong>This is important:</strong> the <strong>Reward
+      Variable</strong> is <em>distributed</em> as <span
+      class="math inline">\(P\{Y = 1|\textbf{X}\} =
+      r(\textbf{X})\)</span> – note that the distribution of the reward
+      is dependent on <em>all</em> covariates at that step, as it should
+      be, where <span class="math inline">\(r : \{0, 1\}^N \rightarrow
+      [0, 1]\)</span> is an <em>arbitrary, fixed, unknown function.</em>
+      <strong>Can we add an Oracle to this formalization?</strong> For
+      example, a farmer who knows <em>some</em> qualities of the
+      function – in a non-binary case, for example, too much heat is
+      bad. A non-binary case could always be binarized.</p>
+      <p>The dependence of the rewards on the variables, due to the
+      nature of the fact that this is a distribution, is
+      <em>stochastic</em>. <strong>Causal Graphs seem to be constrained
+      to be DAGs.</strong><br />
+      <strong><em>Algorithm:</em></strong> The algorithm described in
+      the paper is,</p>
+      <ol type="1">
+      <li><p>For the first <span
+      class="math inline">\(\frac{T}{2}\)</span> rounds, choose <span
+      class="math inline">\(do()\)</span>, and collect observational
+      data.</p></li>
+      <li><p>As the <em>only link</em> (as it’s a <strong>Parallel
+      Bandit)</strong>, it follows that if <span
+      class="math inline">\(P{Y|X_i = j}\)</span> is large, we’ll get
+      good estimates via <span class="math inline">\(do(X_i =
+      j)\)</span> , and for small values, <em>we might not observe
+      anything</em>, so the <strong>estimates of their returns</strong>
+      might be poor Can we estimate how poor?.</p></li>
+      <li><p>To address the aforementioned problem, <strong>Split
+      remaining rounds between infrequently observed
+      actions</strong>.</p></li>
+      </ol>
+      <p>Natural question – <strong>How infrequent is bad
+      enough?</strong> Refresher – vector <span
+      class="math inline">\(\textbf{q}\)</span> defines the Bernoulli
+      parameter that tunes how often something comes up – we want to
+      answer how many of the variables are unbalanced? Intuitively, this
+      arises from how <em>small</em> <span
+      class="math inline">\(q_i\)</span> or <span
+      class="math inline">\((1-q_i)\)</span> is.</p>
+      <p><strong>The following statement is possibly the most confusing
+      part of the paper.</strong><br />
+      For indices <span class="math inline">\(I_{\tau} = \{i: \min\{q_i,
+      1 - q_i\} &lt; \frac{1}{\tau}\}\)</span>. We define <span
+      class="math inline">\(m(\textbf{q}) = \min\{\tau : |I_{\tau} \leq
+      \tau\}\)</span>.</p>
+      <p><strong><em>Aside:</em></strong> Let’s compute a few cases of
+      <span class="math inline">\(m(\textbf{q})\)</span> to clear this
+      out. If <span class="math inline">\(\textbf{q} = (\frac{1}{2},
+      \dots, \frac{1}{2})\)</span>, then <span
+      class="math inline">\(m(\textbf{q}) = \min\{\tau \text{ such that
+      } |I_\tau| \leq \tau\}\)</span>. We can compute the possible
+      values of <span class="math inline">\(\tau\)</span> here and take
+      the minimum, and <span class="math inline">\(\tau \in \mathbb{Z} :
+      2 \leq \tau \leq N\)</span>, where <span class="math inline">\(N =
+      |\textbf{q}|\)</span>.</p>
+      <p>The value of <span class="math inline">\(\min\{q_i, 1 -
+      q_i\}\)</span> is identically <span
+      class="math inline">\(\frac{1}{2}\)</span> here. So, <span
+      class="math inline">\(I_{\tau} = {i : \min\{q_i, 1 - q_i\} &lt;
+      \frac{1}{\tau}\}}\)</span> is <span
+      class="math inline">\(0\)</span> for all <span
+      class="math inline">\(\tau \geq 2\)</span>, and <span
+      class="math inline">\(N\)</span> for <span
+      class="math inline">\(\tau = 1\)</span>, since all <span
+      class="math inline">\(\forall q_i \in q, q_i \leq
+      \frac{1}{1}\)</span>. So, we want to see the minimum value of
+      <span class="math inline">\(\tau\)</span>, which is, here, <span
+      class="math inline">\(2\)</span>.</p>
+      <p>By similar arguments, if <span class="math inline">\(\textbf{q}
+      = (0, \dots, 0)\)</span>, <span class="math inline">\(\min\{q_i,
+      1-q_i\}\)</span> is identically 0. So, every value of <span
+      class="math inline">\(\tau\)</span> produces a set of size <span
+      class="math inline">\(N\)</span>, and so, we <em>must</em> choose
+      <span class="math inline">\(N\)</span>. Run some experiments in
+      <code>python</code> and see how this function varies, perhaps?</p>
+      <p>From some toying around, it seems like <span
+      class="math inline">\(m(\textbf{q})\)</span> is the <em>best</em>
+      case – possible when all are perfectly balanced (you get
+      <em>maximum</em> exploration by doing <em>nothing</em>), but when
+      all values are close to <span class="math inline">\(1\)</span> or
+      <span class="math inline">\(0\)</span>, we have <span
+      class="math inline">\(m(\textbf{q}) = N\)</span> (which means you
+      have seen <em>only</em> one side of the coin flip every time).
+      Essentially, <strong>High <span
+      class="math inline">\(m(\textbf{q})\)</span></strong> means that
+      our observations have accounted to very little, and there’s a lot
+      to see. The converse is also true.</p>
+      <p>The paper’s primary claim is that <strong>the usage of the
+      Causal Structure allows the Algorithm to only explore the <span
+      class="math inline">\(m(\textbf{q})\)</span> <em>difficult</em>
+      actions.</strong> <em>Difficult</em> can perhaps more accurately
+      be described as <strong>Rare</strong>. Perhaps because real-life
+      systems are <em>highly stochastic</em> (useful to note here that
+      <span class="math inline">\(m(\textbf{q})\)</span> is high when
+      the <strong>Shannon Entropy</strong> seems to be low), values of
+      <span class="math inline">\(m(\textbf{q})\)</span> is
+      <em>low</em>. Interestingly, it may directly imply that there
+      isn’t <em>much information present in the system</em>, and hence
+      <strong>many steps are required to exploit</strong> the system.
+      What does it even mean to calculate the entropy of a <em>set</em>
+      of probability distribution parameters?</p>
+      <h2 id="analysis-regret-bounds-for-general-graphs">Analysis:
+      Regret Bounds for General Graphs</h2>
+      <p>Consider the more general problem – the graph structure is . By
+      the <strong>Causal Graph</strong>, <strong>Correlation <span
+      class="math inline">\(\neq\)</span> Causation</strong> <span
+      class="math inline">\(\implies\)</span> <span
+      class="math inline">\(P\{Y | X_i = j\} \neq P\{Y | do(X_i =
+      j)\}\)</span>. Note the <strong>Causal Graph</strong> above for
+      reference.</p>
+      <p>!**<span class="math inline">\(do(X = j)\)</span> affects
+      <em>only</em> <span class="math inline">\(Y\)</span> (<a
+      href="correlation_causation.png" width="100%">Causation<strong>,
+      but if <span class="math inline">\(X\)</span> happens
+      spontaneously, it is associated with changes in both <span
+      class="math inline">\(Z\)</span> <em>and</em> <span
+      class="math inline">\(Y\)</span> – </strong>Correlation** is
+      bidirectional.</a></p>
+      <p><strong>note to self:</strong> <em>Book of Why</em>, Judea
+      Pearl.</p>
+      <p>The following <strong>Truncated Factorization Formula</strong>
+      is attributed to <strong>Judea Pearl</strong>, father of
+      <strong>Causal Inference</strong> and
+      <strong>Do-Calculus</strong>. It represents the result of a
+      conditioning with a <span class="math inline">\(do()\)</span>
+      operation <em>without</em> a <span
+      class="math inline">\(do()\)</span> operation. <span
+      class="math display">\[P\{X_1, \dots, X_N \ do(X_i = j)\} =
+      \prod_{k \neq i} P\{X_k | \mathcal{P}a_{X_k}\} \delta(X_i -
+      j),\]</span> where <span
+      class="math inline">\(\mathcal{P}a_{X_k}\)</span>, as before,
+      denotes the parents of <span class="math inline">\(X_k\)</span>,
+      <span class="math inline">\(\delta\)</span> is just the
+      <strong>Dirac Delta</strong> function.</p>
+      <p>Note that naïvely using the same algorithm as <strong>Parallel
+      Bandits</strong> from before <em>will</em> not work here. Here’s
+      how to do it – we write each <span
+      class="math inline">\(P\{Y|a\}\)</span> in terms of observational
+      quantities, and then explicitly play actions for which the
+      <strong>Observed Quantities</strong> are <em>poor</em>.</p>
+      <p>The primary difference here is that the general Causal Graph,
+      <em>while compulsorily a DAG</em>, can still possess nodes that
+      have edges directed towards them – something we disregarded in the
+      <strong>Parallel Bandits case</strong>. What this does is that it
+      ruins our assumption that we can <span
+      class="math inline">\(do()\)</span> until we have a sufficiently
+      strong estimator of at least the common events, and then move on
+      to the rare(r) variables. Here, a <span
+      class="math inline">\(do(X_i = j)\)</span> does <em>not</em>
+      induce the same changes in the target <span
+      class="math inline">\(Y\)</span> as the case where we <span
+      class="math inline">\(do()\)</span> and independently observe
+      <span class="math inline">\(X_i = j\)</span>.</p>
+      <p><strong>Assumptions:</strong> We assume we know the
+      <strong>Conditional Interventional Distributions <span
+      class="math inline">\(P\{\mathcal{P}a_{Y} | a\}\)</span> but
+      <em>not</em> <span
+      class="math inline">\(P\{Y|a\}\)</span></strong>. This has a
+      physical meaning. Consider the following <strong>Causal
+      Graph</strong>. Imagine that <strong>Crop Yield</strong> is
+      <em>caused directly by</em> <strong>Soil Moisture</strong>, and
+      so, <strong>Soil Moisture</strong> <span class="math inline">\(\in
+      \mathcal{P}a_Y\)</span>. However, <strong>Irrigation</strong>
+      <em>causes</em> <strong>Soil Moisture</strong>, and so it
+      <em>indirectly</em> causes the <strong>Crop Yield</strong>. What
+      we are assuming we know here is how the factors <em>in our
+      control</em> are affected by <em>other factors that are also in
+      our control</em> – in other words, we <em>don’t</em> assume
+      knowledge of how <span class="math inline">\(Y\)</span>, or
+      <strong>Crop Yield</strong> changes with <strong>Soil
+      Moisture</strong>, or (considering we control it), the
+      <strong>Weather</strong>, but we <em>do</em> know how
+      <strong>Weather</strong> and <strong>Irrigation</strong> affect
+      the <strong>Soil Moisture</strong>. Note that we need only assume
+      we know how the set <span
+      class="math inline">\(\mathcal{P}a_Y\)</span>, consisting of
+      <strong>Soil Moisture</strong>, <strong>Nutrient Level</strong>,
+      and <strong>Weather</strong> change in this respect – we don’t
+      assume knowledge about how something can affect
+      <strong>Irrigation</strong> – we need not know this to arrive at
+      an algorithm.</p>
+      <p><strong>Estimating the conditional distributions for
+      <em>all</em> variables in an optimal way is a research
+      problem.</strong> Check if it has been solved.</p>
+      <p>Now, let <span class="math inline">\(\eta\)</span> be a
+      distribution on the available interventions <span
+      class="math inline">\(a \in \mathcal{A}\)</span>, so <span
+      class="math inline">\(\eta_a \geq 0\)</span> and <span
+      class="math inline">\(\sum_{a\in\mathcal{A}} = 1.\)</span> Also,
+      define the following <strong>Mixture distribution:</strong> <span
+      class="math inline">\(Q = \sum_{a\in\mathcal{A}}\eta_{a}
+      P\{\mathcal{P}a_Y | a\}\)</span> over the interventions with
+      respect to <span class="math inline">\(\eta\)</span>.</p>
+      <p><strong>Note:</strong> Mixture distributions are also trivially
+      still distributions, as we can move the integral inside the
+      summand – very roughly, the idea is that <span
+      class="math inline">\(\int_{i} w_i P_i dx\)</span> is the mixture,
+      <span class="math inline">\(\iint_{i} w_i P_i dx dx\)</span> is
+      the integral of the PDF. <span class="math inline">\(w_i\)</span>
+      is independent of <span class="math inline">\(P_i\)</span>, so the
+      integral can be moved inward, <span class="math inline">\(\int_i
+      w_i (\int_i P_i dx) dx\)</span> = <span
+      class="math inline">\(\int_i w_i (1) dx = 1\)</span>. Here, <span
+      class="math inline">\(P\{\mathcal{P}a_Y | a\}\)</span> weighs each
+      action by how likely it is to <em>affect</em> the parents of <span
+      class="math inline">\(Y\)</span> – does this measure how often it
+      turns <span class="math inline">\(P\)</span></p>
+      <p>For example, in the example we took, we’d have <span
+      class="math inline">\(P\{\mathcal{P}a_Y | do(A:
+      \text{\text{Irrigation}})\}\)</span> be, say <span
+      class="math inline">\(M\)</span>, a mapping from <span
+      class="math inline">\(\{0, 1\}^3 \rightarrow [0, 1] \in
+      \mathbb{R}\)</span>, which tells us the resultant probability
+      distribution over <strong>{Soil Moisture, Nutrient Level,
+      Weather}</strong> when <strong>Irrigation</strong> is performed.
+      Now, we weight <em>each</em> of <span
+      class="math inline">\(M_i\)</span> with <span
+      class="math inline">\(\eta_a\)</span> for the given action – the
+      probability that we are going to <span
+      class="math inline">\(do(\text{\text{Irrigation}})\)</span>.</p>
+      <p>The proposed algorithm samples <span
+      class="math inline">\(T\)</span> actions from our distribution
+      over actions, <span class="math inline">\(\eta\)</span>, and uses
+      them to estimate the returns <span
+      class="math inline">\(\mu_a\)</span> for all <span
+      class="math inline">\(a \in \mathcal{A}\)</span>
+      <em>simultaneously</em> via <strong>Truncated Importance Weighted
+      Estimator</strong>. We let the <span
+      class="math inline">\(\mathcal{P}a_{Y}(X)\)</span> denote the
+      <em>realization</em> of variables <span
+      class="math inline">\(X\)</span> that are in the set <span
+      class="math inline">\(\mathcal{P}a_Y\)</span>. We define the
+      function <span class="math inline">\(R_a(X) =
+      \frac{P\{\mathcal{P}a_Y(X)|a\}}{Q\{\mathcal{P}a_Y(X)\}}\)</span>.
+      Let us look at the numerator and denominator more closely. Also,
+      note that <span class="math inline">\(X\)</span> here,
+      <strong>unbolded</strong>, is a set of <em>concrete</em>
+      realizations of variables <span class="math inline">\(\textbf{x}
+      \in \textbf{X}\)</span></p>
+      <p><span class="math inline">\(P(\mathcal{P}a_Y(X) | a)\)</span>
+      queries the likelihood of observing <span
+      class="math inline">\(\mathcal{P}a_Y(X)\)</span> after action
+      <span class="math inline">\(a\)</span> is done (needs
+      confirmation). This can be measured as we know the conditional
+      interventional distribution <span
+      class="math inline">\(P\{\mathcal{P}a_Y | a\}\)</span>.</p>
+      <p><span class="math inline">\(Q\{\mathcal{P}a_Y(X)\}\)</span>
+      uses the aforementioned <strong>Mixture Distribution</strong>,
+      where we <em>weight</em> the <span
+      class="math inline">\(P\{\mathcal{P}a_Y | a\}\)</span> (the
+      distribution over the parents of <span
+      class="math inline">\(Y\)</span> after some action <span
+      class="math inline">\(a\)</span>) with the probability of
+      <em>choosing</em> that action <span
+      class="math inline">\(a\)</span> in the first place.</p>
+      <p>Essentially, given an action <span
+      class="math inline">\(a\)</span>, and a set of concrete
+      realizations <span class="math inline">\(X\)</span>, <span
+      class="math inline">\(R_a(X)\)</span> is the ratio of the
+      likelihood of observing the concrete values <span
+      class="math inline">\(X\)</span> among the parents of <span
+      class="math inline">\(Y\)</span>, and the likelihood of <span
+      class="math inline">\(X\)</span> being realized from our mixture
+      distribution – that is, the chances of <em>us</em> intervening and
+      finding <span class="math inline">\(X\)</span>, based on our own
+      distribution over the actions. <strong>This is the Importance
+      Weighted part of the Truncated Importance Weighted
+      Estimator</strong>.</p>
+      <p>Then, the <strong>expected return</strong> for an action <span
+      class="math inline">\(a\)</span> is, <span
+      class="math display">\[\hat{\mu}_a = \frac{1}{T} \sum_{t=1}^{T}
+      Y_t R_a(X_t) \mathds{1}{R_a(X_t) \leq B_a}\]</span>, where <span
+      class="math inline">\(B_a \geq 0\)</span> is a constant to tune
+      the <strong>degree of truncation</strong>. The important part here
+      is that we’re <em>again</em> weighting <span
+      class="math inline">\(\mu_a\)</span> with the values of <span
+      class="math inline">\(Y_t\)</span> that are being observed – this
+      is what serves us the information required to choose the optimal
+      answer.</p>
+      <figure id="fig:CID">
+      <p>
+      <img src="conditional_interventional_distribution.png" style="width:50.0%" alt="image" />
+      <span id="fig:CID" data-label="fig:CID"></span>
+      </p>
+      </figure>
+      <h2
+      id="a-proof-for-the-regret-bound-on-the-parallel-bandits-case">A
+      proof for the Regret Bound on the Parallel Bandits Case</h2>
+      <p>Some preliminaries: First, we write the <strong>Hoeffding
+      Bound</strong>: <span class="math inline">\(P(\frac{1}{n}\sum
+      \left(X_t - \mathbb{E}(X_t) \geq \epsilon \right) \leq
+      \exp{\left(\frac{-2n^2\epsilon}{\sum(b-a)^2}\right)}\)</span>,
+      where <span class="math inline">\(b\)</span> and <span
+      class="math inline">\(a\)</span> are the bounds of the random
+      variable. In our case, <span class="math inline">\(b = 1, a =
+      0\)</span>, so the denominator vanishes.</p>
+      <h1 id="causal-bandits-with-unknown-confounders">Causal Bandits
+      with Unknown Confounders</h1>
+
+      
+      <noscript><div id="noscript-warning-footer" class="admonition error" title="Warning to NoScript Users"><div class="admonition-title"><p>[<strong>Error</strong>: JavaScript disabled.]</p></div> <p>[Backlinks, similar links, and the bibliography require JS enabled to load.]</p></div></noscript>
+      
+      
+      
+      
+      </div> <!-- /.markdownBody -->
+
+    </article>
+
+    
+    <!-- SSI: Footer -->
+    <!-- FOOTER-BEGIN-->
+        <nav id="navigation">
+      <svg id="navigation-left"><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#direction" /></svg>
+      <a id="navigation-center" class="link-page-not" title="Return to top of current page" href="#top"
+        ><svg><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#center" /></svg></a>
+      <svg id="navigation-right"><use href="/static/img/ornament/sequential-nav-icons-arabesque.svg#direction" /></svg>
+    </nav>
+    <div class="markdownBody" id="footer">
+      <p id="footer-anonymous-feedback">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7uqL7B_l1HFIfXc8D_nZyumaOv58msK7jhl4XzQjWODWKdA/viewform" title="Google Docs web form for submitting anonymized feedback to Gwern Branwen">[&hairsp;Send Anonymous Feedback&hairsp;]</a>
+      </p>
+      <div id="x-of-the-day" class="dark-mode-invert">
+        <p><a id="qotd" class="include include-spinner-not" href="/metadata/today-quote.html">[Quote Of The Day]</a></p>
+        <p><a id="sotd" class="include include-spinner-not" href="/metadata/today-site.html">[Site Of The Day]</a></p>
+        <p><a id="atod" class="include include-spinner-not" href="/metadata/today-annotation.html">[Annotation Of The Day]</a></p>
+      </div>
+      <p><a id="psa-adblock" class="include adsense include-spinner-not" href="/metadata/psa-adblock.html">[adblock public service announcement]</a></p>
+    </div>
+
+    <!-- FOOTER-END -->
+    
+    <div id="footer-decoration-container"> <!-- Mandatory element for layout -->
+      <a rel="home me contents" title="Progyan.net homepage" class="footer-logo dark-mode-invert" href="/index">​</a>
+    </div>
+
+  </main>
+
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-18912926-1" onload="GW.googleAnalyticsLoaded = true;"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-18912926-1');
+  </script>
+  
+  
+</body>
+</html>
